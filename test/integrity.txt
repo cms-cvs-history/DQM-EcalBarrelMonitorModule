@@ -1,7 +1,7 @@
 process DUMP = { 
 
      module ecalEBunpacker = EcalDCCUnpackingModule{
-       untracked string fileName = 'EcalDCCUnpackingModule.root'
+       untracked string fileName = 'EcalBarrelIntegrityChecks.root'
      }
 
      path p = {ecalEBunpacker}	
