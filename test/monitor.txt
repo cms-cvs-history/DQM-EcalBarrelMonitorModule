@@ -5,7 +5,7 @@ process MONITOR = {
      }
 
      module ecalMonitor = EcalBarrelMonitorModule{
-       untracked string fileName = 'DQMEcalBarrelMonitorModule.root'
+       untracked string fileName = 'EcalBarrelMonitorModule.root'
      }
      
      path p = {ecalEBunpacker, ecalMonitor}	
