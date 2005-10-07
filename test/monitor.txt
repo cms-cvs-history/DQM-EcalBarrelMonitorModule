@@ -1,0 +1,19 @@
+process MONITOR = { 
+
+     module ecalEBunpacker = EcalDCCUnpackingModule{
+       untracked string fileName = 'EcalDCCUnpackingModule.root'
+     }
+
+     module ecalMonitor = EBMonitorModule{
+       untracked string fileName = 'EBMonitorModule.root'
+     }
+     
+     path p = {ecalEBunpacker, ecalMonitor}	
+
+     source = DAQEcalTBInputService{ 
+#       untracked string fileName = '/tmp/dellaric/H4-000008203-SM5-PEDESTAL-STD' 
+       untracked string fileName = '/tmp/dellaric/H4-000008205-SM5-TEST_PULSE-MGPA' 
+#       untracked string fileName = '/tmp/dellaric/H4-000008206-SM5-COSMIC-STD'
+       untracked int32 maxEvents = 150
+     }
+}
