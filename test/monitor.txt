@@ -1,6 +1,7 @@
 process MONITOR = { 
 
      module ecalEBunpacker = EcalDCCUnpackingModule{
+       untracked bool DQMServices = true
        untracked string outputFile = 'EcalBarrelIntegrityChecks.root'
      }
 
