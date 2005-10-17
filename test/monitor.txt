@@ -18,7 +18,7 @@ process MONITOR = {
 #       untracked string fileName = '/tmp/H4-000008205-SM5-TEST_PULSE-MGPA' 
 #       untracked string fileName = '/tmp/H4-000008206-SM5-COSMIC-STD'
        untracked string fileName = '/tmp/H4-000006100-SM5-COSMIC-STD'
-       untracked int32 maxEvents = 150
+#       untracked int32 maxEvents = 150
      }
 
      service = DaqMonitorROOTBackEnd{ }
