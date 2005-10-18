@@ -8,7 +8,7 @@ process MONITOR = {
 
      module ecalMonitor = EcalBarrelMonitorModule{
        untracked bool DaqMonitorBEInterface = true
-       untracked bool MonitorDaemon = false
+       untracked bool MonitorDaemon = true
 #       untracked string outputFile = 'EcalBarrelMonitorModule.root'
      }
      
