@@ -6,17 +6,16 @@ process MONITOR = {
      }
 
      module ecalMonitor = EcalBarrelMonitorModule{
-       untracked bool DBEinterface = true
-#       untracked string outputFile = 'EcalBarrelMonitorModule.root'
+       untracked string outputFile = 'EcalBarrelMonitorModule.root'
      }
      
      path p = {ecalEBunpacker, ecalMonitor}	
 
      source = DAQEcalTBInputService{ 
 #       untracked string fileName = '/tmp/H4-000008203-SM5-PEDESTAL-STD' 
-#       untracked string fileName = '/tmp/H4-000008205-SM5-TEST_PULSE-MGPA' 
+       untracked string fileName = '/tmp/H4-000008205-SM5-TEST_PULSE-MGPA' 
 #       untracked string fileName = '/tmp/H4-000008206-SM5-COSMIC-STD'
-       untracked string fileName = '/tmp/H4-000006100-SM5-COSMIC-STD'
+#       untracked string fileName = '/tmp/H4-000006100-SM5-COSMIC-STD'
 #       untracked int32 maxEvents = 150
      }
 
