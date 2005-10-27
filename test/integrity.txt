@@ -1,8 +1,7 @@
 process DUMP = { 
 
      module ecalEBunpacker = EcalDCCUnpackingModule{
-       untracked bool DaqMonitorBEInterface = true
-       untracked bool MonitorDaemon = true
+       untracked bool DBEinterface = true
        untracked string fileName = 'EcalBarrelIntegrityChecks.root'
      }
 

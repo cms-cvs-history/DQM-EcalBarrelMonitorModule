@@ -1,14 +1,12 @@
 process MONITOR = { 
 
      module ecalEBunpacker = EcalDCCUnpackingModule{
-       untracked bool DaqMonitorBEInterface = true
-       untracked bool MonitorDaemon = true
+       untracked bool DBEinterface = true
 #       untracked string outputFile = 'EcalBarrelMonitorModule.root'
      }
 
      module ecalMonitor = EcalBarrelMonitorModule{
-       untracked bool DaqMonitorBEInterface = true
-       untracked bool MonitorDaemon = true
+       untracked bool DBEinterface = true
 #       untracked string outputFile = 'EcalBarrelMonitorModule.root'
      }
      
