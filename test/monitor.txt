@@ -5,11 +5,18 @@ process MONITOR = {
 #       untracked string outputFile = 'EcalBarrelMonitorModule.root'
      }
 
-     module ecalMonitor = EcalBarrelMonitorModule{
-       untracked string outputFile = 'EcalBarrelMonitorModule.root'
+     module ecalUncalibHitMaker = EcalWeightUncalibRecHitProducer {
+       string digiProducer   = "ecalEBunpacker"
+       string digiCollection = ""
+       string hitCollection  = "EcalEBUncalibRecHits"
+       untracked int32 nMaxPrintout = 1
      }
-     
-     path p = {ecalEBunpacker, ecalMonitor}	
+
+     module ecalMonitor = EcalBarrelMonitorModule{
+#       untracked string outputFile = 'EcalBarrelMonitorModule.root'
+     }
+
+     path p = {ecalEBunpacker, ecalUncalibHitMaker, ecalMonitor}	
 
      source = DAQEcalTBInputService{ 
 #       untracked string fileName = '/tmp/H4-000008203-SM5-PEDESTAL-STD' 
@@ -17,6 +24,17 @@ process MONITOR = {
 #       untracked string fileName = '/tmp/H4-000008206-SM5-COSMIC-STD'
        untracked string fileName = '/tmp/H4-000006100-SM5-COSMIC-STD'
 #       untracked int32 maxEvents = 150
+     }
+
+     es_source = PoolDBESSource{ VPSet toGet = {
+                                         { string record = "EcalPedestalsRcd"
+                                           string tag = "EcalPedestals_2008_test"},
+                                         { string record = "EcalWeightRecAlgoWeightsRcd"
+                                           string tag = "EcalWeightRecAlgoWeights_h4_sm5"}
+                                       }
+       bool loadAll = true
+       string connect = "sqlite_file:ecalwgt.db"
+       string timetype = "runnumber"
      }
 
      service = DaqMonitorROOTBackEnd{ }
@@ -42,7 +60,7 @@ process MONITOR = {
        # monitoring period in ms (i.e. how often monitoring elements 
        # are shipped to the collector
        # (default: 1000)
-       untracked int32 UpdateDelay = 1000
+       untracked int32 UpdateDelay = 2000
 
        # name of DQM source
        # (default: DQMSource)
