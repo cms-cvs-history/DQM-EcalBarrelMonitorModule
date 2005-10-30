@@ -7,4 +7,6 @@ for FILE in H4-000008203-SM5-PEDESTAL-STD H4-000008205-SM5-TEST_PULSE-MGPA H4-00
   ln -sf /tmp/$USER/$FILE /tmp/
 done
 
+../../../../test/slc3_ia32_gcc323/testWriteEcalWeightMatrix
+
 cmsRun --parameter-set dump.txt
