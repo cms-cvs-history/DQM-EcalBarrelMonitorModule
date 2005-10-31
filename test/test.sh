@@ -7,6 +7,6 @@ for FILE in H4-000006100-SM5-COSMIC-STD H4-000006187-SM5-LASER-STD H4-000008203-
   ln -sf /tmp/$USER/$FILE /tmp/
 done
 
-../../../../test/slc3_ia32_gcc323/testWriteEcalWeightMatrix
+/afs/cern.ch/cms/Releases/CMSSW/prerelease/CMSSW_0_2_0_pre6/test/slc3_ia32_gcc323/testWriteEcalWeightMatrix
 
 cmsRun --parameter-set dump.txt
