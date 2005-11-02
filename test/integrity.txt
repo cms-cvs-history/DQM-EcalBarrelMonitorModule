@@ -10,6 +10,7 @@ process DUMP = {
      source = DAQEcalTBInputService{
        untracked string fileName = '/tmp/H4-000008203-SM5-PEDESTAL-STD'
        untracked int32 maxEvents = 2
+       untracked bool isBinary = false
      }
 
 }
