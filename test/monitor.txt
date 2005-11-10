@@ -9,7 +9,7 @@ process MONITOR = {
        string digiProducer   = "ecalEBunpacker"
        string digiCollection = ""
        string hitCollection  = "EcalEBUncalibRecHits"
-       untracked int32 nMaxPrintout = 1
+       untracked int32 nMaxPrintout = 0
      }
 
      module ecalMonitor = EcalBarrelMonitorModule{
@@ -18,6 +18,7 @@ process MONITOR = {
 #       untracked string runType = 'laser'
        untracked string runType = 'pedestal'
 #       untracked string runType = 'testpulse'
+        untracked int32 runNumber = 000006100
      }
 
      path p = {ecalEBunpacker, ecalUncalibHitMaker, ecalMonitor}	
@@ -25,14 +26,14 @@ process MONITOR = {
      source = DAQEcalTBInputService{ 
 #       untracked int32 maxEvents = 150
 #---
-#       untracked string fileName = '/tmp/H4-000006100-SM5-COSMIC-STD'
-#       untracked bool isBinary = false
+       untracked string fileName = '/tmp/H4-000006100-SM5-COSMIC-STD'
+       untracked bool isBinary = false
 #--
 #       untracked string fileName = '/tmp/H4-000006187-SM5-LASER-STD' 
 #       untracked bool isBinary = false
 #---
-       untracked string fileName = '/tmp/H4-000008203-SM5-PEDESTAL-STD' 
-       untracked bool isBinary = false
+#       untracked string fileName = '/tmp/H4-000008203-SM5-PEDESTAL-STD' 
+#       untracked bool isBinary = false
 #---
 #       untracked string fileName = '/tmp/H4-000008205-SM5-TEST_PULSE-MGPA' 
 #       untracked bool isBinary = false
