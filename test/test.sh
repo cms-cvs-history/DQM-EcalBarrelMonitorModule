@@ -10,3 +10,4 @@ done
 /afs/cern.ch/cms/Releases/CMSSW/prerelease/CMSSW_0_2_0_pre7/test/slc3_ia32_gcc323/testWriteEcalWeightMatrix
 
 cmsRun --parameter-set dump.txt
+
