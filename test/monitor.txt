@@ -82,7 +82,7 @@ process MONITOR = {
        # monitoring period in ms (i.e. how often monitoring elements 
        # are shipped to the collector
        # (default: 1000)
-       untracked int32 UpdateDelay = 1000
+       untracked int32 UpdateDelay = 5000
 
        # name of DQM source
        # (default: DQMSource)
