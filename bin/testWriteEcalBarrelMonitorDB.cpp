@@ -42,11 +42,29 @@ int main(){
 
   for(size_t i=0; i<3; ++i) {
     std::vector<EcalWeight> tv1, tv2;
-    for(size_t j=0; j<10; ++j) {
-      tv1.push_back( EcalWeight(i*10. + j) );
-      //std::cout << "row: " << i << " col: " << j << " -  val: " << mat1[i][j]  << std::endl;
-      tv2.push_back( EcalWeight(100+i*10. + j) );
-    }
+
+    tv1.push_back( EcalWeight(-0.333) );
+    tv1.push_back( EcalWeight(-0.333) );
+    tv1.push_back( EcalWeight(-0.333) );
+    tv1.push_back( EcalWeight( 0.000) );
+    tv1.push_back( EcalWeight( 0.000) );
+    tv1.push_back( EcalWeight( 0.300) );
+    tv1.push_back( EcalWeight( 0.700) );
+    tv1.push_back( EcalWeight( 0.000) );
+    tv1.push_back( EcalWeight( 0.000) );
+    tv1.push_back( EcalWeight( 0.000) );
+
+    tv2.push_back( EcalWeight(-0.333) );
+    tv2.push_back( EcalWeight(-0.333) );
+    tv2.push_back( EcalWeight(-0.333) );
+    tv2.push_back( EcalWeight( 0.000) );
+    tv2.push_back( EcalWeight( 0.000) );
+    tv2.push_back( EcalWeight( 0.300) );
+    tv2.push_back( EcalWeight( 0.700) );
+    tv2.push_back( EcalWeight( 0.000) );
+    tv2.push_back( EcalWeight( 0.000) );
+    tv2.push_back( EcalWeight( 0.000) );
+
     mat1.push_back(tv1);
     mat2.push_back(tv2);
   }
@@ -84,22 +102,12 @@ int main(){
   for(int iEta=1; iEta<=nMaxEta;++iEta) {
     for(int iPhi=1; iPhi<=nMaxPhi; ++iPhi) {
       channelId= (iEta-1)*nMaxPhi+iPhi;
-      int tt = channelId;
-      if(tt%2 == 0) {
-        item.mean_x1  =0.91;
-        item.rms_x1   =0.17;
-        item.mean_x6  =0.52;
-        item.rms_x6   =0.03;
-        item.mean_x12 =0.16;
-        item.rms_x12  =0.05;
-      } else {
-        item.mean_x1  =0.50;
-        item.rms_x1   =0.94;
-        item.mean_x6  =0.72;
-        item.rms_x6   =0.07;
-        item.mean_x12 =0.87;
-        item.rms_x12  =0.07;
-      }
+      item.mean_x1  = 201.00;
+      item.rms_x1   =   0.62;
+      item.mean_x6  = 199.40;
+      item.rms_x6   =   0.90;
+      item.mean_x12 = 198.80;
+      item.rms_x12  =   1.10;
       ped1->m_pedestals.insert(std::make_pair(channelId,item));
     }
   }
