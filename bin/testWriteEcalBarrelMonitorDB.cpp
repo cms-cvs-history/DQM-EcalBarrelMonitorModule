@@ -46,24 +46,24 @@ int main(){
     tv1.push_back( EcalWeight(-0.333) );
     tv1.push_back( EcalWeight(-0.333) );
     tv1.push_back( EcalWeight(-0.333) );
-    tv1.push_back( EcalWeight( 0.000) );
-    tv1.push_back( EcalWeight( 0.000) );
-    tv1.push_back( EcalWeight( 0.300) );
-    tv1.push_back( EcalWeight( 0.700) );
-    tv1.push_back( EcalWeight( 0.000) );
-    tv1.push_back( EcalWeight( 0.000) );
-    tv1.push_back( EcalWeight( 0.000) );
+    tv1.push_back( EcalWeight( 0.025) );
+    tv1.push_back( EcalWeight( 0.147) );
+    tv1.push_back( EcalWeight( 0.221) );
+    tv1.push_back( EcalWeight( 0.216) );
+    tv1.push_back( EcalWeight( 0.176) );
+    tv1.push_back( EcalWeight( 0.127) );
+    tv1.push_back( EcalWeight( 0.088) );
 
     tv2.push_back( EcalWeight(-0.333) );
     tv2.push_back( EcalWeight(-0.333) );
     tv2.push_back( EcalWeight(-0.333) );
-    tv2.push_back( EcalWeight( 0.000) );
-    tv2.push_back( EcalWeight( 0.000) );
-    tv2.push_back( EcalWeight( 0.300) );
-    tv2.push_back( EcalWeight( 0.700) );
-    tv2.push_back( EcalWeight( 0.000) );
-    tv2.push_back( EcalWeight( 0.000) );
-    tv2.push_back( EcalWeight( 0.000) );
+    tv2.push_back( EcalWeight( 0.025) );
+    tv2.push_back( EcalWeight( 0.147) );
+    tv2.push_back( EcalWeight( 0.221) );
+    tv2.push_back( EcalWeight( 0.216) );
+    tv2.push_back( EcalWeight( 0.176) );
+    tv2.push_back( EcalWeight( 0.127) );
+    tv2.push_back( EcalWeight( 0.088) );
 
     mat1.push_back(tv1);
     mat2.push_back(tv2);
