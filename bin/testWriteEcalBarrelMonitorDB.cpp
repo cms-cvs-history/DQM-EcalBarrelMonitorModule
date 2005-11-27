@@ -120,23 +120,12 @@ int main(){
   for(int iEta=1; iEta<=85;++iEta) {
     for(int iPhi=1; iPhi<=20; ++iPhi) {
       channelId= (iEta-1)*nMaxPhi+iPhi;
-      int tt = channelId;
-      if(tt%2 == 0) {
-        item.mean_x1=0.33;
-        item.rms_x1=0.44;
-        item.mean_x6 =0.22;
-        item.rms_x6  =0.11;
-        item.mean_x12=0.39;
-        item.rms_x12 =0.12;
-      } else {
-        item.mean_x1=0.56;
-        item.rms_x1=0.98;
-        item.mean_x6 =0.83;
-        item.rms_x6  =0.27;
-        item.mean_x12=0.54;
-        item.rms_x12 =0.27;
-      }
-      //std::cout << "iphi: " << iPhi << " ieta: " << iEta << " channel: " << channelId << endl;
+      item.mean_x1  = 201.00;
+      item.rms_x1   =   0.62;
+      item.mean_x6  = 199.40;
+      item.rms_x6   =   0.90;
+      item.mean_x12 = 198.80;
+      item.rms_x12  =   1.10;
       ped2->m_pedestals.insert(std::make_pair(channelId,item));
     }
   }
