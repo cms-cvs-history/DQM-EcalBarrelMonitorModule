@@ -7,7 +7,7 @@ for FILE in H4-000006100-SM5-COSMIC-STD H4-000006187-SM5-LASER-STD H4-000008203-
   ln -sf /tmp/$USER/$FILE /tmp/
 done
 
-../../../../bin/slc3_ia32_gcc323/testWriteEcalBarrelMonitorDB
+../../../../../bin/slc3_ia32_gcc323/testWriteEcalBarrelMonitorDB
 
 cmsRun --parameter-set dump.txt
 
