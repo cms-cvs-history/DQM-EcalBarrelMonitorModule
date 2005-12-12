@@ -1,9 +1,6 @@
 process MONITOR = { 
 
-     module ecalEBunpacker = EcalDCCUnpackingModule{
-       untracked bool DBEinterface = true
-#       untracked string outputFile = 'EcalBarrelMonitorModule.root'
-     }
+     module ecalEBunpacker = EcalDCCUnpackingModule{ }
 
      module ecalUncalibHitMaker = EcalWeightUncalibRecHitProducer {
        string digiProducer   = "ecalEBunpacker"
