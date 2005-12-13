@@ -16,6 +16,7 @@ process MONITOR = {
        untracked string runType = 'pedestal'
 #       untracked string runType = 'testpulse'
         untracked int32 runNumber = 000006100
+#       untracked bool verbose = true
      }
 
      path p = {ecalEBunpacker, ecalUncalibHitMaker, ecalMonitor}	
