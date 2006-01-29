@@ -9,17 +9,25 @@ process MONITOR = {
        untracked int32 nMaxPrintout = 0
      }
 
-     module ecalMonitor = EcalBarrelMonitorModule{
+     module ecalMonitorModule = EcalBarrelMonitorModule{
 #       untracked string outputFile = 'EcalBarrelMonitorModule.root'
+#       untracked bool verbose = true
 #       untracked string runType = 'cosmic'
 #       untracked string runType = 'laser'
        untracked string runType = 'pedestal'
 #       untracked string runType = 'testpulse'
         untracked int32 runNumber = 000006100
-#       untracked bool verbose = true
      }
 
-     path p = {ecalEBunpacker, ecalUncalibHitMaker, ecalMonitor}	
+     module ecalIntegrityTask = EBIntegrityTask{ }
+     module ecalCosmicTask = EBCosmicTask{ }
+     module ecalElectronTask = EBElectronTask{ }
+     module ecalLaserTask = EBLaserTask{ }
+     module ecalPedestalOnlineTask = EBPedestalOnlineTask{ }
+     module ecalPedestalTask = EBPedestalTask{ } 
+     module ecalTestPulseTask = EBTestPulseTask{ }
+
+     path p = {ecalEBunpacker, ecalUncalibHitMaker, ecalMonitorModule, ecalIntegrityTask, ecalCosmicTask, ecalElectronTask, ecalLaserTask, ecalPedestalOnlineTask, ecalPedestalTask, ecalTestPulseTask}	
 
      source = DAQEcalTBInputService{ 
 #       untracked int32 maxEvents = 150
