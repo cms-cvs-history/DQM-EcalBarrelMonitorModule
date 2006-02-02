@@ -32,25 +32,25 @@ process MONITOR = {
      source = DAQEcalTBInputService{ 
 #       untracked int32 maxEvents = 150
 #---
-#       untracked string fileName = '/tmp/H4-000006100-SM5-COSMIC-STD'
+#       untracked vstring fileNames = { '/tmp/H4-000006100-SM5-COSMIC-STD' }
 #       untracked bool isBinary = false
 #--
-#       untracked string fileName = '/tmp/H4-000006187-SM5-LASER-STD' 
+#       untracked vstring fileNames = { '/tmp/H4-000006187-SM5-LASER-STD' }
 #       untracked bool isBinary = false
 #---
-       untracked string fileName = '/tmp/H4-000008203-SM5-PEDESTAL-STD' 
+       untracked vstring fileNames = { '/tmp/H4-000008203-SM5-PEDESTAL-STD' }
        untracked bool isBinary = false
 #---
-#       untracked string fileName = '/tmp/H4-000008205-SM5-TEST_PULSE-MGPA' 
+#       untracked vstring fileNames = { '/tmp/H4-000008205-SM5-TEST_PULSE-MGPA' }
 #       untracked bool isBinary = false
 #---
-#       untracked string fileName = '/tmp/H4-000008206-SM5-COSMIC-STD'
+#       untracked vstring fileNames = { '/tmp/H4-000008206-SM5-COSMIC-STD' }
 #       untracked bool isBinary = false
 #---
-#       untracked string fileName = '/tmp/H4-000015188-SM5-COSMIC-STD'
+#       untracked vstring fileNames = { '/tmp/H4-000015188-SM5-COSMIC-STD' }
 #       untracked bool isBinary = true
 #---
-#       untracked string fileName = '/tmp/H4-000015292-SM5-LASER-STD'
+#       untracked vstring fileNames = { '/tmp/H4-000015292-SM5-LASER-STD' }
 #       untracked bool isBinary = true
      }
 
