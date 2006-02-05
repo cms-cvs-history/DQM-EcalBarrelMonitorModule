@@ -29,7 +29,7 @@ process MONITOR = {
      module ecalPedestalTask = EBPedestalTask{ } 
      module ecalTestPulseTask = EBTestPulseTask{ }
 
-     path p = {ecalEBunpacker, ecalUncalibHitMaker, ecalMonitorModule, ecalIntegrityTask, ecalCosmicTask, ecalElectronTask, ecalLaserTask, ecalPedestalOnlineTask, ecalPedestalTask, ecalTestPulseTask}	
+     path p = {ecalEBunpacker, ecalUncalibHitMaker, ecalMonitorModule, ecalIntegrityTask, ecalCosmicTask, ecalElectronTask, ecalLaserTask, ecalPedestalOnlineTask, ecalPedestalTask, ecalTestPulseTask}
 
      source = DAQEcalTBInputService{ 
 #       untracked int32 maxEvents = 150
@@ -66,6 +66,33 @@ process MONITOR = {
        string connect = "sqlite_file:ecalcalib.db"
        string timetype = "runnumber"
      }
+
+     service = MessageLogger{
+       vstring destinations = { "cout" }
+#       vstring debugModules = { "ecalEBunpacker" }
+#       vstring debugModules = { "ecalMonitorModule" }
+      vstring categories = { "postBeginJob",
+                             "postEndJob",
+                             "preEventProcessing",
+                             "postEventProcessing",
+                             "preModule",
+                             "postModule", 
+                             "EcalTBInputService",
+                             "EcalBarrelMonitor"
+                            }
+       PSet cout = { string threshold = "INFO"
+                     PSet default = { int32 limit = 1000000 }
+                     PSet EcalTBInputService = { int32 limit = 0 }
+                     PSet EcalBarrelMonitor = { int32 limit = 0 }
+                     bool noTimeStamps = true
+                     bool noLineBreaks = true
+                     PSet preEventProcessing = { int32 limit = 10 }
+                     PSet postEventProcessing = { int32 limit = 0 }
+                     PSet preModule = { int32 limit = 0 }
+                     PSet postModule = { int32 limit = 0 } 
+                     PSet postBeginJob = { int32 limit = 0 }
+                     PSet postEndJob = { int32 limit = 0 }
+                   }
 
      service = DaqMonitorROOTBackEnd{ }
 
