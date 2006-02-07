@@ -93,6 +93,7 @@ process MONITOR = {
                      PSet postBeginJob = { int32 limit = 0 }
                      PSet postEndJob = { int32 limit = 0 }
                    }
+     }
 
      service = DaqMonitorROOTBackEnd{ }
 
