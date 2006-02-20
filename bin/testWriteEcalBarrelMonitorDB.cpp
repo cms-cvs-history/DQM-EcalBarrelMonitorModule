@@ -37,10 +37,8 @@ int main(){
   EcalWeightMatrix& mat1 = wgt->getWeightsBeforeGainSwitch();
   EcalWeightMatrix& mat2 = wgt->getWeightsAfterGainSwitch();
 
-  std::cout << "initial size of mat1: " << mat1.size() << std::endl;
-  std::cout << "initial size of mat2: " << mat2.size() << std::endl;
-
-  for(size_t i=0; i<3; ++i) {
+  // amplitude
+  {
     std::vector<EcalWeight> tv1, tv2;
 
     tv1.push_back( EcalWeight(-0.333) );
@@ -69,6 +67,66 @@ int main(){
     mat2.push_back(tv2);
   }
 
+  // pedestal
+  {
+    std::vector<EcalWeight> tv1, tv2;
+
+    tv1.push_back( EcalWeight( 0.333) );
+    tv1.push_back( EcalWeight( 0.333) );
+    tv1.push_back( EcalWeight( 0.333) );
+    tv1.push_back( EcalWeight( 0.000) );
+    tv1.push_back( EcalWeight( 0.000) );
+    tv1.push_back( EcalWeight( 0.000) );
+    tv1.push_back( EcalWeight( 0.000) );
+    tv1.push_back( EcalWeight( 0.000) );
+    tv1.push_back( EcalWeight( 0.000) );
+    tv1.push_back( EcalWeight( 0.000) );
+
+    tv2.push_back( EcalWeight( 0.333) );
+    tv2.push_back( EcalWeight( 0.333) );
+    tv2.push_back( EcalWeight( 0.333) );
+    tv2.push_back( EcalWeight( 0.000) );
+    tv2.push_back( EcalWeight( 0.000) );
+    tv2.push_back( EcalWeight( 0.000) );
+    tv2.push_back( EcalWeight( 0.000) );
+    tv2.push_back( EcalWeight( 0.000) );
+    tv2.push_back( EcalWeight( 0.000) );
+    tv2.push_back( EcalWeight( 0.000) );
+
+    mat1.push_back(tv1);
+    mat2.push_back(tv2);
+  }
+
+  // jitter
+  {
+    std::vector<EcalWeight> tv1, tv2;
+
+    tv1.push_back( EcalWeight( 0.000) );
+    tv1.push_back( EcalWeight( 0.000) );
+    tv1.push_back( EcalWeight( 0.000) );
+    tv1.push_back( EcalWeight( 0.800) );
+    tv1.push_back( EcalWeight( 0.800) );
+    tv1.push_back( EcalWeight( 0.800) );
+    tv1.push_back( EcalWeight( 0.200) );
+    tv1.push_back( EcalWeight( 0.300) );
+    tv1.push_back( EcalWeight( 0.300) );
+    tv1.push_back( EcalWeight( 0.300) );
+
+    tv2.push_back( EcalWeight( 0.000) );
+    tv2.push_back( EcalWeight( 0.000) );
+    tv2.push_back( EcalWeight( 0.000) );
+    tv2.push_back( EcalWeight( 0.800) );
+    tv2.push_back( EcalWeight( 0.800) );
+    tv2.push_back( EcalWeight( 0.800) );
+    tv2.push_back( EcalWeight( 0.200) );
+    tv2.push_back( EcalWeight( 0.300) );
+    tv2.push_back( EcalWeight( 0.300) );
+    tv2.push_back( EcalWeight( 0.300) );
+
+    mat1.push_back(tv1);
+    mat2.push_back(tv2);
+  }
+
   // fill the chi2 matrcies
   EcalWeightMatrix& mat3 = wgt->getChi2WeightsBeforeGainSwitch();
   EcalWeightMatrix& mat4 = wgt->getChi2WeightsAfterGainSwitch();
@@ -82,7 +140,6 @@ int main(){
     mat4.push_back(tv2);
   }
 
-
   std::string wgttok=w.write<EcalWeightRecAlgoWeights>(wgt, "EcalWeightRecAlgoWeights");
 
   //assign IOV
@@ -90,7 +147,6 @@ int main(){
 
   std::string wgtiovToken=w.write<cond::IOV>(wgt_iov,"IOV");
   std::cout << "weights written into db with IOV" << std::endl;
-
 
   cond::IOV* pediov=new cond::IOV;
   int channelId;
