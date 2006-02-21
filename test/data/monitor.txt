@@ -14,6 +14,7 @@ process MONITOR = {
 #       untracked string outputFile = 'EcalBarrelMonitorModule.root'
 #       untracked bool verbose = true
 #       untracked bool enableMonitorDaemon = false
+#       untracked bool enableEventDisplay = true
 #       untracked string runType = 'cosmic'
 #       untracked string runType = 'laser'
        untracked string runType = 'pedestal'
