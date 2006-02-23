@@ -7,6 +7,9 @@ for FILE in H4-000006100-SM5-COSMIC-STD H4-000006187-SM5-LASER-STD H4-000008203-
   ln -sf /tmp/$USER/$FILE /tmp/
 done
 
+export CORAL_AUTH_USER=ecal
+export CORAL_AUTH_PASSWORD=ecal
+
 ../../../../../bin/slc3_ia32_gcc323/testWriteEcalBarrelMonitorDB
 
 cmsRun --parameter-set dump.txt
