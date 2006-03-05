@@ -72,27 +72,16 @@ process MONITOR = {
        vstring destinations = { "cout" }
 #       vstring debugModules = { "ecalEBunpacker" }
 #       vstring debugModules = { "ecalMonitorModule" }
-      vstring categories = { "postBeginJob",
-                             "postEndJob",
-                             "preEventProcessing",
-                             "postEventProcessing",
-                             "preModule",
-                             "postModule", 
-                             "EcalTBInputService",
+#       vstring debugModules = { "*" }
+      vstring categories = { "EcalTBInputService",
                              "EcalBarrelMonitor"
                             }
        PSet cout = { string threshold = "INFO"
-                     PSet default = { int32 limit = 1000000 }
+                     PSet default = { int32 limit = 0 }
                      PSet EcalTBInputService = { int32 limit = 0 }
-                     PSet EcalBarrelMonitor = { int32 limit = 0 }
+                     PSet EcalBarrelMonitor = { int32 limit = 10 }
                      bool noTimeStamps = true
                      bool noLineBreaks = true
-                     PSet preEventProcessing = { int32 limit = 10 }
-                     PSet postEventProcessing = { int32 limit = 0 }
-                     PSet preModule = { int32 limit = 0 }
-                     PSet postModule = { int32 limit = 0 } 
-                     PSet postBeginJob = { int32 limit = 0 }
-                     PSet postEndJob = { int32 limit = 0 }
                    }
      }
 
