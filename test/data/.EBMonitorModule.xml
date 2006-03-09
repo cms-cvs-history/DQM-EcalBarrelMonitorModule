@@ -29,12 +29,13 @@
 			       string digiProducer   = "ecalEBunpacker"
 			       string digiCollection = ""
 			       string hitCollection  = "EcalEBUncalibRecHits"
-			       untracked int32 nMaxPrintout = 0
+			       untracked int32 nMaxPrintout = 1
 			     }
 
 			     module ecalMonitorModule = EcalBarrelMonitorModule{
-			       untracked bool enableMonitorDaemon = false
-			       untracked string runType = "testpulse"
+			       untracked bool enableMonitorDaemon = true
+			       untracked bool verbose = true
+			       untracked string runType = "cosmic"
 			       untracked int32 runNumber = 000006100
 			     }
 
@@ -56,7 +57,8 @@
 			     }
 
 			     source = DAQEcalTBInputService{
-			       untracked vstring fileNames = { '/tmp/H4-000006100-SM5-COSMIC-STD' }
+			       untracked int32 maxEvents = 150
+			       untracked vstring fileNames = { "/tmp/H4-000006100-SM5-COSMIC-STD" }
 			       untracked bool isBinary = false
 			     }
 
@@ -73,7 +75,7 @@
 
 			     service = MessageLogger{
 			       vstring destinations = { "cout" }
-			      vstring categories = { "EcalTBInputService",
+			       vstring categories = { "EcalTBInputService",
 			                             "EcalBarrelMonitor"
 			                            }
 			       PSet cout = { string threshold = "INFO"
