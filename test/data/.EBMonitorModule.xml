@@ -90,7 +90,7 @@
 			     service = MonitorDaemon{
 			       untracked bool AutoInstantiate = true
 			       untracked int32 reconnect_delay = 5
-			       untracked string DestinationAddress = "localhost"
+			       untracked string DestinationAddress = ".host"
 			       untracked int32 SendPort = 9090
 			       untracked int32 UpdateDelay = 500
 			       untracked string NameAsSource = "FU0"
