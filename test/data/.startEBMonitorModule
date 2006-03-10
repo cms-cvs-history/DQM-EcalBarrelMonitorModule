@@ -4,6 +4,6 @@ if ! perl webPingXDAQ.pl pclx22.ts.infn.it 1972 10
 then
   echo "executive didn't start properly"
 else
-  perl sendCmdToApp.pl pclx22.ts.infn.it 1972 EBMonitorModule.xml
+  perl sendCmdToApp.pl .host .portn EBMonitorModule.xml
 fi
 
