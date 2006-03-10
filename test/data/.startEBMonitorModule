@@ -1,5 +1,5 @@
 eval `scramv1 ru -sh`
-xdaq.exe -h .host -p .port -e profile.xml >& /dev/null &
+xdaq.exe -h .host -p .portn -e profile.xml >& /dev/null &
 if ! perl webPingXDAQ.pl pclx22.ts.infn.it 1972 10
 then
   echo "executive didn't start properly"
