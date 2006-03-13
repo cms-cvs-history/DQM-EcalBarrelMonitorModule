@@ -6,7 +6,14 @@ process MONITOR = {
 #     module ecalUncalibHitMaker = EcalAnalFitUncalibRecHitProducer{
        string digiProducer   = "ecalEBunpacker"
        string digiCollection = ""
-       string hitCollection  = "EcalEBUncalibRecHits"
+       string hitCollection  = "EcalUncalibRecHits"
+       untracked int32 nMaxPrintout = 0
+     }
+
+     module ecalRecHitMaker = EcalRecHitProducer{
+       string uncalibRecHitProducer = "ecalUncalibHitMaker"
+       string uncalibRecHitCollection = "EcalUncalibRecHits"
+       string rechitCollection = "EcalRecHits"
        untracked int32 nMaxPrintout = 0
      }
 
@@ -30,7 +37,14 @@ process MONITOR = {
      module ecalPedestalTask = EBPedestalTask{ } 
      module ecalTestPulseTask = EBTestPulseTask{ }
 
-     path p = {ecalEBunpacker, ecalUncalibHitMaker, ecalMonitorModule, ecalIntegrityTask, ecalCosmicTask, ecalBeamTask, ecalLaserTask, ecalPedestalOnlineTask, ecalPedestalTask, ecalTestPulseTask}
+     path p = { ecalEBunpacker,
+                ecalUncalibHitMaker, ecalRecHitMaker,
+                ecalMonitorModule,
+                ecalIntegrityTask,
+                ecalCosmicTask, ecalBeamTask,
+                ecalLaserTask,
+                ecalPedestalOnlineTask, ecalPedestalTask,
+                ecalTestPulseTask }
 
      source = DAQEcalTBInputService{ 
 #       untracked int32 maxEvents = 150
@@ -57,24 +71,25 @@ process MONITOR = {
 #       untracked bool isBinary = true
      }
 
-     es_source = PoolDBESSource{ VPSet toGet = {
-                                         { string record = "EcalPedestalsRcd"
-                                           string tag = "EcalPedestals_2008_test"},
-                                         { string record = "EcalWeightRecAlgoWeightsRcd"
-                                           string tag = "EcalWeightRecAlgoWeights_h4_sm5"}
-                                       }
-       bool loadAll = true
-       string connect = "sqlite_file:ecalcalib.db"
-       string timetype = "runnumber"
-     }
+     es_source = EcalTrivialConditionRetriever{ }
+#     es_source = PoolDBESSource{ VPSet toGet = {
+#                                         { string record = "EcalPedestalsRcd"
+#                                           string tag = "EcalPedestals_2008_test"},
+#                                         { string record = "EcalWeightRecAlgoWeightsRcd"
+#                                           string tag = "EcalWeightRecAlgoWeights_h4_sm5"}
+#                                       }
+#       bool loadAll = true
+#       string connect = "sqlite_file:ecalcalib.db"
+#       string timetype = "runnumber"
+#     }
 
      service = MessageLogger{
        vstring destinations = { "cout" }
 #       vstring debugModules = { "ecalEBunpacker" }
 #       vstring debugModules = { "ecalMonitorModule" }
 #       vstring debugModules = { "*" }
-      vstring categories = { "EcalTBInputService",
-                             "EcalBarrelMonitor"
+       vstring categories = { "EcalTBInputService",
+                              "EcalBarrelMonitor"
                             }
        PSet cout = { string threshold = "INFO"
                      PSet default = { int32 limit = 0 }

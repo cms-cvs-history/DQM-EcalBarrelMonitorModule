@@ -28,8 +28,15 @@
 			     module ecalUncalibHitMaker = EcalWeightUncalibRecHitProducer{
 			       string digiProducer   = "ecalEBunpacker"
 			       string digiCollection = ""
-			       string hitCollection  = "EcalEBUncalibRecHits"
+			       string hitCollection  = "EcalUncalibRecHits"
 			       untracked int32 nMaxPrintout = 1
+			     }
+
+			     module ecalRecHitMaker = EcalRecHitProducer{
+			       string uncalibRecHitProducer = "ecalUncalibHitMaker"
+			       string uncalibRecHitCollection = "EcalUncalibRecHits"
+			       string rechitCollection = "EcalRecHits"
+			       untracked int32 nMaxPrintout = 0
 			     }
 
 			     module ecalMonitorModule = EcalBarrelMonitorModule{
@@ -47,7 +54,8 @@
 			     module ecalPedestalTask = EBPedestalTask{ } 
 			     module ecalTestPulseTask = EBTestPulseTask{ }
 
-			     path p = { ecalEBunpacker, ecalUncalibHitMaker,
+			     path p = { ecalEBunpacker,
+			                ecalUncalibHitMaker, ecalRecHitMaker,
 			                ecalMonitorModule,
 			                ecalIntegrityTask,
 			                ecalCosmicTask, ecalBeamTask,
@@ -62,16 +70,7 @@
 			       untracked bool isBinary = false
 			     }
 
-			     es_source = PoolDBESSource{ VPSet toGet = {
-                        			                 { string record = "EcalPedestalsRcd"
-			                                           string tag = "EcalPedestals_2008_test"},
-			                                         { string record = "EcalWeightRecAlgoWeightsRcd"
-			                                           string tag = "EcalWeightRecAlgoWeights_h4_sm5"}
-			                                       }
-			       bool loadAll = true
-			       string connect = "sqlite_file:ecalcalib.db"
-			       string timetype = "runnumber"
-			     }
+			     es_source = EcalTrivialConditionRetriever{ }
 
 			     service = MessageLogger{
 			       vstring destinations = { "cout" }
