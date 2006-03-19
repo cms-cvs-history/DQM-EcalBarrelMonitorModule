@@ -1,4 +1,6 @@
-EBMonitorModule.xml
 profile.xml
-startEBMonitorModule
-webPingXDAQ.pl
+runMonitorModule.sh
+startMonitorModule-FedStreamer-EVB
+startMonitorModule-SimpleI2OSender-EVB
+MonitorModule-FedStreamer-EVB.xml
+MonitorModule-SimpleI2OSender-EVB.xml
