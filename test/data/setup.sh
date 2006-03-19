@@ -4,7 +4,7 @@ if [ "$1" != "" ]; then
   LOCALTASK=$1
 fi
 if [ "$2" != "" ]; then 
-  REMOTEHOST=$2
+  REMHOST=$2
 fi
 if [ "$3" != "" ]; then 
   LOCALPORT=$3
@@ -16,7 +16,7 @@ fi
 # Settable parameters. If empty or commented out they'll be asked for...
 
 #LOCALTASK="FU"
-#REMOTEHOST="pclip9.cern.ch"
+#REMHOST="pclip9.cern.ch"
 #LOCALPORT=1972
 #REMOTEPORT=12345
 
@@ -44,16 +44,16 @@ else
   exit
 fi
 
-if [ "$REMOTEHOST" == "" ] ; then
+if [ "$REMHOST" == "" ] ; then
   echo -n "Fine... Now tell me the name of the PC where $REMOTETASK will run (name[.domain]) "
-  read REMOTEHOST
+  read REMHOST
 
-  REMOTEHOST=`/usr/bin/host $REMOTEHOST | /bin/awk '{print $1}'`
-  if [ $REMOTEHOST == "Host" ]; then
+  REMHOST=`/usr/bin/host $REMHOST | /bin/awk '{print $1}'`
+  if [ $REMHOST == "Host" ]; then
     echo "Uhmmm... It looks like that host does not exist, try again re-running me"
     exit
   fi
-  echo "Good, your friend computer will be $REMOTEHOST"
+  echo "Good, your friend computer will be $REMHOST"
 fi
 
 if [ "$LOCALPORT" == "" ]; then
@@ -62,7 +62,7 @@ if [ "$LOCALPORT" == "" ]; then
 fi
 
 if [ "$REMOTEPORT" == "" ]; then
-  echo -n "... And on which remote port comunicates in $REMOTEHOST? "
+  echo -n "... And on which remote port comunicates in $REMHOST? "
   read REMOTEPORT
 fi
 
@@ -70,12 +70,12 @@ fi
 
 if [ $LOCALTASK == "FU" ]; then
   FUHOST="$LOCALHOST";
-  BUHOST="$REMOTEHOST";
+  BUHOST="$REMHOST";
   FUPORT="$LOCALPORT"
   BUPORT="$REMOTEPORT"
 else
   BUHOST="$LOCALHOST";
-  FUHOST="$REMOTEHOST";
+  FUHOST="$REMHOST";
   BUPORT="$LOCALPORT"
   FUPORT="$REMOTEPORT"
 fi
