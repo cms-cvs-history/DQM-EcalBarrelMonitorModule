@@ -131,6 +131,6 @@ fi
 /bin/chmod 751 MonitorModule-SimpleI2OSender-EVB.xml
 /bin/chmod 751 startMonitorModule-FedStreamer-EVB
 /bin/chmod 751 startMonitorModule-SimpleI2OSender-EVB
-
+/bin/chmod 751 runMonitorModule.sh
 
 

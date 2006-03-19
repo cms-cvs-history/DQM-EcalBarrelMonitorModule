@@ -34,7 +34,7 @@
             <collectorAddr xsi:type="xsd:string">localhost</collectorAddr>
             <!-- <fragDumpSwitch xsi:type="xsd:boolean">true</fragDumpSwitch> -->
             <!-- <fragDropSwitch xsi:type="xsd:boolean">true</fragDropSwitch> --> <!-- this is used to drop events at exit of FU -->
-            <workDir xsi:type="xsd:string">/opt/CMSSW/CMSSW_0_5_0/work</workDir>
+            <workDir xsi:type="xsd:string">.pwd</workDir>
          </properties>
          <!-- <xc:Unicast class="BU" network="tcp1"></xc:Unicast> -->
       </xc:Application>
