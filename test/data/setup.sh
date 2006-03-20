@@ -80,28 +80,24 @@ else
   FUPORT="$REMOTEPORT"
 fi
 
-LIBS="libEventFilterProcessor.so libEventFilterProcessor.so"
-MW_LIB=""
-
-for n in $LIBS 
-do 
-  SEARCH="${LOCALRT}/lib/slc3_ia32_gcc323/$n"
-  echo "Looking for $SEARCH"
-  if [ ! -f $SEARCH ]; then
-    echo "Not Found! Will pick it up from the release area..."
-    SEARCH="${CMSSW_RELEASE_BASE}/lib/slc3_ia32_gcc323/$n"
-  else 
-    echo "Found!"
-  fi
-  if [ "$MW_LIB" == "" ]; then
-    MW_LIB="$SEARCH"
-  else
-    MW_LIB="$MW_LIB $SEARCH"
-  fi
-done
-
-MWC_LIB=$(echo "$MWC_LIB" | /bin/sed 's/\//\\\//g')
-echo $MWC_LIB
+LIB1="${LOCALRT}/lib/slc3_ia32_gcc323/libEventFilterUnit.so"
+echo "Looking for $LIB1"
+if [ ! -f $LIB1 ]; then
+  echo "Not Found! Will pick it up from the release area..."
+  LIB1="${CMSSW_RELEASE_BASE}/lib/slc3_ia32_gcc323/libEventFilterUnit.so"
+else 
+  echo "Found!"
+fi
+LIB2="${LOCALRT}/lib/slc3_ia32_gcc323/libEventFilterProcessor.so"
+echo "Looking for $LIB1"
+if [ ! -f $LIB2 ]; then
+  echo "Not Found! Will pick it up from the release area..."
+  LIB2="${CMSSW_RELEASE_BASE}/lib/slc3_ia32_gcc323/libEventFilterProcessor.so"
+else 
+  echo "Found!"
+fi
+LIB1=$(echo "$LIB1" | /bin/sed 's/\//\\\//g')
+LIB2=$(echo "$LIB2" | /bin/sed 's/\//\\\//g')
 
 if [ -e profile.xml ]; then
     /bin/rm profile.xml
@@ -120,8 +116,8 @@ if [ -e runMonitorModule.sh ]; then
 fi
 
 /bin/sed -e "s/.pwd/${PATH}/g" .profile.xml > profile.xml
-/bin/sed -e "s/.buport/$BUPORT/g" -e "s/.fuport/$FUPORT/g" -e "s/.buhost/$BUHOST/g" -e "s/.fuhost/$FUHOST/g" -e "s/.pwd/$PATH/g" -e "s/.libpath/${MWC_LIB}/g"  .MonitorModule-FedStreamer-EVB.xml > MonitorModule-FedStreamer-EVB.xml
-/bin/sed -e "s/.buport/$BUPORT/g" -e "s/.fuport/$FUPORT/g" -e "s/.buhost/$BUHOST/g" -e "s/.fuhost/$FUHOST/g" -e "s/.pwd/$PATH/g" -e "s/.libpath/${MWC_LIB}/g"  .MonitorModule-SimpleI2OSender-EVB.xml > MonitorModule-SimpleI2OSender-EVB.xml
+/bin/sed -e "s/.buport/$BUPORT/g" -e "s/.fuport/$FUPORT/g" -e "s/.buhost/$BUHOST/g" -e "s/.fuhost/$FUHOST/g" -e "s/.pwd/$PATH/g" -e "s/.lib1/${LIB1}/g" -e "s/.lib2/${LIB2}/g"  .MonitorModule-FedStreamer-EVB.xml > MonitorModule-FedStreamer-EVB.xml
+/bin/sed -e "s/.buport/$BUPORT/g" -e "s/.fuport/$FUPORT/g" -e "s/.buhost/$BUHOST/g" -e "s/.fuhost/$FUHOST/g" -e "s/.pwd/$PATH/g" -e "s/.lib1/${LIB1}/g" -e "s/.lib2/${LIB2}/g"   .MonitorModule-SimpleI2OSender-EVB.xml > MonitorModule-SimpleI2OSender-EVB.xml
 /bin/sed -e "s/.portn/$LOCALPORT/g" -e "s/.host/$LOCALHOST/g" .startMonitorModule-FedStreamer-EVB > startMonitorModule-FedStreamer-EVB
 /bin/sed -e "s/.portn/$LOCALPORT/g" -e "s/.host/$LOCALHOST/g" .startMonitorModule-SimpleI2OSender-EVB > startMonitorModule-SimpleI2OSender-EVB
 /bin/sed -e "s/.portn/$LOCALPORT/g" -e "s/.host/$LOCALHOST/g" .runMonitorModule.sh  > runMonitorModule.sh

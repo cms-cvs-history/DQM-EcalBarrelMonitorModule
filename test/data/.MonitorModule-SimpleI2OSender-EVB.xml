@@ -105,9 +105,9 @@
          </properties>
       </xc:Application>
 
-      <xc:Module>/afs/cern.ch/cms/Releases/CMSSW/CMSSW_0_5_0/lib/slc3_ia32_gcc323/libEventFilterUnit.so</xc:Module>
-      <xc:Module>/afs/cern.ch/cms/Releases/XDAQ/XDAQ_3_4/lib/linux/x86/libpttcp.so</xc:Module>
-      <xc:Module>/afs/cern.ch/cms/Releases/CMSSW/CMSSW_0_5_0/lib/slc3_ia32_gcc323/libEventFilterProcessor.so</xc:Module>
+      <xc:Module>.lib1</xc:Module>
+      <xc:Module>${XDAQ_ROOT}/lib/linux/x86/libpttcp.so</xc:Module>
+      <xc:Module>.lib2</xc:Module>
    </xc:Context>
 
    <xc:Context url="http://.buhost:.buport">
