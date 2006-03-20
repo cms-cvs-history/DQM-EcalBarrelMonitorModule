@@ -112,9 +112,9 @@
 
    <xc:Context url="http://.buhost:.buport">
 
-      <xc:Endpoint hostname=".buhost" network="tcp1" port="30000" protocol="tcp" service="i2o"></xc:Endpoint>
+      <xc:Endpoint hostname=".buhost" network="tcp1" port="30001" protocol="tcp" service="i2o"></xc:Endpoint>
 
-      <xc:Application class="PeerTransportTCP" id="20" network="local" instance="1">
+      <xc:Application class="PeerTransportTCP" id="21" network="local" instance="1">
          <properties xmlns="urn:xdaq-application:PeerTransportTCP" xsi:type="soapenc:Struct">
              <autoSize xsi:type="xsd:boolean">true</autoSize>
              <maxPacketSize xsi:type="xsd:unsignedLong">8192</maxPacketSize>
