@@ -128,7 +128,7 @@
 
       <xc:Application class="RUBuilderTester" id="12" instance="0" network="local"/>
 
-      <xc:Module>$XDAQ_ROOT/daq/evb/rubuildertester/lib/linux/x86/libRUBuilderTester.so</xc:Module>
+      <xc:Module>${XDAQ_ROOT}/lib/linux/x86/libRUBuilderTester.so</xc:Module>
 
       <xc:Application class="SimpleI2OSender" id="50" instance="0" network="local"/>
 
@@ -150,13 +150,13 @@
       <!--    </properties>                                                                 -->
       <!-- </xc:Application>                                                                -->
 
-      <xc:Module>$XDAQ_ROOT/daq/evb/examples/ta/lib/linux/x86/libTA.so</xc:Module>
-      <xc:Module>$XDAQ_ROOT/daq/evb/evm/lib/linux/x86/libEVM.so</xc:Module>
-      <xc:Module>$XDAQ_ROOT/daq/evb/ru/lib/linux/x86/libRU.so</xc:Module>
-      <xc:Module>$XDAQ_ROOT/daq/evb/bu/lib/linux/x86/libBU.so</xc:Module>
+      <xc:Module>${XDAQ_ROOT}/lib/linux/x86/libTA.so</xc:Module>
+      <xc:Module>${XDAQ_ROOT}/lib/linux/x86/libEVM.so</xc:Module>
+      <xc:Module>${XDAQ_ROOT}/lib/linux/x86/libRU.so</xc:Module>
+      <xc:Module>${XDAQ_ROOT}/lib/linux/x86/libBU.so</xc:Module>
       <xc:Module>$XDAQ_ROOT/daq/evb/myI2Osender/lib/linux/x86/libSimpleI2OSender.so</xc:Module>
-      <!-- <xc:Module>$XDAQ_ROOT/daq/evb/examples/fu/lib/linux/x86/libFU.so</xc:Module> -->
-      <xc:Module>$XDAQ_ROOT/daq/pt/tcp/lib/linux/x86/libpttcp.so</xc:Module>
+      <!-- <xc:Module>${XDAQ_ROOT}/lib/linux/x86/libFU.so</xc:Module> -->
+      <xc:Module>${XDAQ_ROOT}/lib/linux/x86/libpttcp.so</xc:Module>
 
    </xc:Context>
 
