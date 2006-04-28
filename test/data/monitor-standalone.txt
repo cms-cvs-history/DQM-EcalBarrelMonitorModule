@@ -64,7 +64,6 @@ process MONITOR = {
                 ecalMonitorClient }
 
      source = DAQEcalTBInputService{ 
-       untracked int32 maxEvents = 50
 #       untracked int32 maxEvents = 150
 #---
 #       untracked vstring fileNames = { '/tmp/H4-000006100-SM5-COSMIC-STD' }
