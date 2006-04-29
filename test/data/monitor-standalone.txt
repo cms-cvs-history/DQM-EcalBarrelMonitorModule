@@ -37,21 +37,21 @@ process MONITOR = {
      module ecalPedestalTask = EBPedestalTask{ } 
      module ecalTestPulseTask = EBTestPulseTask{ }
 
-      module ecalMonitorClient = EcalBarrelMonitorClient{
-#        untracked string outputFile = 'EcalBarrelMonitorClient.root'
-#        untracked string dbName = "ecalh4db"
-#        untracked string dbHostName = "pccmsecdb.cern.ch"
-#        untracked string dbUserName = "test06"
-#        untracked string dbPassword = "oratest06"
-        untracked string location = "H4"
-        untracked string baseHtmlDir = "."
-#        untracked bool collateSources = true
-#        untracked bool cloneME = false
-#        untracked bool enableSubRun = true
-#        untracked bool enableExit = false
-        untracked bool enableMonitorDaemon = false
-#        untracked bool verbose = true
-      }
+     module ecalMonitorClient = EcalBarrelMonitorClient{
+#       untracked string outputFile = 'EcalBarrelMonitorClient.root'
+#       untracked string dbName = "ecalh4db"
+#       untracked string dbHostName = "pccmsecdb.cern.ch"
+#       untracked string dbUserName = "test06"
+#       untracked string dbPassword = "oratest06"
+       untracked string location = "H4"
+       untracked string baseHtmlDir = "."
+#       untracked bool collateSources = true
+       untracked bool cloneME = false
+#       untracked bool enableSubRun = true
+#       untracked bool enableExit = false
+       untracked bool enableMonitorDaemon = false
+#       untracked bool verbose = true
+     }
 
      path p = { ecalEBunpacker,
                 ecalUncalibHitMaker, ecalRecHitMaker,
