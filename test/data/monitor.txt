@@ -22,10 +22,10 @@ process MONITOR = {
 #       untracked bool verbose = true
 #       untracked bool enableMonitorDaemon = false
 #       untracked bool enableEventDisplay = true
-#       untracked string runType = 'cosmic'
-#       untracked string runType = 'laser'
-       untracked string runType = 'pedestal'
-#       untracked string runType = 'testpulse'
+#       untracked string runType = 'COSMIC'
+#       untracked string runType = 'LASER'
+       untracked string runType = 'PEDESTAL'
+#       untracked string runType = 'TEST_PULSE'
         untracked int32 runNumber = 000006100
      }
 
