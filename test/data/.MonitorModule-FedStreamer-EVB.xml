@@ -44,13 +44,17 @@
             <parameterSet xsi:type="xsd:string">
                process MONITOR = { module ecalEBunpacker = EcalDCCUnpackingModule{ }
 	                           module ecalUncalibHitMaker = EcalWeightUncalibRecHitProducer{ string digiProducer   = "ecalEBunpacker"
- 	                                                                                         string digiCollection = ""
-		                                                                                 string hitCollection  = "EcalUncalibRecHits"
+ 	                                                                                         string EBdigiCollection = ""
+ 	                                                                                         string EEdigiCollection = ""
+		                                                                                 string EBhitCollection  = "EcalUncalibRecHitsEB"
+		                                                                                 string EEhitCollection  = ""
 		                                                                                 untracked int32 nMaxPrintout = 1
 		                                                                               }
                                    module ecalRecHitMaker = EcalRecHitProducer{ string uncalibRecHitProducer = "ecalUncalibHitMaker"
-		                                                                string uncalibRecHitCollection = "EcalUncalibRecHits"
-		                                                                string rechitCollection = "EcalRecHits"
+		                                                                string EBuncalibRecHitCollection = "EcalUncalibRecHitsEB"
+		                                                                string EEuncalibRecHitCollection = ""
+		                                                                string EBrechitCollection = "EcalRecHits"
+		                                                                string EErechitCollection = ""
 		                                                                untracked int32 nMaxPrintout = 0
 		                                                              }
                                    module ecalMonitorModule = EcalBarrelMonitorModule{ untracked bool enableMonitorDaemon = true
@@ -58,6 +62,7 @@
 		                                                                       untracked string runType = "cosmic"
 		                                                                       untracked int32 runNumber = 000006100
 	                                                                             }
+                                   module ecalOccupancyTask = EBOccupancyTask{ }
                                    module ecalIntegrityTask = EBIntegrityTask{ }
 	                           module ecalCosmicTask = EBCosmicTask{ }
 		                   module ecalBeamTask = EBBeamTask{ }
@@ -68,6 +73,7 @@
 		                   path p = { ecalEBunpacker,
 			                      ecalUncalibHitMaker, ecalRecHitMaker,
 			                      ecalMonitorModule,
+			                      ecalOccupancyTask,
 			                      ecalIntegrityTask,
 			                      ecalCosmicTask, ecalBeamTask,
 		  	                      ecalLaserTask,
