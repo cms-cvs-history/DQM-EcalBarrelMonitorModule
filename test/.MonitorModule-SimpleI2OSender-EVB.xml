@@ -1,0 +1,174 @@
+<?xml version='1.0'?>
+<xc:Partition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:xc="http://xdaq.web.cern.ch/xdaq/xsd/2004/XMLConfiguration-30">
+
+   <i2o:protocol xmlns:i2o="http://xdaq.web.cern.ch/xdaq/xsd/2004/I2OConfiguration-30">
+      <i2o:target class="TA"                     instance="0" tid="22" />
+      <i2o:target class="EVM"                    instance="0" tid="23" />
+      <i2o:target class="RU"                     instance="0" tid="25" />
+      <i2o:target class="BU"                     instance="0" tid="28" />
+      <i2o:target class="FilterUnitFramework"    instance="0" tid="29" />
+      <i2o:target class="evf::FUEventProcessor"  instance="0" tid="30" />
+      <i2o:target class="SimpleI2OSender"        instance="0" tid="100"/>
+   </i2o:protocol>
+
+   <xc:Context url="http://.fuhost:.fuport">
+
+      <xc:Endpoint hostname=".fuhost" network="tcp1" port="30000" protocol="tcp" service="i2o"></xc:Endpoint>
+
+      <xc:Application class="PeerTransportTCP" id="20" network="local" instance="0">
+         <properties xmlns="urn:xdaq-application:PeerTransportTCP" xsi:type="soapenc:Struct">
+             <autoSize xsi:type="xsd:boolean">true</autoSize>
+             <maxPacketSize xsi:type="xsd:unsignedLong">65536</maxPacketSize>
+             <!-- poolName xsi:type="xsd:string">RoundtripSendPool</poolName -->
+         </properties>
+      </xc:Application>
+
+   <!--   <xc:Application class="Executive" id="0"  network="local" resident="true">
+         <properties xmlns="urn:xdaq-application:Executive" xsi:type="soapenc:Struct">
+            <logLevel xsi:type="xsd:string">INFO</logLevel>
+         </properties>
+      </xc:Application> -->
+
+      <xc:Application class="FilterUnitFramework" id="21" instance="0" network="tcp1">
+         <properties xmlns="urn:xdaq-application:FilterUnitFramework" xsi:type="soapenc:Struct">
+            <collectorAddr xsi:type="xsd:string">localhost</collectorAddr>
+            <!-- <fragDumpSwitch xsi:type="xsd:boolean">true</fragDumpSwitch> -->
+            <!-- <fragDropSwitch xsi:type="xsd:boolean">true</fragDropSwitch> --> <!-- this is used to drop events at exit of FU -->
+            <workDir xsi:type="xsd:string">.pwd</workDir>
+         </properties>
+         <!-- <xc:Unicast class="BU" network="tcp1"></xc:Unicast> -->
+      </xc:Application>
+
+      <xc:Application class="evf::FUEventProcessor" id="23" instance="0" network="local">
+         <properties xmlns="urn:xdaq-application:FUEventProcessor" xsi:type="soapenc:Struct">
+            <parameterSet xsi:type="xsd:string">
+               process MONITOR = { module ecalEBunpacker = EcalDCCUnpackingModule{ }
+	                           module ecalUncalibHitMaker = EcalWeightUncalibRecHitProducer{ string digiProducer   = "ecalEBunpacker"
+ 	                                                                                         string EBdigiCollection = ""
+ 	                                                                                         string EEdigiCollection = ""
+		                                                                                 string EBhitCollection  = "EcalUncalibRecHitsEB"
+		                                                                                 string EEhitCollection  = ""
+		                                                                                 untracked int32 nMaxPrintout = 0
+		                                                                               }
+                                   module ecalRecHitMaker = EcalRecHitProducer{ string uncalibRecHitProducer = "ecalUncalibHitMaker"
+		                                                                string EBuncalibRecHitCollection = "EcalUncalibRecHitsEB"
+		                                                                string EEuncalibRecHitCollection = ""
+		                                                                string EBrechitCollection = "EcalRecHitsEB"
+		                                                                string EErechitCollection = ""
+		                                                                untracked int32 nMaxPrintout = 0
+		                                                              }
+                                   module ecalMonitorModule = EcalBarrelMonitorModule{ untracked bool enableMonitorDaemon = true
+		                                                                       untracked bool verbose = true
+		                                                                       untracked string runType = "COSMIC"
+		                                                                       untracked int32 runNumber = 000006100
+	                                                                             }
+                                   module ecalIntegrityTask = EBIntegrityTask{ }
+	                           module ecalCosmicTask = EBCosmicTask{ }
+		                   module ecalBeamHodoTask = EBBeamHodoTask{ }
+		                   module ecalBeamCaloTask = EBBeamCaloTask{ }
+		                   module ecalLaserTask = EBLaserTask{ }
+		                   module ecalPedestalOnlineTask = EBPedestalOnlineTask{ }
+		                   module ecalPedestalTask = EBPedestalTask{ } 
+		                   module ecalTestPulseTask = EBTestPulseTask{ }
+		                   path p = { ecalEBunpacker,
+			                      ecalUncalibHitMaker, ecalRecHitMaker,
+			                      ecalMonitorModule,
+			                      ecalIntegrityTask,
+			                      ecalCosmicTask, ecalBeamHodoTask, ecalBeamCaloTask,
+		  	                      ecalLaserTask,
+			                      ecalPedestalOnlineTask, ecalPedestalTask,
+			                      ecalTestPulseTask
+			                   }
+                                   source = DaqSource { string reader = "FUReader"
+                                                        untracked int32 maxEvents=-1
+                                                        PSet pset = {untracked int32 dummy = 0}
+                                                      }
+	                           es_source = EcalTrivialConditionRetriever{ }
+	                           service = MessageLogger{ vstring destinations = { "cout" }
+			                                    vstring categories = { "EcalTBInputService",
+			                                                           "EcalBarrelMonitor"
+			                                                         }
+			                                    PSet cout = { string threshold = "INFO"
+			                                                  PSet default = { int32 limit = 0 }
+			                                                  PSet EcalTBInputService = { int32 limit = 0 }
+			                                                  PSet EcalBarrelMonitor = { int32 limit = 10 }
+			                                                  bool noTimeStamps = true
+			                                                  bool noLineBreaks = true
+			                                                }
+
+			                                  }  
+			           service = DaqMonitorROOTBackEnd{ }
+			           service = MonitorDaemon{ untracked bool AutoInstantiate = true
+			                                    untracked int32 reconnect_delay = 5
+			                                    untracked string DestinationAddress = ".fuhost"
+			                                    untracked int32 SendPort = 9090
+			                                    untracked int32 UpdateDelay = 500
+			                                    untracked string NameAsSource = "FU0"
+			                                  }
+
+			         }
+            </parameterSet>
+         </properties>
+      </xc:Application>
+
+      <xc:Module>.lib1</xc:Module>
+      <xc:Module>${XDAQ_ROOT}/lib/linux/x86/libpttcp.so</xc:Module>
+      <xc:Module>.lib2</xc:Module>
+   </xc:Context>
+
+   <xc:Context url="http://.buhost:.buport">
+
+      <xc:Endpoint hostname=".buhost" network="tcp1" port="30001" protocol="tcp" service="i2o"></xc:Endpoint>
+
+      <xc:Application class="PeerTransportTCP" id="21" network="local" instance="1">
+         <properties xmlns="urn:xdaq-application:PeerTransportTCP" xsi:type="soapenc:Struct">
+             <autoSize xsi:type="xsd:boolean">true</autoSize>
+             <maxPacketSize xsi:type="xsd:unsignedLong">65536</maxPacketSize>
+             <!-- poolName xsi:type="xsd:string">RoundtripSendPool</poolName -->
+         </properties>
+      </xc:Application>
+
+		
+      <!-- <xc:Module>${XDAQ_ROOT}/daq/pheaps/lib/linux/x86/libpheaps.so</xc:Module>            -->
+      <!-- <xc:Module>${XDAQ_ROOT}/daq/fedstreamer/lib/linux/x86/libfedstreamer.so</xc:Module>  -->
+
+      <xc:Application class="RUBuilderTester" id="12" instance="0" network="local"/>
+
+      <xc:Module>${XDAQ_ROOT}/lib/linux/x86/libRUBuilderTester.so</xc:Module>
+
+      <xc:Application class="SimpleI2OSender" id="50" instance="0" network="local">
+        <properties xmlns="urn:xdaq-application:SimpleI2OSender" xsi:type="soapenc:Struct">
+          <sleepTime xsi:type="xsd:unsignedLong">0</sleepTime>
+        </properties>
+      </xc:Application>
+
+      <xc:Application class="TA" id="13" instance="0" network="local">
+        <properties xmlns="urn:xdaq-application:TA" xsi:type="soapenc:Struct">
+          <triggerSourceId xsi:type="xsd:unsignedLong">1</triggerSourceId>
+        </properties>
+      </xc:Application>
+
+      <xc:Application class="EVM" id="14" instance="0" network="local"/>
+
+      <xc:Application class="RU" id="16" instance="0" network="local"/>
+
+      <xc:Application class="BU" id="17" instance="0" network="tcp1"/>
+
+      <!-- <xc:Application class="FU" id="18" instance="0" network="local">                 -->
+      <!--    <properties xmlns="urn:xdaq-application:FU" xsi:type="soapenc:Struct">        -->
+      <!--        <buInstNb xsi:type="xsd:unsignedLong">0</buInstNb>                        -->
+      <!--    </properties>                                                                 -->
+      <!-- </xc:Application>                                                                -->
+
+      <xc:Module>${XDAQ_ROOT}/lib/linux/x86/libTA.so</xc:Module>
+      <xc:Module>${XDAQ_ROOT}/lib/linux/x86/libEVM.so</xc:Module>
+      <xc:Module>${XDAQ_ROOT}/lib/linux/x86/libRU.so</xc:Module>
+      <xc:Module>${XDAQ_ROOT}/lib/linux/x86/libBU.so</xc:Module>
+      <xc:Module>.lib3</xc:Module>
+      <!-- <xc:Module>${XDAQ_ROOT}/lib/linux/x86/libFU.so</xc:Module> -->
+      <xc:Module>${XDAQ_ROOT}/lib/linux/x86/libpttcp.so</xc:Module>
+
+   </xc:Context>
+
+
+</xc:Partition>
