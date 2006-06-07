@@ -83,7 +83,18 @@
                                                         untracked int32 maxEvents=-1
                                                         PSet pset = {untracked int32 dummy = 0}
                                                       }
-	                           es_source = EcalTrivialConditionRetriever{ }
+
+	                           es_source = EcalTrivialConditionRetriever{ untracked vdouble amplWeights = { -0.333, -0.333, -0.333,
+                                                                                                                 0.025,  0.147,  0.221,
+                                                                                                                 0.216,  0.176,  0.127, 0.088 }
+                                                                              untracked vdouble pedWeights = { 0.333, 0.333, 0.333,
+                                                                                                               0.000, 0.000, 0.000,
+                                                                                                               0.000, 0.000, 0.000, 0.000 }
+                                                                              untracked vdouble jittWeights = { 0.000, 0.000, 0.000,
+                                                                                                                0.800, 0.800, 0.800,
+                                                                                                                0.200, 0.300, 0.300, 0.300 }
+                                                                            }
+
 	                           service = MessageLogger{ vstring destinations = { "cout" }
 			                                    vstring categories = { "EcalTBInputService",
 			                                                           "EcalBarrelMonitor"
