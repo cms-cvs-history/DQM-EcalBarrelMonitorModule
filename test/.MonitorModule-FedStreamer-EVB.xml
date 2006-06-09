@@ -44,23 +44,28 @@
             <parameterSet xsi:type="xsd:string">
                process MONITOR = { module ecalEBunpacker = EcalDCCUnpackingModule{ }
 	                           module ecalUncalibHitMaker = EcalWeightUncalibRecHitProducer{ string digiProducer   = "ecalEBunpacker"
- 	                                                                                         string digiCollection = ""
-		                                                                                 string hitCollection  = "EcalUncalibRecHits"
-		                                                                                 untracked int32 nMaxPrintout = 1
+ 	                                                                                         string EBdigiCollection = ""
+ 	                                                                                         string EEdigiCollection = ""
+		                                                                                 string EBhitCollection  = "EcalUncalibRecHitsEB"
+		                                                                                 string EEhitCollection  = ""
+		                                                                                 untracked int32 nMaxPrintout = 0
 		                                                                               }
                                    module ecalRecHitMaker = EcalRecHitProducer{ string uncalibRecHitProducer = "ecalUncalibHitMaker"
-		                                                                string uncalibRecHitCollection = "EcalUncalibRecHits"
-		                                                                string rechitCollection = "EcalRecHits"
+		                                                                string EBuncalibRecHitCollection = "EcalUncalibRecHitsEB"
+		                                                                string EEuncalibRecHitCollection = ""
+		                                                                string EBrechitCollection = "EcalRecHitsEB"
+		                                                                string EErechitCollection = ""
 		                                                                untracked int32 nMaxPrintout = 0
 		                                                              }
                                    module ecalMonitorModule = EcalBarrelMonitorModule{ untracked bool enableMonitorDaemon = true
 		                                                                       untracked bool verbose = true
-		                                                                       untracked string runType = "cosmic"
+		                                                                       untracked string runType = "COSMIC"
 		                                                                       untracked int32 runNumber = 000006100
 	                                                                             }
                                    module ecalIntegrityTask = EBIntegrityTask{ }
 	                           module ecalCosmicTask = EBCosmicTask{ }
-		                   module ecalBeamTask = EBBeamTask{ }
+	                           module ecalBeamHodoTask = EBBeamHodoTask{ }
+	                           module ecalBeamCaloTask = EBBeamCaloTask{ }
 		                   module ecalLaserTask = EBLaserTask{ }
 		                   module ecalPedestalOnlineTask = EBPedestalOnlineTask{ }
 		                   module ecalPedestalTask = EBPedestalTask{ } 
@@ -69,8 +74,8 @@
 			                      ecalUncalibHitMaker, ecalRecHitMaker,
 			                      ecalMonitorModule,
 			                      ecalIntegrityTask,
-			                      ecalCosmicTask, ecalBeamTask,
-		  	                      ecalLaserTask,
+		  	                      ecalCosmicTask, ecalBeamHodoTask, ecalBeamCaloTask,
+			                      ecalLaserTask,
 			                      ecalPedestalOnlineTask, ecalPedestalTask,
 			                      ecalTestPulseTask
 			                   }
@@ -101,6 +106,7 @@
 			                                                  bool noTimeStamps = true
 			                                                  bool noLineBreaks = true
 			                                                }
+
 			                                  }  
 			           service = DaqMonitorROOTBackEnd{ }
 			           service = MonitorDaemon{ untracked bool AutoInstantiate = true
