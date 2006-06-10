@@ -48,24 +48,23 @@
  	                                                                                         string EEdigiCollection = ""
 		                                                                                 string EBhitCollection  = "EcalUncalibRecHitsEB"
 		                                                                                 string EEhitCollection  = ""
-		                                                                                 untracked int32 nMaxPrintout = 1
+		                                                                                 untracked int32 nMaxPrintout = 0
 		                                                                               }
                                    module ecalRecHitMaker = EcalRecHitProducer{ string uncalibRecHitProducer = "ecalUncalibHitMaker"
 		                                                                string EBuncalibRecHitCollection = "EcalUncalibRecHitsEB"
 		                                                                string EEuncalibRecHitCollection = ""
-		                                                                string EBrechitCollection = "EcalRecHits"
+		                                                                string EBrechitCollection = "EcalRecHitsEB"
 		                                                                string EErechitCollection = ""
 		                                                                untracked int32 nMaxPrintout = 0
 		                                                              }
                                    module ecalMonitorModule = EcalBarrelMonitorModule{ untracked bool enableMonitorDaemon = true
 		                                                                       untracked bool verbose = true
-		                                                                       untracked string runType = "cosmic"
+		                                                                       untracked string runType = "COSMIC"
 		                                                                       untracked int32 runNumber = 000006100
 	                                                                             }
                                    module ecalOccupancyTask = EBOccupancyTask{ }
                                    module ecalIntegrityTask = EBIntegrityTask{ }
 	                           module ecalCosmicTask = EBCosmicTask{ }
-		                   module ecalBeamTask = EBBeamTask{ }
 		                   module ecalLaserTask = EBLaserTask{ }
 		                   module ecalPedestalOnlineTask = EBPedestalOnlineTask{ }
 		                   module ecalPedestalTask = EBPedestalTask{ } 
@@ -75,8 +74,8 @@
 			                      ecalMonitorModule,
 			                      ecalOccupancyTask,
 			                      ecalIntegrityTask,
-			                      ecalCosmicTask, ecalBeamTask,
-		  	                      ecalLaserTask,
+			                      ecalCosmicTask,
+			                      ecalLaserTask,
 			                      ecalPedestalOnlineTask, ecalPedestalTask,
 			                      ecalTestPulseTask
 			                   }
@@ -84,7 +83,16 @@
                                                         untracked int32 maxEvents=-1
                                                         PSet pset = {untracked int32 dummy = 0}
                                                       }
-	                           es_source = EcalTrivialConditionRetriever{ }
+	                           es_source = EcalTrivialConditionRetriever{ untracked vdouble amplWeights = { -0.333, -0.333, -0.333,
+                                                                                                                 0.025,  0.147,  0.221,
+                                                                                                                 0.216,  0.176,  0.127, 0.088 }
+                                                                              untracked vdouble pedWeights = { 0.333, 0.333, 0.333,
+                                                                                                               0.000, 0.000, 0.000,
+                                                                                                               0.000, 0.000, 0.000, 0.000 }
+                                                                              untracked vdouble jittWeights = { 0.000, 0.000, 0.000,
+                                                                                                                0.800, 0.800, 0.800,
+                                                                                                                0.200, 0.300, 0.300, 0.300 }
+                                   }
 	                           service = MessageLogger{ vstring destinations = { "cout" }
 			                                    vstring categories = { "EcalTBInputService",
 			                                                           "EcalBarrelMonitor"
