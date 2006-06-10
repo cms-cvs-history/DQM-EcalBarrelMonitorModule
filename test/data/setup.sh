@@ -24,7 +24,7 @@ fi
 
 eval `scramv1 runtime -sh`
 
-LOCALHOST=$(echo `/bin/hostname` | /bin/sed 's/\//\\\//g')
+LOCALHOST=$(echo `/bin/hostname -s` | /bin/sed 's/\//\\\//g')
 echo "The local hostname is = $LOCALHOST"
 
 PATH=$(echo "${PWD}" | /bin/sed 's/\//\\\//g')
@@ -48,7 +48,7 @@ if [ "$REMHOST" == "" ] ; then
   echo -n "Fine... Now tell me the name of the PC where $REMOTETASK will run (name[.domain]) "
   read REMHOST
 
-  REMHOST=`/usr/bin/host $REMHOST | /bin/awk '{print $1}'`
+  REMHOST=`/usr/bin/host $REMHOST | /bin/awk -F. '{print $1}'`
   if [ $REMHOST == "Host" ]; then
     echo "Uhmmm... It looks like that host does not exist, try again re-running me"
     exit
