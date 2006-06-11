@@ -88,7 +88,7 @@
                                                                                                                 0.200, 0.300, 0.300, 0.300 }
                                                                             }
 	                           service = MessageLogger{ untracked vstring destinations = { "cout" }
-			                                    untrackedvstring categories = { "EcalTBInputService",
+			                                    untracked vstring categories = { "EcalTBInputService",
 			                                                                    "EcalBarrelMonitor"
 			                                                                  }
 			                                    untracked PSet cout = { untracked string threshold = "INFO"
