@@ -117,9 +117,6 @@ fi
 if [ -e MonitorModule-SimpleI2OSender-EVB.xml ]; then
     /bin/rm MonitorModule-SimpleI2OSender-EVB.xml
 fi
-if [ -e startEBMonitorModule ]; then
-    /bin/rm startEBMonitorModule
-fi
 if [ -e runMonitorModule.sh ]; then
     /bin/rm runMonitorModule.sh
 fi
@@ -127,15 +124,11 @@ fi
 /bin/sed -e "s/.pwd/${PATH}/g" .profile.xml > profile.xml
 /bin/sed -e "s/.buport/$BUPORT/g" -e "s/.fuport/$FUPORT/g" -e "s/.buhost/$BUHOST/g" -e "s/.fuhost/$FUHOST/g" -e "s/.pwd/$PATH/g" -e "s/.lib1/${LIB1}/g" -e "s/.lib2/${LIB2}/g"  .MonitorModule-FedStreamer-EVB.xml > MonitorModule-FedStreamer-EVB.xml
 /bin/sed -e "s/.buport/$BUPORT/g" -e "s/.fuport/$FUPORT/g" -e "s/.buhost/$BUHOST/g" -e "s/.fuhost/$FUHOST/g" -e "s/.pwd/$PATH/g" -e "s/.lib1/${LIB1}/g" -e "s/.lib2/${LIB2}/g" -e "s/.lib3/${LIB3}/g"   .MonitorModule-SimpleI2OSender-EVB.xml > MonitorModule-SimpleI2OSender-EVB.xml
-/bin/sed -e "s/.portn/$LOCALPORT/g" -e "s/.host/$LOCALHOST/g" .startMonitorModule-FedStreamer-EVB > startMonitorModule-FedStreamer-EVB
-/bin/sed -e "s/.portn/$LOCALPORT/g" -e "s/.host/$LOCALHOST/g" .startMonitorModule-SimpleI2OSender-EVB > startMonitorModule-SimpleI2OSender-EVB
 /bin/sed -e "s/.portn/$LOCALPORT/g" -e "s/.host/$LOCALHOST/g" .runMonitorModule.sh  > runMonitorModule.sh
 
 /bin/chmod 751 profile.xml
 /bin/chmod 751 MonitorModule-FedStreamer-EVB.xml
 /bin/chmod 751 MonitorModule-SimpleI2OSender-EVB.xml
-/bin/chmod 751 startMonitorModule-FedStreamer-EVB
-/bin/chmod 751 startMonitorModule-SimpleI2OSender-EVB
 /bin/chmod 751 runMonitorModule.sh
 
 
