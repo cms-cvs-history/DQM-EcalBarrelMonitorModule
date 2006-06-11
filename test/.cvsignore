@@ -1,4 +1,5 @@
 profile.xml
-runMonitorModule.sh
 MonitorModule-FedStreamer-EVB.xml
 MonitorModule-SimpleI2OSender-EVB.xml
+runMonitorModule.sh
+runSimpleI2OSender.sh
