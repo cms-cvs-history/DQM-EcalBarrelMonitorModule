@@ -23,11 +23,13 @@
          </properties>
       </xc:Application>
 
-   <!--   <xc:Application class="Executive" id="0"  network="local" resident="true">
+   <!--
+      <xc:Application class="Executive" id="0"  network="local" resident="true">
          <properties xmlns="urn:xdaq-application:Executive" xsi:type="soapenc:Struct">
             <logLevel xsi:type="xsd:string">INFO</logLevel>
          </properties>
-      </xc:Application> -->
+      </xc:Application>
+    -->
 
       <xc:Application class="FilterUnitFramework" id="21" instance="0" network="tcp1">
          <properties xmlns="urn:xdaq-application:FilterUnitFramework" xsi:type="soapenc:Struct">
