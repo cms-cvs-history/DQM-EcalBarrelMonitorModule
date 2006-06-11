@@ -73,10 +73,10 @@
 			                      ecalPedestalOnlineTask, ecalPedestalTask,
 			                      ecalTestPulseTask
 			                   }
-                                   source = DaqSource { string reader = "FUReader"
-                                                        untracked int32 maxEvents=-1
-                                                        PSet pset = {untracked int32 dummy = 0}
-                                                      }
+                                   source = DaqSource{ string reader = "FUReader"
+                                                       untracked int32 maxEvents=-1
+                                                       PSet pset = {untracked int32 dummy = 0}
+                                                     }
 	                           es_source = EcalTrivialConditionRetriever{ untracked vdouble amplWeights = { -0.333, -0.333, -0.333,
                                                                                                                  0.025,  0.147,  0.221,
                                                                                                                  0.216,  0.176,  0.127, 0.088 }
@@ -86,17 +86,17 @@
                                                                               untracked vdouble jittWeights = { 0.000, 0.000, 0.000,
                                                                                                                 0.800, 0.800, 0.800,
                                                                                                                 0.200, 0.300, 0.300, 0.300 }
-                                   }
-	                           service = MessageLogger{ vstring destinations = { "cout" }
-			                                    vstring categories = { "EcalTBInputService",
-			                                                           "EcalBarrelMonitor"
-			                                                         }
-			                                    PSet cout = { string threshold = "INFO"
-			                                                  PSet default = { int32 limit = 0 }
-			                                                  PSet EcalTBInputService = { int32 limit = 0 }
-			                                                  PSet EcalBarrelMonitor = { int32 limit = 10 }
-			                                                  bool noTimeStamps = true
-			                                                  bool noLineBreaks = true
+                                                                            }
+	                           service = MessageLogger{ untracked vstring destinations = { "cout" }
+			                                    untrackedvstring categories = { "EcalTBInputService",
+			                                                                    "EcalBarrelMonitor"
+			                                                                  }
+			                                    untracked PSet cout = { untracked string threshold = "INFO"
+			                                                  untracked PSet default = { untracked int32 limit = 0 }
+			                                                  untracked PSet EcalTBInputService = { untracked int32 limit = 0 }
+			                                                  untracked PSet EcalBarrelMonitor = { untracked int32 limit = 10 }
+			                                                  untracked bool noTimeStamps = true
+			                                                  untracked bool noLineBreaks = true
 			                                                }
 			                                  }  
 			           service = DaqMonitorROOTBackEnd{ }
