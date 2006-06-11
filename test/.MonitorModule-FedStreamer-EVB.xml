@@ -190,17 +190,10 @@
 
       <xc:Application class="BU" id="17" instance="0" network="tcp1"/>
 
-      <!-- <xc:Application class="FU" id="18" instance="0" network="local">                 -->
-      <!--    <properties xmlns="urn:xdaq-application:FU" xsi:type="soapenc:Struct">        -->
-      <!--        <buInstNb xsi:type="xsd:unsignedLong">0</buInstNb>                        -->
-      <!--    </properties>                                                                 -->
-      <!-- </xc:Application>                                                                -->
-
       <xc:Module>${XDAQ_ROOT}/lib/linux/x86/libTA.so</xc:Module>
       <xc:Module>${XDAQ_ROOT}/lib/linux/x86/libEVM.so</xc:Module>
       <xc:Module>${XDAQ_ROOT}/lib/linux/x86/libRU.so</xc:Module>
       <xc:Module>${XDAQ_ROOT}/lib/linux/x86/libBU.so</xc:Module>
-      <!-- <xc:Module>${XDAQ_ROOT}/lib/linux/x86/libFU.so</xc:Module> -->
       <xc:Module>${XDAQ_ROOT}/lib/linux/x86/libpttcp.so</xc:Module>
 
    </xc:Context>
