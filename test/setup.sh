@@ -104,9 +104,19 @@ if [ ! -f $LIB3 ]; then
 else 
   echo "Found!"
 fi
+LIB4="${LOCALRT}/lib/slc3_ia32_gcc323/libDQMServicesXdaqCollector.so"
+echo "Looking for $4"
+if [ ! -f $LIB4 ]; then
+  echo "Not Found! Will pick it up from the release area..."
+  LIB4="${CMSSW_RELEASE_BASE}/lib/slc3_ia32_gcc323/libDQMServicesXdaqCollector.so"
+else 
+  echo "Found!"
+fi
+
 LIB1=$(echo "$LIB1" | /bin/sed 's/\//\\\//g')
 LIB2=$(echo "$LIB2" | /bin/sed 's/\//\\\//g')
 LIB3=$(echo "$LIB3" | /bin/sed 's/\//\\\//g')
+LIB4=$(echo "$LIB4" | /bin/sed 's/\//\\\//g')
 
 if [ -e profile.xml ]; then
     /bin/rm profile.xml
@@ -126,7 +136,7 @@ fi
 
 /bin/sed -e "s/.pwd/${PATH}/g" .profile.xml > profile.xml
 /bin/sed -e "s/.buport/$BUPORT/g" -e "s/.fuport/$FUPORT/g" -e "s/.buhost/$BUHOST/g" -e "s/.fuhost/$FUHOST/g" -e "s/.pwd/$PATH/g" -e "s/.lib1/${LIB1}/g" -e "s/.lib2/${LIB2}/g"  .MonitorModule-FedStreamer-EVB.xml > MonitorModule-FedStreamer-EVB.xml
-/bin/sed -e "s/.buport/$BUPORT/g" -e "s/.fuport/$FUPORT/g" -e "s/.buhost/$BUHOST/g" -e "s/.fuhost/$FUHOST/g" -e "s/.pwd/$PATH/g" -e "s/.lib1/${LIB1}/g" -e "s/.lib2/${LIB2}/g" -e "s/.lib3/${LIB3}/g"   .MonitorModule-SimpleI2OSender-EVB.xml > MonitorModule-SimpleI2OSender-EVB.xml
+/bin/sed -e "s/.buport/$BUPORT/g" -e "s/.fuport/$FUPORT/g" -e "s/.buhost/$BUHOST/g" -e "s/.fuhost/$FUHOST/g" -e "s/.pwd/$PATH/g" -e "s/.lib1/${LIB1}/g" -e "s/.lib2/${LIB2}/g" -e "s/.lib3/${LIB3}/g" -e "s/.lib4/${LIB4}/g"  .MonitorModule-SimpleI2OSender-EVB.xml > MonitorModule-SimpleI2OSender-EVB.xml
 /bin/sed -e "s/.portn/$LOCALPORT/g" -e "s/.host/$LOCALHOST/g" .runMonitorModule.sh > runMonitorModule.sh
 /bin/sed -e "s/.buport/$LOCALPORT/g" -e "s/.host/$LOCALHOST/g" .runSimpleI2OSender.sh > runSimpleI2OSender.sh
 

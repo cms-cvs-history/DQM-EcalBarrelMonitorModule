@@ -101,7 +101,7 @@
 			           service = DaqMonitorROOTBackEnd{ }
 			           service = MonitorDaemon{ untracked bool AutoInstantiate = true
 			                                    untracked int32 reconnect_delay = 5
-			                                    untracked string DestinationAddress = ".fuhost"
+			                                    untracked string DestinationAddress = "localhost"
 			                                    untracked int32 SendPort = 9090
 			                                    untracked int32 UpdateDelay = 500
 			                                    untracked string NameAsSource = "FU0"
@@ -115,6 +115,11 @@
       <xc:Module>.lib1</xc:Module>
       <xc:Module>${XDAQ_ROOT}/lib/linux/x86/libpttcp.so</xc:Module>
       <xc:Module>.lib2</xc:Module>
+
+      <xc:Application class="XdaqCollector" id="16" instance="0" network="local">
+      </xc:Application>
+      <xc:Module>.lib4</xc:Module>
+
    </xc:Context>
 
    <xc:Context url="http://.buhost:.buport">
