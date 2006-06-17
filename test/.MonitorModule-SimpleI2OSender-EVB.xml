@@ -110,24 +110,24 @@
         		                                  }
 
         		         }
-            </parameterSet>
-       </properties>
-     </xc:Application>
+             </parameterSet>
+        </properties>
+      </xc:Application>
 
-     <xc:Module>.lib1</xc:Module>
-     <xc:Module>${XDAQ_ROOT}/lib/linux/x86/libpttcp.so</xc:Module>
-     <xc:Module>.lib2</xc:Module>
+      <xc:Module>.lib1</xc:Module>
+      <xc:Module>${XDAQ_ROOT}/lib/linux/x86/libpttcp.so</xc:Module>
+      <xc:Module>.lib2</xc:Module>
 
-     <xc:Application class="XdaqCollector" id="16" instance="0" network="local">
-       <properties xmlns="urn:xdaq-application:XdaqCollector" xsi:type="soapenc:Struct">
-         <listenPort xsi:type="xsd:integer">9090</listenPort>
-       </properties>
-     </xc:Application>
-   <xc:Module>.lib4</xc:Module>
+      <xc:Application class="XdaqCollector" id="16" instance="0" network="local">
+        <properties xmlns="urn:xdaq-application:XdaqCollector" xsi:type="soapenc:Struct">
+          <listenPort xsi:type="xsd:integer">9090</listenPort>
+        </properties>
+      </xc:Application>
+    <xc:Module>.lib4</xc:Module>
 
- </xc:Context>
+  </xc:Context>
 
- <xc:Context url="http://.buhost:.buport">
+  <xc:Context url="http://.buhost:.buport">
 
     <xc:Endpoint hostname=".buhost" network="tcp1" port="30001" protocol="tcp" service="i2o"></xc:Endpoint>
 
