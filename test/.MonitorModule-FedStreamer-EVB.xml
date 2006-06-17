@@ -34,6 +34,8 @@
 
       <xc:Application class="evf::FUEventProcessor" id="23" instance="0" network="local">
          <properties xmlns="urn:xdaq-application:FUEventProcessor" xsi:type="soapenc:Struct">
+            <collectorAddr xsi:type="xsd:string">localhost</collectorAddr>
+            <collectorPort xsi:type="xsd:integer">9090</collectorPort>
             <parameterSet xsi:type="xsd:string">
                process MONITOR = { module ecalEBunpacker = EcalDCCUnpackingModule{ }
 	                           module ecalUncalibHitMaker = EcalWeightUncalibRecHitProducer{ string digiProducer   = "ecalEBunpacker"
@@ -117,6 +119,9 @@
       <xc:Module>.lib2</xc:Module>
 
       <xc:Application class="XdaqCollector" id="16" instance="0" network="local">
+        <properties xmlns="urn:xdaq-application:XdaqCollector" xsi:type="soapenc:Struct">
+          <listenPort xsi:type="xsd:integer">9090</listenPort>
+        </properties>
       </xc:Application>
       <xc:Module>.lib4</xc:Module>
 
