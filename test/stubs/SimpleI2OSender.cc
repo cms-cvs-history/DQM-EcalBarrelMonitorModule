@@ -45,9 +45,7 @@ SimpleI2OSender::SimpleI2OSender(xdaq::ApplicationStub * s): xdaq::WebApplicatio
 	getApplicationInfoSpace()->fireItemAvailable("sleepTime", &sleepTime_);
 
 
-   	//dataFile.open ("/opt/Software3.4/TriDAS/daq/evb/myI2Osender/H4-000021547-SM19-TEST_PULSE-MGPA", ios::binary );
-   	//dataFile.open ("/opt/Software3.4/TriDAS/daq/evb/myI2Osender/H4-000021672-SM19-LASER-STD", ios::binary );
-	dataFile.open ("/cms/users/dellaric/work/cms/h4data/H4-000016360-SM5-LASER-STD", ios::binary );
+	dataFile.open ("/tmp/RAWDATA.BINARY", ios::binary );
 	dataFile.seekg (0, ios::beg);
 	// skip 1st event to have LV1 = 1
 	unsigned long a=1;
