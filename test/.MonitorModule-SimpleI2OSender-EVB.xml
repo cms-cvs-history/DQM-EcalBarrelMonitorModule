@@ -64,7 +64,8 @@
         	                   module ecalPedestalOnlineTask = EBPedestalOnlineTask{ }
         	                   module ecalPedestalTask = EBPedestalTask{ } 
         	                   module ecalTestPulseTask = EBTestPulseTask{ }
-        	                   path p = { ecalEBunpacker,
+                                   module preScaler Prescaler { int32 prescaleFactor = 1 }
+        	                   path p = { preScaler, ecalEBunpacker,
         		                      ecalUncalibHitMaker, ecalRecHitMaker,
         		                      ecalMonitorModule,
         		                      ecalOccupancyTask,
