@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<layouts>
+  <layout name="cosmics">
+     <row>
+         <column>
+            <monitorable name="Collector/FU0/EcalBarrel/EBCosmicTask/Sel/EBCT energy sel SM01" />
+         </column>         
+     </row>
+     <row> 
+         <column>
+            <monitorable name="Collector/FU0/EcalBarrel/EBCosmicTask/Cut/EBCT energy cut SM01" />
+         </column>
+      </row>
+      <row>
+         <column>
+            <monitorable name="Collector/FU0/EcalBarrel/EBCosmicTask/Spectrum/EBCT energy spectrum SM01" />
+         </column>         
+         <column>
+            <monitorable name="Collector/FU0/EcalBarrel/EBCosmicTask/Spectrum/pippo" />
+         </column>         
+
+      </row>
+   </layout>
+
+  <layout name="cosmics_client">
+     <row>
+         <column>
+            <monitorable name="EcalBarrelMonitorClient/EcalBarrel/EBCosmicTask/Sel/EBCT energy sel SM01" />
+         </column>         
+     </row>
+     <row> 
+         <column>
+            <monitorable name="EcalBarrelMonitorClient/EcalBarrel/EBCosmicTask/Cut/EBCT energy cut SM01" />
+         </column>
+      </row>
+      <row>
+         <column>
+            <monitorable name="EcalBarrelMonitorClient/EcalBarrel/EBCosmicTask/Spectrum/EBCT energy spectrum SM01" />
+         </column>         
+         <column>
+            <monitorable name="EcalBarrelMonitorClient/EcalBarrel/EBCosmicTask/Spectrum/pippo" />
+         </column>         
+
+      </row>
+   </layout>
+
+  <layout name="PedestalOnline_client">
+     <row>
+         <column>
+            <monitorable name="EcalBarrelMonitorClient/EcalBarrel/EBPedestalOnlineClient/EBPOT pedestal quality G12 SM01" />
+         </column>         
+     </row>
+      <row>
+         <column>
+            <monitorable name="EcalBarrelMonitorClient/EcalBarrel/EBPedestalOnlineClient/EBPOT pedestal mean G12 SM01" />
+         </column>         
+         <column>
+            <monitorable name="EcalBarrelMonitorClient/EcalBarrel/EBPedestalOnlineClient/EBPOT pedestal rms G12 SM01" />
+         </column>         
+      </row>
+   </layout>
+
+  <layout name="Integrity_client">
+     <row>
+         <column>
+            <monitorable name="EcalBarrelMonitorClient/EcalBarrel/EBIntegrityTask/EBIT DCC size error" />
+         </column>         
+     </row>
+     <row>
+         <column>
+            <monitorable name="EcalBarrelMonitorClient/EcalBarrel/EBIntegrityClient/EBIT data integrity quality SM01" />
+         </column>         
+     </row>
+     <row>
+         <column>
+            <monitorable name="EcalBarrelMonitorClient/EcalBarrel/EcalOccupancy/EBMM occupancy SM01" />
+         </column>         
+     </row>
+     <row>
+         <column>
+            <monitorable name="EcalBarrelMonitorClient/EcalBarrel/EBIntegrityTask/Gain/EBIT gain SM01" />
+         </column>         
+     </row>
+     <row>
+         <column>
+            <monitorable name="EcalBarrelMonitorClient/EcalBarrel/EBIntegrityTask/ChId/EBIT ChId SM01" />
+         </column>         
+     </row>
+     <row>
+         <column>
+            <monitorable name="EcalBarrelMonitorClient/EcalBarrel/EBIntegrityTask/GainSwitch/EBIT gain switch SM01" />
+         </column>
+     </row>
+     <row>         
+         <column>
+            <monitorable name="EcalBarrelMonitorClient/EcalBarrel/EBIntegrityTask/GainSwitchStay/EBIT gain switch stay SM01" />
+         </column>         
+     </row>
+     <row>
+         <column>
+            <monitorable name="EcalBarrelMonitorClient/EcalBarrel/EBIntegrityTask/TTId/EBIT TTId SM01" />
+         </column>         
+     </row>
+     <row>
+         <column>
+            <monitorable name="EcalBarrelMonitorClient/EcalBarrel/EBIntegrityTask/TTBlockSize/EBIT TTBlockSize SM01" />
+         </column>         
+     </row>
+     <row>
+         <column>
+            <monitorable name="EcalBarrelMonitorClient/EcalBarrel/EBIntegrityClient/EBIT data integrity quality MEM SM01" />
+         </column>         
+     </row>
+     <row>
+         <column>
+            <monitorable name="EcalBarrelMonitorClient/EcalBarrel/EcalOccupancy/EBMM MEM occupancy SM01" />
+         </column>         
+     </row>
+     <row>
+         <column>
+            <monitorable name="EcalBarrelMonitorClient/EcalBarrel/EBIntegrityTask/MemChId/EBIT MemChId SM01" />
+         </column>         
+     </row>
+     <row>
+         <column>
+            <monitorable name="EcalBarrelMonitorClient/EcalBarrel/EBIntegrityTask/MemGain/EBIT MemGain SM01" />
+         </column>         
+     </row>
+     <row>
+         <column>
+            <monitorable name="EcalBarrelMonitorClient/EcalBarrel/EBIntegrityTask/MemTTId/EBIT MemTTId SM01" />
+         </column>         
+     </row>
+     <row>
+         <column>
+            <monitorable name="EcalBarrelMonitorClient/EcalBarrel/EBIntegrityTask/MemSize/EBIT MemSize SM01" />
+         </column>         
+     </row> 
+   </layout>
+</layouts>
+
+
