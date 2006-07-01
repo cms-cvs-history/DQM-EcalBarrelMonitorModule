@@ -54,7 +54,6 @@
                                                                               }
                                    module ecalMonitorModule = EcalBarrelMonitorModule{ untracked bool enableMonitorDaemon = true
                                                                                        untracked bool verbose = true
-                                                                                       untracked string runType = "COSMIC"
                                                                                        untracked int32 runNumber = 000006100
                                                                                      }
                                    module ecalOccupancyTask = EBOccupancyTask{ }
