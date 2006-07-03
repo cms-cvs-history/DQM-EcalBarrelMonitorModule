@@ -1,29 +1,11 @@
 <?xml version="1.0" encoding="iso-8859-1"?>
 
 <layouts>
-  <layout name="cosmics">
-     <row>
-         <column>
-            <monitorable name="Collector/FU0/EcalBarrel/EBCosmicTask/Sel/EBCT energy sel SM01" />
-         </column>         
-     </row>
-     <row> 
-         <column>
-            <monitorable name="Collector/FU0/EcalBarrel/EBCosmicTask/Cut/EBCT energy cut SM01" />
-         </column>
-      </row>
-      <row>
-         <column>
-            <monitorable name="Collector/FU0/EcalBarrel/EBCosmicTask/Spectrum/EBCT energy spectrum SM01" />
-         </column>         
-         <column>
-            <monitorable name="Collector/FU0/EcalBarrel/EBCosmicTask/Spectrum/pippo" />
-         </column>         
+  
+  <layout name="----------------------------------------">
+  </layout>
 
-      </row>
-   </layout>
-
-  <layout name="cosmics_client">
+  <layout name="Cosmics_client_1">
      <row>
          <column>
             <monitorable name="EcalBarrelMonitorClient/EcalBarrel/EBCosmicTask/Sel/EBCT energy sel SM01" />
@@ -45,23 +27,12 @@
       </row>
    </layout>
 
-  <layout name="PedestalOnline_client">
-     <row>
-         <column>
-            <monitorable name="EcalBarrelMonitorClient/EcalBarrel/EBPedestalOnlineClient/EBPOT pedestal quality G12 SM01" />
-         </column>         
-     </row>
-      <row>
-         <column>
-            <monitorable name="EcalBarrelMonitorClient/EcalBarrel/EBPedestalOnlineClient/EBPOT pedestal mean G12 SM01" />
-         </column>         
-         <column>
-            <monitorable name="EcalBarrelMonitorClient/EcalBarrel/EBPedestalOnlineClient/EBPOT pedestal rms G12 SM01" />
-         </column>         
-      </row>
-   </layout>
 
-  <layout name="Integrity_client">
+  <layout name="----------------------------------------">
+  </layout>
+
+
+   <layout name="Integrity_client_1">
      <row>
          <column>
             <monitorable name="EcalBarrelMonitorClient/EcalBarrel/EBIntegrityTask/EBIT DCC size error" />
@@ -72,11 +43,9 @@
             <monitorable name="EcalBarrelMonitorClient/EcalBarrel/EBIntegrityClient/EBIT data integrity quality SM01" />
          </column>         
      </row>
-     <row>
-         <column>
-            <monitorable name="EcalBarrelMonitorClient/EcalBarrel/EcalOccupancy/EBMM occupancy SM01" />
-         </column>         
-     </row>
+   </layout>
+
+   <layout name="Integrity_client_2">
      <row>
          <column>
             <monitorable name="EcalBarrelMonitorClient/EcalBarrel/EBIntegrityTask/Gain/EBIT gain SM01" />
@@ -92,6 +61,9 @@
             <monitorable name="EcalBarrelMonitorClient/EcalBarrel/EBIntegrityTask/GainSwitch/EBIT gain switch SM01" />
          </column>
      </row>
+   </layout>
+
+   <layout name="Integrity_client_3">
      <row>         
          <column>
             <monitorable name="EcalBarrelMonitorClient/EcalBarrel/EBIntegrityTask/GainSwitchStay/EBIT gain switch stay SM01" />
@@ -107,6 +79,9 @@
             <monitorable name="EcalBarrelMonitorClient/EcalBarrel/EBIntegrityTask/TTBlockSize/EBIT TTBlockSize SM01" />
          </column>         
      </row>
+   </layout>
+
+   <layout name="Integrity_client_4">
      <row>
          <column>
             <monitorable name="EcalBarrelMonitorClient/EcalBarrel/EBIntegrityClient/EBIT data integrity quality MEM SM01" />
@@ -122,6 +97,9 @@
             <monitorable name="EcalBarrelMonitorClient/EcalBarrel/EBIntegrityTask/MemChId/EBIT MemChId SM01" />
          </column>         
      </row>
+   </layout>
+
+   <layout name="Integrity_client_5">
      <row>
          <column>
             <monitorable name="EcalBarrelMonitorClient/EcalBarrel/EBIntegrityTask/MemGain/EBIT MemGain SM01" />
@@ -138,6 +116,301 @@
          </column>         
      </row> 
    </layout>
+
+
+  <layout name="----------------------------------------">
+  </layout>
+
+
+  <layout name="Laser_client_1">
+     <row>
+         <column>
+            <monitorable name="EcalBarrelMonitorClient/EcalBarrel/EBLaserClient/EBLT laser quality L1 SM01" />
+         </column>         
+     </row>
+      <row>
+         <column>
+            <monitorable name="EcalBarrelMonitorClient/EcalBarrel/EBLaserClient/EBLT amplitude L1 SM01" />
+         </column>         
+         <column>
+            <monitorable name="EcalBarrelMonitorClient/EcalBarrel/EBLaserClient/EBLT amplitude over PN L1 SM01" />
+         </column>         
+      </row>
+      <row>
+         <column>
+            <monitorable name="EcalBarrelMonitorClient/EcalBarrel/EBLaserClient/EBLT timing L1 SM01" />
+         </column>         
+         <column>
+            <monitorable name="EcalBarrelMonitorClient/EcalBarrel/EBLaserClient/pippo" />
+         </column>         
+      </row>
+   </layout>
+
+  <layout name="Laser_client_2">
+     <row>
+         <column>
+            <monitorable name="EcalBarrelMonitorClient/EcalBarrel/EBLaserClient/EBLT laser quality L4 SM01" />
+         </column>         
+     </row>
+      <row>
+         <column>
+            <monitorable name="EcalBarrelMonitorClient/EcalBarrel/EBLaserClient/EBLT amplitude L4 SM01" />
+         </column>         
+         <column>
+            <monitorable name="EcalBarrelMonitorClient/EcalBarrel/EBLaserClient/EBLT amplitude over PN L4 SM01" />
+         </column>         
+      </row>
+      <row>
+         <column>
+            <monitorable name="EcalBarrelMonitorClient/EcalBarrel/EBLaserClient/EBLT timing L4 SM01" />
+         </column>         
+         <column>
+            <monitorable name="EcalBarrelMonitorClient/EcalBarrel/EBLaserClient/pippo" />
+         </column>         
+      </row>
+   </layout>
+
+  <layout name="Laser_client_3">
+     <row>
+         <column>
+            <monitorable name="EcalBarrelMonitorClient/EcalBarrel/EBPnDiodeTask/Laser1/Gain01/EBPDT PNs pedestal SM01 G01 L1" />
+         </column>         
+         <column>
+            <monitorable name="EcalBarrelMonitorClient/EcalBarrel/EBPnDiodeTask/Laser1/Gain01/EBPDT PNs amplitude SM01 G01 L1" />
+         </column>
+      </row>
+     <row>
+         <column>
+            <monitorable name="EcalBarrelMonitorClient/EcalBarrel/EBPnDiodeTask/Laser1/Gain16/EBPDT PNs pedestal SM01 G16 L1" />
+         </column>         
+         <column>
+            <monitorable name="EcalBarrelMonitorClient/EcalBarrel/EBPnDiodeTask/Laser1/Gain16/EBPDT PNs amplitude SM01 G16 L1" />
+         </column>
+      </row>
+   </layout>
+
+  <layout name="Laser_client_4">
+     <row>
+         <column>
+            <monitorable name="EcalBarrelMonitorClient/EcalBarrel/EBPnDiodeTask/Laser4/Gain01/EBPDT PNs pedestal SM01 G01 L4" />
+         </column>         
+         <column>
+            <monitorable name="EcalBarrelMonitorClient/EcalBarrel/EBPnDiodeTask/Laser4/Gain01/EBPDT PNs amplitude SM01 G01 L4" />
+         </column>
+      </row>
+     <row>
+         <column>
+            <monitorable name="EcalBarrelMonitorClient/EcalBarrel/EBPnDiodeTask/Laser4/Gain16/EBPDT PNs pedestal SM01 G16 L4" />
+         </column>         
+         <column>
+            <monitorable name="EcalBarrelMonitorClient/EcalBarrel/EBPnDiodeTask/Laser4/Gain16/EBPDT PNs amplitude SM01 G16 L4" />
+         </column>
+      </row>
+   </layout>
+
+
+  <layout name="----------------------------------------">
+  </layout>
+
+
+  <layout name="Pedestal_client_1">
+     <row>
+         <column>
+            <monitorable name="EcalBarrelMonitorClient/EcalBarrel/EBPedestalClient/EBPT pedestal quality G01 SM01" />
+         </column>         
+     </row>
+      <row>
+         <column>
+            <monitorable name="EcalBarrelMonitorClient/EcalBarrel/EBPedestalClient/EBPT pedestal mean G01 SM01" />
+         </column>         
+         <column>
+            <monitorable name="EcalBarrelMonitorClient/EcalBarrel/EBPedestalClient/EBPT pedestal rms G01 SM01" />
+         </column>         
+      </row>
+   </layout>
+
+  <layout name="Pedestal_client_2">
+     <row>
+         <column>
+            <monitorable name="EcalBarrelMonitorClient/EcalBarrel/EBPedestalClient/EBPT pedestal quality G06 SM01" />
+         </column>         
+     </row>
+      <row>
+         <column>
+            <monitorable name="EcalBarrelMonitorClient/EcalBarrel/EBPedestalClient/EBPT pedestal mean G06 SM01" />
+         </column>         
+         <column>
+            <monitorable name="EcalBarrelMonitorClient/EcalBarrel/EBPedestalClient/EBPT pedestal rms G06 SM01" />
+         </column>         
+      </row>
+   </layout>
+
+  <layout name="Pedestal_client_3">
+     <row>
+         <column>
+            <monitorable name="EcalBarrelMonitorClient/EcalBarrel/EBPedestalClient/EBPT pedestal quality G12 SM01" />
+         </column>         
+     </row>
+      <row>
+         <column>
+            <monitorable name="EcalBarrelMonitorClient/EcalBarrel/EBPedestalClient/EBPT pedestal mean G12 SM01" />
+         </column>         
+         <column>
+            <monitorable name="EcalBarrelMonitorClient/EcalBarrel/EBPedestalClient/EBPT pedestal rms G12 SM01" />
+         </column>         
+      </row>
+   </layout>
+
+  <layout name="Pedestal_client_4">
+     <row>
+         <column>
+            <monitorable name="EcalBarrelMonitorClient/EcalBarrel/EBPedestalTask/Gain01/EBPT pedestal 3sum SM01 G01" />
+         </column>         
+     </row>
+     <row> 
+         <column>
+            <monitorable name="EcalBarrelMonitorClient/EcalBarrel/EBPedestalTask/Gain01/EBPT pedestal 5sum SM01 G01" />
+         </column>
+      </row>
+   </layout>
+
+  <layout name="Pedestal_client_5">
+     <row>
+         <column>
+            <monitorable name="EcalBarrelMonitorClient/EcalBarrel/EBPedestalTask/Gain06/EBPT pedestal 3sum SM01 G06" />
+         </column>         
+     </row>
+     <row> 
+         <column>
+            <monitorable name="EcalBarrelMonitorClient/EcalBarrel/EBPedestalTask/Gain06/EBPT pedestal 5sum SM01 G06" />
+         </column>
+      </row>
+   </layout>
+
+  <layout name="Pedestal_client_6">
+     <row>
+         <column>
+            <monitorable name="EcalBarrelMonitorClient/EcalBarrel/EBPedestalTask/Gain12/EBPT pedestal 3sum SM01 G12" />
+         </column>         
+     </row>
+     <row> 
+         <column>
+            <monitorable name="EcalBarrelMonitorClient/EcalBarrel/EBPedestalTask/Gain12/EBPT pedestal 5sum SM01 G12" />
+         </column>
+      </row>
+   </layout>
+
+  <layout name="Pedestal_client_7">
+     <row>
+         <column>
+            <monitorable name="EcalBarrelMonitorClient/EcalBarrel/EBPnDiodeTask/Gain01/EBPDT PNs pedestal SM01 G01" />
+         </column>         
+     </row>
+     <row> 
+         <column>
+            <monitorable name="EcalBarrelMonitorClient/EcalBarrel/EBPnDiodeTask/Gain16/EBPDT PNs pedestal SM01 G16" />
+         </column>
+      </row>
+   </layout>
+
+
+  <layout name="----------------------------------------">
+  </layout>
+
+
+  <layout name="PedestalOnline_client_1">
+     <row>
+         <column>
+            <monitorable name="EcalBarrelMonitorClient/EcalBarrel/EBPedestalOnlineClient/EBPOT pedestal quality G12 SM01" />
+         </column>         
+     </row>
+      <row>
+         <column>
+            <monitorable name="EcalBarrelMonitorClient/EcalBarrel/EBPedestalOnlineClient/EBPOT pedestal mean G12 SM01" />
+         </column>         
+         <column>
+            <monitorable name="EcalBarrelMonitorClient/EcalBarrel/EBPedestalOnlineClient/EBPOT pedestal rms G12 SM01" />
+         </column>         
+      </row>
+   </layout>
+
+
+  <layout name="----------------------------------------">
+  </layout>
+
+
+  <layout name="TestPulse_client_1">
+     <row>
+         <column>
+            <monitorable name="EcalBarrelMonitorClient/EcalBarrel/EBTestPulseClient/EBTPT test pulse quality G01 SM01" />
+         </column>         
+     </row>
+      <row>
+         <column>
+            <monitorable name="EcalBarrelMonitorClient/EcalBarrel/EBTestPulseClient/EBTPT test pulse amplitude G01 SM01" />
+         </column>         
+         <column>
+            <monitorable name="EcalBarrelMonitorClient/EcalBarrel/EBTestPulseTask/Gain01/EBTPT shape SM01 G01" />
+         </column>         
+      </row>
+   </layout>
+
+  <layout name="TestPulse_client_2">
+     <row>
+         <column>
+            <monitorable name="EcalBarrelMonitorClient/EcalBarrel/EBTestPulseClient/EBTPT test pulse quality G06 SM01" />
+         </column>         
+     </row>
+      <row>
+         <column>
+            <monitorable name="EcalBarrelMonitorClient/EcalBarrel/EBTestPulseClient/EBTPT test pulse amplitude G06 SM01" />
+         </column>         
+         <column>
+            <monitorable name="EcalBarrelMonitorClient/EcalBarrel/EBTestPulseTask/Gain06/EBTPT shape SM01 G06" />
+         </column>         
+      </row>
+   </layout>
+
+  <layout name="TestPulse_client_3">
+     <row>
+         <column>
+            <monitorable name="EcalBarrelMonitorClient/EcalBarrel/EBTestPulseClient/EBTPT test pulse quality G12 SM01" />
+         </column>         
+     </row>
+      <row>
+         <column>
+            <monitorable name="EcalBarrelMonitorClient/EcalBarrel/EBTestPulseClient/EBTPT test pulse amplitude G12 SM01" />
+         </column>         
+         <column>
+            <monitorable name="EcalBarrelMonitorClient/EcalBarrel/EBTestPulseTask/Gain12/EBTPT shape SM01 G12" />
+         </column>         
+      </row>
+   </layout>
+
+  <layout name="TestPulse_client_4">
+     <row>
+         <column>
+            <monitorable name="EcalBarrelMonitorClient/EcalBarrel/EBPnDiodeTask/Gain01/EBPDT PNs pedestal SM01 G01" />
+         </column>         
+         <column>
+            <monitorable name="EcalBarrelMonitorClient/EcalBarrel/EBPnDiodeTask/Gain01/EBPDT PNs amplitude SM01 G01" />
+         </column>
+      </row>
+     <row>
+         <column>
+            <monitorable name="EcalBarrelMonitorClient/EcalBarrel/EBPnDiodeTask/Gain16/EBPDT PNs pedestal SM01 G16" />
+         </column>         
+         <column>
+            <monitorable name="EcalBarrelMonitorClient/EcalBarrel/EBPnDiodeTask/Gain16/EBPDT PNs amplitude SM01 G16" />
+         </column>
+      </row>
+   </layout>
+
+
+  <layout name="----------------------------------------">
+  </layout>
+
+
 </layouts>
 
 
