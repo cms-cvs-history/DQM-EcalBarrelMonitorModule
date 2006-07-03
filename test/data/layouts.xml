@@ -411,6 +411,134 @@
   </layout>
 
 
+  <layout name="BeamHodo_client_1">
+     <row>
+         <column>
+            <monitorable name="EcalBarrelMonitorClient/EcalBarrel/EBBeamHodoTask/EBBHT occup SM01, 01" />
+         </column>         
+         <column>
+            <monitorable name="EcalBarrelMonitorClient/EcalBarrel/EBBeamHodoTask/EBBHT raw SM01, 01" />
+         </column>
+      </row>
+     <row>
+         <column>
+            <monitorable name="EcalBarrelMonitorClient/EcalBarrel/EBBeamHodoTask/EBBHT occup SM01, 02" />
+         </column>         
+         <column>
+            <monitorable name="EcalBarrelMonitorClient/EcalBarrel/EBBeamHodoTask/EBBHT raw SM01, 02" />
+         </column>
+      </row>
+  </layout>
+
+  <layout name="BeamHodo_client_2">
+     <row>
+         <column>
+            <monitorable name="EcalBarrelMonitorClient/EcalBarrel/EBBeamHodoTask/EBBHT occup SM01, 03" />
+         </column>         
+         <column>
+            <monitorable name="EcalBarrelMonitorClient/EcalBarrel/EBBeamHodoTask/EBBHT raw SM01, 03" />
+         </column>
+      </row>
+     <row>
+         <column>
+            <monitorable name="EcalBarrelMonitorClient/EcalBarrel/EBBeamHodoTask/EBBHT occup SM01, 04" />
+         </column>         
+         <column>
+            <monitorable name="EcalBarrelMonitorClient/EcalBarrel/EBBeamHodoTask/EBBHT raw SM01, 04" />
+         </column>
+      </row>
+  </layout>
+
+  <layout name="BeamHodo_client_3">
+     <row>
+         <column>
+            <monitorable name="EcalBarrelMonitorClient/EcalBarrel/EBBeamHodoTask/EBBHT PosX rec SM01" />
+         </column>         
+         <column>
+            <monitorable name="EcalBarrelMonitorClient/EcalBarrel/EBBeamHodoTask/EBBHT PosY rec SM01" />
+         </column>
+      </row>
+     <row>
+         <column>
+            <monitorable name="EcalBarrelMonitorClient/EcalBarrel/EBBeamHodoTask/EBBHT PosYX rec SM01" />
+         </column>         
+         <column>
+            <monitorable name="EcalBarrelMonitorClient/EcalBarrel/EBBeamHodoTask/pippo" />
+         </column>
+      </row>
+  </layout>
+
+  <layout name="BeamHodo_client_4">
+     <row>
+         <column>
+            <monitorable name="EcalBarrelMonitorClient/EcalBarrel/EBBeamHodoTask/EBBHT SloX SM01" />
+         </column>         
+         <column>
+            <monitorable name="EcalBarrelMonitorClient/EcalBarrel/EBBeamHodoTask/EBBHT SloY SM01" />
+         </column>
+      </row>
+     <row>
+         <column>
+            <monitorable name="EcalBarrelMonitorClient/EcalBarrel/EBBeamHodoTask/EBBHT QualX SM01" />
+         </column>         
+         <column>
+            <monitorable name="EcalBarrelMonitorClient/EcalBarrel/EBBeamHodoTask/EBBHT QualY SM01" />
+         </column>
+      </row>
+  </layout>
+
+  <layout name="BeamHodo_client_5">
+     <row>
+         <column>
+            <monitorable name="EcalBarrelMonitorClient/EcalBarrel/EBBeamHodoTask/EBBHT (Hodo-Calo) XVsCry SM01" />
+         </column>         
+         <column>
+            <monitorable name="EcalBarrelMonitorClient/EcalBarrel/EBBeamHodoTask/EBBHT (Hodo-Calo)YVsCry SM01" />
+         </column>
+         <column>
+            <monitorable name="EcalBarrelMonitorClient/EcalBarrel/EBBeamHodoTask/EBBHT (TDC-Calo)VsCry SM01" />
+         </column>         
+      </row>
+     <row>
+         <column>
+            <monitorable name="EcalBarrelMonitorClient/EcalBarrel/EBBeamHodoTask/EBBHT PosX: Hodo-Calo SM01" />
+         </column>
+         <column>
+            <monitorable name="EcalBarrelMonitorClient/EcalBarrel/EBBeamHodoTask/EBBHT PosY: Hodo-Calo SM01" />
+         </column>
+         <column>
+            <monitorable name="EcalBarrelMonitorClient/EcalBarrel/EBBeamHodoTask/EBBHT TimeMax: TDC-Calo SM01" />
+         </column>
+      </row>
+  </layout>
+
+  <layout name="BeamHodo_client_6">
+     <row>
+         <column>
+            <monitorable name="EcalBarrelMonitorClient/EcalBarrel/EBBeamHodoTask/EBBHT prof E1 vs X SM01" />
+         </column>         
+         <column>
+            <monitorable name="EcalBarrelMonitorClient/EcalBarrel/EBBeamHodoTask/EBBHT his E1 vs X SM01" />
+         </column>
+      </row>
+     <row>
+         <column>
+            <monitorable name="EcalBarrelMonitorClient/EcalBarrel/EBBeamHodoTask/EBBHT prof E1 vs Y SM01" />
+         </column>         
+         <column>
+            <monitorable name="EcalBarrelMonitorClient/EcalBarrel/EBBeamHodoTask/EBBHT his e1 vs Y SM01" />
+         </column>
+      </row>
+  </layout>
+
+
+  <layout name="----------------------------------------">
+  </layout>
+
+
+  <layout name="----------------------------------------">
+  </layout>
+
 </layouts>
 
 
