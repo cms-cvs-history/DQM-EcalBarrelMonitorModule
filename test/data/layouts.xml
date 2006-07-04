@@ -490,13 +490,13 @@
   <layout name="BeamHodo_client_5">
      <row>
          <column>
-            <monitorable name="EcalBarrelMonitorClient/EcalBarrel/EBBeamHodoTask/EBBHT Hodo-Calo X Vs Cry SM01" />
+            <monitorable name="EcalBarrelMonitorClient/EcalBarrel/EBBeamHodoTask/EBBHT Hodo-Calo X vs Cry SM01" />
          </column>         
          <column>
-            <monitorable name="EcalBarrelMonitorClient/EcalBarrel/EBBeamHodoTask/EBBHT Hodo-Calo Y Vs Cry SM01" />
+            <monitorable name="EcalBarrelMonitorClient/EcalBarrel/EBBeamHodoTask/EBBHT Hodo-Calo Y vs Cry SM01" />
          </column>
          <column>
-            <monitorable name="EcalBarrelMonitorClient/EcalBarrel/EBBeamHodoTask/EBBHT TDC-Calo Vs Cry SM01" />
+            <monitorable name="EcalBarrelMonitorClient/EcalBarrel/EBBeamHodoTask/EBBHT TDC-Calo vs Cry SM01" />
          </column>         
       </row>
      <row>
