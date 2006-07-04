@@ -64,16 +64,16 @@
         	                   module ecalPedestalTask = EBPedestalTask{ } 
         	                   module ecalTestPulseTask = EBTestPulseTask{ }
                                    module preScaler = Prescaler { int32 prescaleFactor = 1 }
-        	                   path p = { preScaler, ecalEBunpacker,
-        		                      ecalUncalibHitMaker, ecalRecHitMaker,
-        		                      ecalMonitorModule,
-        		                      ecalOccupancyTask,
-        		                      ecalIntegrityTask,
-        		                      ecalCosmicTask,
-        	  	                      ecalLaserTask,
-        		                      ecalPedestalOnlineTask, ecalPedestalTask,
-        		                      ecalTestPulseTask
-        		                   }
+        	                   sequence s1 = { preScaler, ecalEBunpacker,
+        		                           ecalUncalibHitMaker, ecalRecHitMaker }
+                                   sequence s2 = { ecalMonitorModule }
+                                   sequence s3 = { ecalOccupancyTask,
+        		                           ecalIntegrityTask,
+        		                           ecalCosmicTask,
+        	  	                           ecalLaserTask,
+        		                           ecalPedestalOnlineTask, ecalPedestalTask,
+        		                           ecalTestPulseTask }
+                                   path p = { s1, s2, s3 }
                                    source = DaqSource{ string reader = "FUReader"
                                                        untracked int32 maxEvents=-1
                                                        PSet pset = {untracked int32 dummy = 0}

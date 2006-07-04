@@ -78,7 +78,7 @@
                                                                                      }
                                    module preScaler = Prescaler { int32 prescaleFactor = 1 }
                                    sequence s1 = { ecalEBunpacker,
-                                                   ecalUncalibHitMaker, ecalRecHitMaker}
+                                                   ecalUncalibHitMaker, ecalRecHitMaker }
                                    sequence s2 = { ecalMonitorModule,
                                                    ecalMonitorClient }
                                    sequence s3 = { ecalOccupancyTask,
@@ -87,7 +87,7 @@
                                                    ecalLaserTask,
                                                    ecalPedestalOnlineTask, ecalPedestalTask,
                                                    ecalTestPulseTask }
-                                   path p = { s1, s3, s2 }
+                                   path p = { s1, s2, s3 }
                                    source = DaqSource{ string reader = "FUReader"
                                                        untracked int32 maxEvents=-1
                                                        PSet pset = {untracked int32 dummy = 0}
