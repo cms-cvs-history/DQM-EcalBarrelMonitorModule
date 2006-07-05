@@ -2,33 +2,7 @@
 
 <layouts>
   
-  <layout name="----------------------------------------">
-  </layout>
-
-  <layout name="Cosmics_client_1">
-     <row>
-         <column>
-            <monitorable name="EcalBarrelMonitorClient/EcalBarrel/EBCosmicTask/Sel/EBCT energy sel SM01" />
-         </column>         
-     </row>
-     <row> 
-         <column>
-            <monitorable name="EcalBarrelMonitorClient/EcalBarrel/EBCosmicTask/Cut/EBCT energy cut SM01" />
-         </column>
-      </row>
-      <row>
-         <column>
-            <monitorable name="EcalBarrelMonitorClient/EcalBarrel/EBCosmicTask/Spectrum/EBCT energy spectrum SM01" />
-         </column>         
-         <column>
-            <monitorable name="EcalBarrelMonitorClient/EcalBarrel/EBCosmicTask/Spectrum/pippo" />
-         </column>         
-
-      </row>
-   </layout>
-
-
-  <layout name="----------------------------------------">
+  <layout name="------ INTEGRITY ------">
   </layout>
 
 
@@ -41,6 +15,11 @@
      <row>
          <column>
             <monitorable name="EcalBarrelMonitorClient/EcalBarrel/EBIntegrityClient/EBIT data integrity quality SM01" />
+         </column>         
+     </row>
+     <row>
+         <column>
+            <monitorable name="EcalBarrelMonitorClient/EcalBarrel/EcalOccupancy/EBMM occupancy SM01" />
          </column>         
      </row>
    </layout>
@@ -118,7 +97,34 @@
    </layout>
 
 
-  <layout name="----------------------------------------">
+  <layout name="------ COSMICS ------">
+  </layout>
+
+
+  <layout name="Cosmics_client_1">
+     <row>
+         <column>
+            <monitorable name="EcalBarrelMonitorClient/EcalBarrel/EBCosmicTask/Sel/EBCT energy sel SM01" />
+         </column>         
+     </row>
+     <row> 
+         <column>
+            <monitorable name="EcalBarrelMonitorClient/EcalBarrel/EBCosmicTask/Cut/EBCT energy cut SM01" />
+         </column>
+      </row>
+      <row>
+         <column>
+            <monitorable name="EcalBarrelMonitorClient/EcalBarrel/EBCosmicTask/Spectrum/EBCT energy spectrum SM01" />
+         </column>         
+         <column>
+            <monitorable name="EcalBarrelMonitorClient/EcalBarrel/EBCosmicTask/Spectrum/pippo" />
+         </column>         
+
+      </row>
+   </layout>
+
+
+  <layout name="------ LASER ------">
   </layout>
 
 
@@ -209,7 +215,7 @@
    </layout>
 
 
-  <layout name="----------------------------------------">
+  <layout name="------ PEDESTAL ------">
   </layout>
 
 
@@ -314,7 +320,7 @@
    </layout>
 
 
-  <layout name="----------------------------------------">
+  <layout name="------ PED. ONLINE ------">
   </layout>
 
 
@@ -335,7 +341,7 @@
    </layout>
 
 
-  <layout name="----------------------------------------">
+  <layout name="------ TEST PULSE ------">
   </layout>
 
 
@@ -407,7 +413,7 @@
    </layout>
 
 
-  <layout name="----------------------------------------">
+  <layout name="------ BEAM HODO ------">
   </layout>
 
 
@@ -532,7 +538,7 @@
   </layout>
 
 
-  <layout name="----------------------------------------">
+  <layout name="------ BEAM CALO ------">
   </layout>
 
   <layout name="BeamCalo_client_1">
@@ -584,9 +590,6 @@
             <monitorable name="EcalBarrelMonitorClient/EcalBarrel/EBBeamCaloTask/pippo" />
          </column>
       </row>
-  </layout>
-
-  <layout name="----------------------------------------">
   </layout>
 
 </layouts>
