@@ -549,10 +549,7 @@
      </row>
      <row>         
          <column>
-            <monitorable name="EcalBarrelMonitorClient/EcalBarrel/EBBeamCaloTask/EBBCT read crystal errors" />
-         </column>
-         <column>
-            <monitorable name="EcalBarrelMonitorClient/EcalBarrel/EBBeamCaloTask/EBBCT number of readout crystals" />
+            <monitorable name="EcalBarrelMonitorClient/EcalBarrel/EBBeamCaloTask/EBBCT quality read crystal errors" />
          </column>
          <column>
             <monitorable name="EcalBarrelMonitorClient/EcalBarrel/EBBeamCaloTask/pippo" />
@@ -563,17 +560,33 @@
   <layout name="BeamCalo_client_2">
      <row>
          <column>
-            <monitorable name="EcalBarrelMonitorClient/EcalBarrel/EBBeamCaloTask/EBBCT crystal on beam" />
+            <monitorable name="EcalBarrelMonitorClient/EcalBarrel/EBBeamCaloTask/EBBCT quality entries or read crystals errors" />
          </column>
      </row>
      <row>
          <column>
-            <monitorable name="EcalBarrelMonitorClient/EcalBarrel/EBBeamCaloTask/EBBCT crystal with maximum rec energy" />
+            <monitorable name="EcalBarrelMonitorClient/EcalBarrel/EBBeamCaloTask/EBBCT number of readout crystals" />
+         </column>
+         <column>
+            <monitorable name="EcalBarrelMonitorClient/EcalBarrel/EBBeamCaloTask/EBBCT crystals done" />
          </column>
      </row>
   </layout>
 
   <layout name="BeamCalo_client_3">
+      <row>   
+         <column>
+            <monitorable name="EcalBarrelMonitorClient/EcalBarrel/EBBeamCaloTask/EBBCT crystal on beam" />
+         </column>
+      </row>
+      <row>
+         <column>
+            <monitorable name="EcalBarrelMonitorClient/EcalBarrel/EBBeamCaloTask/EBBCT crystal with maximum rec energy" />
+         </column>
+      </row>
+  </layout>
+
+  <layout name="BeamCalo_client_4">
       <row>   
          <column>
             <monitorable name="EcalBarrelMonitorClient/EcalBarrel/EBBeamCaloTask/EBBCT rec energy cry 5" />
@@ -591,6 +604,111 @@
          </column>
       </row>
   </layout>
+
+  <layout name="BeamCalo_client_5">
+      <row>   
+         <column>
+            <monitorable name="EcalBarrelMonitorClient/EcalBarrel/EBBeamCaloTask/EBBCT pulse profile in G12 cry 1" />
+         </column>
+         <column>
+            <monitorable name="EcalBarrelMonitorClient/EcalBarrel/EBBeamCaloTask/EBBCT pulse profile in G12 cry 2" />
+         </column>
+         <column>
+            <monitorable name="EcalBarrelMonitorClient/EcalBarrel/EBBeamCaloTask/EBBCT pulse profile in G12 cry 3" />
+         </column>
+      </row>
+      <row>   
+         <column>
+            <monitorable name="EcalBarrelMonitorClient/EcalBarrel/EBBeamCaloTask/EBBCT pulse profile in G12 cry 4" />
+         </column>
+         <column>
+            <monitorable name="EcalBarrelMonitorClient/EcalBarrel/EBBeamCaloTask/EBBCT pulse profile in G12 cry 5" />
+         </column>
+         <column>
+            <monitorable name="EcalBarrelMonitorClient/EcalBarrel/EBBeamCaloTask/EBBCT pulse profile in G12 cry 6" />
+         </column>
+      </row>
+      <row>   
+         <column>
+            <monitorable name="EcalBarrelMonitorClient/EcalBarrel/EBBeamCaloTask/EBBCT pulse profile in G12 cry 7" />
+         </column>
+         <column>
+            <monitorable name="EcalBarrelMonitorClient/EcalBarrel/EBBeamCaloTask/EBBCT pulse profile in G12 cry 8" />
+         </column>
+         <column>
+            <monitorable name="EcalBarrelMonitorClient/EcalBarrel/EBBeamCaloTask/EBBCT pulse profile in G12 cry 9" />
+         </column>
+      </row>
+  </layout>
+
+  <layout name="BeamCalo_client_6">
+      <row>   
+         <column>
+            <monitorable name="EcalBarrelMonitorClient/EcalBarrel/EBBeamCaloTask/EBBCT found gains cry 1" />
+         </column>
+         <column>
+            <monitorable name="EcalBarrelMonitorClient/EcalBarrel/EBBeamCaloTask/EBBCT found gains cry 2" />
+         </column>
+         <column>
+            <monitorable name="EcalBarrelMonitorClient/EcalBarrel/EBBeamCaloTask/EBBCT found gains cry 3" />
+         </column>
+      </row>
+      <row>   
+         <column>
+            <monitorable name="EcalBarrelMonitorClient/EcalBarrel/EBBeamCaloTask/EBBCT found gains cry 4" />
+         </column>
+         <column>
+            <monitorable name="EcalBarrelMonitorClient/EcalBarrel/EBBeamCaloTask/EBBCT found gains cry 5" />
+         </column>
+         <column>
+            <monitorable name="EcalBarrelMonitorClient/EcalBarrel/EBBeamCaloTask/EBBCT found gains cry 6" />
+         </column>
+      </row>
+      <row>   
+         <column>
+            <monitorable name="EcalBarrelMonitorClient/EcalBarrel/EBBeamCaloTask/EBBCT found gains cry 7" />
+         </column>
+         <column>
+            <monitorable name="EcalBarrelMonitorClient/EcalBarrel/EBBeamCaloTask/EBBCT found gains cry 8" />
+         </column>
+         <column>
+            <monitorable name="EcalBarrelMonitorClient/EcalBarrel/EBBeamCaloTask/EBBCT found gains cry 9" />
+         </column>
+      </row>
+  </layout>
+
+  <layout name="BeamCalo_client_7">
+      <row>   
+         <column>
+            <monitorable name="EcalBarrelMonitorClient/EcalBarrel/EBBeamCaloTask/EBBCT crystals done" />
+         </column>
+         <column>
+            <monitorable name="EcalBarrelMonitorClient/EcalBarrel/EBBeamCaloTask/EBBCT number of entries" />
+         </column>
+      </row>
+      <row>   
+         <column>
+            <monitorable name="EcalBarrelMonitorClient/EcalBarrel/EBBeamCaloTask/EBBCT average rec energy in the single cristal" />
+         </column>
+         <column>
+            <monitorable name="EcalBarrelMonitorClient/EcalBarrel/EBBeamCaloTask/EBBCT average rec energy in the 3x3 array" />
+         </column>
+      </row>
+  </layout>
+
+  <layout name="BeamCalo_client_8">
+      <row>   
+         <column>
+            <monitorable name="EcalBarrelMonitorClient/EcalBarrel/EBBeamCaloTask/EBBCT crystal in beam vs event" />
+         </column>
+      </row>
+      <row>
+         <column>
+            <monitorable name="EcalBarrelMonitorClient/EcalBarrel/EBBeamCaloTask/EBBCT table is moving" />
+         </column>
+      </row>
+  </layout>
+
 
 </layouts>
 
