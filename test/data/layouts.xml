@@ -19,7 +19,7 @@
      </row>
      <row>
          <column>
-            <monitorable name="EcalBarrelMonitorClient/EcalBarrel/EcalOccupancy/EBMM occupancy SM01" />
+            <monitorable name="EcalBarrelMonitorClient/EcalBarrel/EcalOccupancyTask/EBMM occupancy SM01" />
          </column>         
      </row>
    </layout>
@@ -68,7 +68,7 @@
      </row>
      <row>
          <column>
-            <monitorable name="EcalBarrelMonitorClient/EcalBarrel/EcalOccupancy/EBMM MEM occupancy SM01" />
+            <monitorable name="EcalBarrelMonitorClient/EcalBarrel/EcalOccupancyTask/EBMM MEM occupancy SM01" />
          </column>         
      </row>
      <row>
