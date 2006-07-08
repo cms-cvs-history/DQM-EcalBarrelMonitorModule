@@ -544,15 +544,15 @@
   <layout name="BeamCalo_client_1">
      <row>
          <column>
-            <monitorable name="EcalBarrelMonitorClient/EcalBarrel/EBBeamCaloTask/EBBCT quality" />
+            <monitorable name="EcalBarrelMonitorClient/EcalBarrel/EBBeamCaloClient/EBBCT quality" />
          </column>
      </row>
      <row>         
          <column>
-            <monitorable name="EcalBarrelMonitorClient/EcalBarrel/EBBeamCaloTask/EBBCT quality read crystal errors" />
+            <monitorable name="EcalBarrelMonitorClient/EcalBarrel/EBBeamCaloClient/EBBCT quality read crystal errors" />
          </column>
          <column>
-            <monitorable name="EcalBarrelMonitorClient/EcalBarrel/EBBeamCaloTask/pippo" />
+            <monitorable name="EcalBarrelMonitorClient/EcalBarrel/EBBeamCaloClient/pippo" />
          </column>
       </row>
   </layout>
@@ -560,7 +560,7 @@
   <layout name="BeamCalo_client_2">
      <row>
          <column>
-            <monitorable name="EcalBarrelMonitorClient/EcalBarrel/EBBeamCaloTask/EBBCT quality entries or read crystals errors" />
+            <monitorable name="EcalBarrelMonitorClient/EcalBarrel/EBBeamCaloClient/EBBCT quality entries or read crystals errors" />
          </column>
      </row>
      <row>
