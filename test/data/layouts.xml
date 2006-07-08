@@ -19,7 +19,7 @@
      </row>
      <row>
          <column>
-            <monitorable name="EcalBarrelMonitorClient/EcalBarrel/EcalOccupancyTask/EBMM occupancy SM01" />
+            <monitorable name="EcalBarrelMonitorClient/EcalBarrel/EBOccupancyTask/EBMM occupancy SM01" />
          </column>         
      </row>
    </layout>
@@ -68,7 +68,7 @@
      </row>
      <row>
          <column>
-            <monitorable name="EcalBarrelMonitorClient/EcalBarrel/EcalOccupancyTask/EBMM MEM occupancy SM01" />
+            <monitorable name="EcalBarrelMonitorClient/EcalBarrel/EBOccupancyTask/EBMM MEM occupancy SM01" />
          </column>         
      </row>
      <row>
@@ -565,10 +565,13 @@
      </row>
      <row>
          <column>
-            <monitorable name="EcalBarrelMonitorClient/EcalBarrel/EBBeamCaloTask/EBBCT number of readout crystals" />
+            <monitorable name="EcalBarrelMonitorClient/EcalBarrel/EBBeamCaloTask/EBBCT readout crystals number" />
          </column>
          <column>
-            <monitorable name="EcalBarrelMonitorClient/EcalBarrel/EBBeamCaloTask/EBBCT crystals done" />
+            <monitorable name="EcalBarrelMonitorClient/EcalBarrel/EBBeamCaloTask/EBBCT readout crystals errors" />
+         </column>
+         <column>
+            <monitorable name="EcalBarrelMonitorClient/EcalBarrel/EBBeamCaloTask/pippo" />
          </column>
      </row>
   </layout>
@@ -688,7 +691,7 @@
       </row>
       <row>   
          <column>
-            <monitorable name="EcalBarrelMonitorClient/EcalBarrel/EBBeamCaloTask/EBBCT average rec energy in the single cristal" />
+            <monitorable name="EcalBarrelMonitorClient/EcalBarrel/EBBeamCaloTask/EBBCT average rec energy in the single crystal" />
          </column>
          <column>
             <monitorable name="EcalBarrelMonitorClient/EcalBarrel/EBBeamCaloTask/EBBCT average rec energy in the 3x3 array" />
