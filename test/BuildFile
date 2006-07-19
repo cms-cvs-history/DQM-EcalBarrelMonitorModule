@@ -1,4 +1,3 @@
 <library file=stubs/*.cc name=SimpleI2OSender>
   <use name=xdaq>
-  <lib name=i2outils>
 </library>
