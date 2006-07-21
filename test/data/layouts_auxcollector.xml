@@ -9,17 +9,17 @@
    <layout name="Integrity_client_1">
      <row>
          <column>
-            <monitorable name="AuxCollector/EcalBarrelMonitorCLient/Collector/FU0/EcalBarrel/EBIntegrityTask/EBIT DCC size error" />
+            <monitorable name="AuxCollector/EcalBarrelMonitorClient/Collector/FU0/EcalBarrel/EBIntegrityTask/EBIT DCC size error" />
          </column>         
      </row>
      <row>
          <column>
-            <monitorable name="AuxCollector/EcalBarrelMonitorCLient/EcalBarrel/EBIntegrityClient/EBIT data integrity quality SM01" />
+            <monitorable name="AuxCollector/EcalBarrelMonitorClient/EcalBarrel/EBIntegrityClient/EBIT data integrity quality SM01" />
          </column>         
      </row>
      <row>
          <column>
-            <monitorable name="AuxCollector/EcalBarrelMonitorCLient/Collector/FU0/EcalBarrel/EBOccupancyTask/EBOT occupancy SM01" />
+            <monitorable name="AuxCollector/EcalBarrelMonitorClient/Collector/FU0/EcalBarrel/EBOccupancyTask/EBOT occupancy SM01" />
          </column>         
      </row>
    </layout>
@@ -27,17 +27,17 @@
    <layout name="Integrity_client_2">
      <row>
          <column>
-            <monitorable name="AuxCollector/EcalBarrelMonitorCLient/Collector/FU0/EcalBarrel/EBIntegrityTask/Gain/EBIT gain SM01" />
+            <monitorable name="AuxCollector/EcalBarrelMonitorClient/Collector/FU0/EcalBarrel/EBIntegrityTask/Gain/EBIT gain SM01" />
          </column>         
      </row>
      <row>
          <column>
-            <monitorable name="AuxCollector/EcalBarrelMonitorCLient/Collector/FU0/EcalBarrel/EBIntegrityTask/ChId/EBIT ChId SM01" />
+            <monitorable name="AuxCollector/EcalBarrelMonitorClient/Collector/FU0/EcalBarrel/EBIntegrityTask/ChId/EBIT ChId SM01" />
          </column>         
      </row>
      <row>
          <column>
-            <monitorable name="AuxCollector/EcalBarrelMonitorCLient/Collector/FU0/EcalBarrel/EBIntegrityTask/GainSwitch/EBIT gain switch SM01" />
+            <monitorable name="AuxCollector/EcalBarrelMonitorClient/Collector/FU0/EcalBarrel/EBIntegrityTask/GainSwitch/EBIT gain switch SM01" />
          </column>
      </row>
    </layout>
@@ -45,17 +45,17 @@
    <layout name="Integrity_client_3">
      <row>         
          <column>
-            <monitorable name="AuxCollector/EcalBarrelMonitorCLient/Collector/FU0/EcalBarrel/EBIntegrityTask/GainSwitchStay/EBIT gain switch stay SM01" />
+            <monitorable name="AuxCollector/EcalBarrelMonitorClient/Collector/FU0/EcalBarrel/EBIntegrityTask/GainSwitchStay/EBIT gain switch stay SM01" />
          </column>         
      </row>
      <row>
          <column>
-            <monitorable name="AuxCollector/EcalBarrelMonitorCLient/Collector/FU0/EcalBarrel/EBIntegrityTask/TTId/EBIT TTId SM01" />
+            <monitorable name="AuxCollector/EcalBarrelMonitorClient/Collector/FU0/EcalBarrel/EBIntegrityTask/TTId/EBIT TTId SM01" />
          </column>         
      </row>
      <row>
          <column>
-            <monitorable name="AuxCollector/EcalBarrelMonitorCLient/Collector/FU0/EcalBarrel/EBIntegrityTask/TTBlockSize/EBIT TTBlockSize SM01" />
+            <monitorable name="AuxCollector/EcalBarrelMonitorClient/Collector/FU0/EcalBarrel/EBIntegrityTask/TTBlockSize/EBIT TTBlockSize SM01" />
          </column>         
      </row>
    </layout>
@@ -63,17 +63,17 @@
    <layout name="Integrity_client_4">
      <row>
          <column>
-            <monitorable name="AuxCollector/EcalBarrelMonitorCLient/EcalBarrel/EBIntegrityClient/EBIT data integrity quality MEM SM01" />
+            <monitorable name="AuxCollector/EcalBarrelMonitorClient/EcalBarrel/EBIntegrityClient/EBIT data integrity quality MEM SM01" />
          </column>         
      </row>
      <row>
          <column>
-            <monitorable name="AuxCollector/EcalBarrelMonitorCLient/Collector/FU0/EcalBarrel/EBOccupancyTask/EBOT MEM occupancy SM01" />
+            <monitorable name="AuxCollector/EcalBarrelMonitorClient/Collector/FU0/EcalBarrel/EBOccupancyTask/EBOT MEM occupancy SM01" />
          </column>         
      </row>
      <row>
          <column>
-            <monitorable name="AuxCollector/EcalBarrelMonitorCLient/Collector/FU0/EcalBarrel/EBIntegrityTask/MemChId/EBIT MemChId SM01" />
+            <monitorable name="AuxCollector/EcalBarrelMonitorClient/Collector/FU0/EcalBarrel/EBIntegrityTask/MemChId/EBIT MemChId SM01" />
          </column>         
      </row>
    </layout>
@@ -81,17 +81,17 @@
    <layout name="Integrity_client_5">
      <row>
          <column>
-            <monitorable name="AuxCollector/EcalBarrelMonitorCLient/Collector/FU0/EcalBarrel/EBIntegrityTask/MemGain/EBIT MemGain SM01" />
+            <monitorable name="AuxCollector/EcalBarrelMonitorClient/Collector/FU0/EcalBarrel/EBIntegrityTask/MemGain/EBIT MemGain SM01" />
          </column>         
      </row>
      <row>
          <column>
-            <monitorable name="AuxCollector/EcalBarrelMonitorCLient/Collector/FU0/EcalBarrel/EBIntegrityTask/MemTTId/EBIT MemTTId SM01" />
+            <monitorable name="AuxCollector/EcalBarrelMonitorClient/Collector/FU0/EcalBarrel/EBIntegrityTask/MemTTId/EBIT MemTTId SM01" />
          </column>         
      </row>
      <row>
          <column>
-            <monitorable name="AuxCollector/EcalBarrelMonitorCLient/Collector/FU0/EcalBarrel/EBIntegrityTask/MemSize/EBIT MemSize SM01" />
+            <monitorable name="AuxCollector/EcalBarrelMonitorClient/Collector/FU0/EcalBarrel/EBIntegrityTask/MemSize/EBIT MemSize SM01" />
          </column>         
      </row> 
    </layout>
@@ -104,20 +104,20 @@
   <layout name="Cosmics_client_1">
      <row>
          <column>
-            <monitorable name="AuxCollector/EcalBarrelMonitorCLient/Collector/FU0/EcalBarrel/EBCosmicTask/Sel/EBCT energy sel SM01" />
+            <monitorable name="AuxCollector/EcalBarrelMonitorClient/Collector/FU0/EcalBarrel/EBCosmicTask/Sel/EBCT energy sel SM01" />
          </column>         
      </row>
      <row> 
          <column>
-            <monitorable name="AuxCollector/EcalBarrelMonitorCLient/Collector/FU0/EcalBarrel/EBCosmicTask/Cut/EBCT energy cut SM01" />
+            <monitorable name="AuxCollector/EcalBarrelMonitorClient/Collector/FU0/EcalBarrel/EBCosmicTask/Cut/EBCT energy cut SM01" />
          </column>
       </row>
       <row>
          <column>
-            <monitorable name="AuxCollector/EcalBarrelMonitorCLient/Collector/FU0/EcalBarrel/EBCosmicTask/Spectrum/EBCT energy spectrum SM01" />
+            <monitorable name="AuxCollector/EcalBarrelMonitorClient/Collector/FU0/EcalBarrel/EBCosmicTask/Spectrum/EBCT energy spectrum SM01" />
          </column>         
          <column>
-            <monitorable name="AuxCollector/EcalBarrelMonitorCLient/Collector/FU0/EcalBarrel/EBCosmicTask/Spectrum/pippo" />
+            <monitorable name="AuxCollector/EcalBarrelMonitorClient/Collector/FU0/EcalBarrel/EBCosmicTask/Spectrum/pippo" />
          </column>         
 
       </row>
@@ -131,23 +131,23 @@
   <layout name="Laser_client_1">
      <row>
          <column>
-            <monitorable name="AuxCollector/EcalBarrelMonitorCLient/EcalBarrel/EBLaserClient/EBLT laser quality L1 SM01" />
+            <monitorable name="AuxCollector/EcalBarrelMonitorClient/EcalBarrel/EBLaserClient/EBLT laser quality L1 SM01" />
          </column>         
      </row>
       <row>
          <column>
-            <monitorable name="AuxCollector/EcalBarrelMonitorCLient/EcalBarrel/EBLaserClient/EBLT amplitude L1 SM01" />
+            <monitorable name="AuxCollector/EcalBarrelMonitorClient/EcalBarrel/EBLaserClient/EBLT amplitude L1 SM01" />
          </column>         
          <column>
-            <monitorable name="AuxCollector/EcalBarrelMonitorCLient/EcalBarrel/EBLaserClient/EBLT amplitude over PN L1 SM01" />
+            <monitorable name="AuxCollector/EcalBarrelMonitorClient/EcalBarrel/EBLaserClient/EBLT amplitude over PN L1 SM01" />
          </column>         
       </row>
       <row>
          <column>
-            <monitorable name="AuxCollector/EcalBarrelMonitorCLient/EcalBarrel/EBLaserClient/EBLT timing L1 SM01" />
+            <monitorable name="AuxCollector/EcalBarrelMonitorClient/EcalBarrel/EBLaserClient/EBLT timing L1 SM01" />
          </column>         
          <column>
-            <monitorable name="AuxCollector/EcalBarrelMonitorCLient/EcalBarrel/EBLaserClient/pippo" />
+            <monitorable name="AuxCollector/EcalBarrelMonitorClient/EcalBarrel/EBLaserClient/pippo" />
          </column>         
       </row>
    </layout>
@@ -155,23 +155,23 @@
   <layout name="Laser_client_2">
      <row>
          <column>
-            <monitorable name="AuxCollector/EcalBarrelMonitorCLient/EcalBarrel/EBLaserClient/EBLT laser quality L4 SM01" />
+            <monitorable name="AuxCollector/EcalBarrelMonitorClient/EcalBarrel/EBLaserClient/EBLT laser quality L4 SM01" />
          </column>         
      </row>
       <row>
          <column>
-            <monitorable name="AuxCollector/EcalBarrelMonitorCLient/EcalBarrel/EBLaserClient/EBLT amplitude L4 SM01" />
+            <monitorable name="AuxCollector/EcalBarrelMonitorClient/EcalBarrel/EBLaserClient/EBLT amplitude L4 SM01" />
          </column>         
          <column>
-            <monitorable name="AuxCollector/EcalBarrelMonitorCLient/EcalBarrel/EBLaserClient/EBLT amplitude over PN L4 SM01" />
+            <monitorable name="AuxCollector/EcalBarrelMonitorClient/EcalBarrel/EBLaserClient/EBLT amplitude over PN L4 SM01" />
          </column>         
       </row>
       <row>
          <column>
-            <monitorable name="AuxCollector/EcalBarrelMonitorCLient/EcalBarrel/EBLaserClient/EBLT timing L4 SM01" />
+            <monitorable name="AuxCollector/EcalBarrelMonitorClient/EcalBarrel/EBLaserClient/EBLT timing L4 SM01" />
          </column>         
          <column>
-            <monitorable name="AuxCollector/EcalBarrelMonitorCLient/EcalBarrel/EBLaserClient/pippo" />
+            <monitorable name="AuxCollector/EcalBarrelMonitorClient/EcalBarrel/EBLaserClient/pippo" />
          </column>         
       </row>
    </layout>
@@ -179,18 +179,18 @@
   <layout name="Laser_client_3">
      <row>
          <column>
-            <monitorable name="AuxCollector/EcalBarrelMonitorCLient/Collector/FU0/EcalBarrel/EBPnDiodeTask/Laser1/Gain01/EBPDT PNs pedestal SM01 G01 L1" />
+            <monitorable name="AuxCollector/EcalBarrelMonitorClient/Collector/FU0/EcalBarrel/EBPnDiodeTask/Laser1/Gain01/EBPDT PNs pedestal SM01 G01 L1" />
          </column>         
          <column>
-            <monitorable name="AuxCollector/EcalBarrelMonitorCLient/Collector/FU0/EcalBarrel/EBPnDiodeTask/Laser1/Gain01/EBPDT PNs amplitude SM01 G01 L1" />
+            <monitorable name="AuxCollector/EcalBarrelMonitorClient/Collector/FU0/EcalBarrel/EBPnDiodeTask/Laser1/Gain01/EBPDT PNs amplitude SM01 G01 L1" />
          </column>
       </row>
      <row>
          <column>
-            <monitorable name="AuxCollector/EcalBarrelMonitorCLient/Collector/FU0/EcalBarrel/EBPnDiodeTask/Laser1/Gain16/EBPDT PNs pedestal SM01 G16 L1" />
+            <monitorable name="AuxCollector/EcalBarrelMonitorClient/Collector/FU0/EcalBarrel/EBPnDiodeTask/Laser1/Gain16/EBPDT PNs pedestal SM01 G16 L1" />
          </column>         
          <column>
-            <monitorable name="AuxCollector/EcalBarrelMonitorCLient/Collector/FU0/EcalBarrel/EBPnDiodeTask/Laser1/Gain16/EBPDT PNs amplitude SM01 G16 L1" />
+            <monitorable name="AuxCollector/EcalBarrelMonitorClient/Collector/FU0/EcalBarrel/EBPnDiodeTask/Laser1/Gain16/EBPDT PNs amplitude SM01 G16 L1" />
          </column>
       </row>
    </layout>
@@ -198,18 +198,18 @@
   <layout name="Laser_client_4">
      <row>
          <column>
-            <monitorable name="AuxCollector/EcalBarrelMonitorCLient/Collector/FU0/EcalBarrel/EBPnDiodeTask/Laser4/Gain01/EBPDT PNs pedestal SM01 G01 L4" />
+            <monitorable name="AuxCollector/EcalBarrelMonitorClient/Collector/FU0/EcalBarrel/EBPnDiodeTask/Laser4/Gain01/EBPDT PNs pedestal SM01 G01 L4" />
          </column>         
          <column>
-            <monitorable name="AuxCollector/EcalBarrelMonitorCLient/Collector/FU0/EcalBarrel/EBPnDiodeTask/Laser4/Gain01/EBPDT PNs amplitude SM01 G01 L4" />
+            <monitorable name="AuxCollector/EcalBarrelMonitorClient/Collector/FU0/EcalBarrel/EBPnDiodeTask/Laser4/Gain01/EBPDT PNs amplitude SM01 G01 L4" />
          </column>
       </row>
      <row>
          <column>
-            <monitorable name="AuxCollector/EcalBarrelMonitorCLient/Collector/FU0/EcalBarrel/EBPnDiodeTask/Laser4/Gain16/EBPDT PNs pedestal SM01 G16 L4" />
+            <monitorable name="AuxCollector/EcalBarrelMonitorClient/Collector/FU0/EcalBarrel/EBPnDiodeTask/Laser4/Gain16/EBPDT PNs pedestal SM01 G16 L4" />
          </column>         
          <column>
-            <monitorable name="AuxCollector/EcalBarrelMonitorCLient/Collector/FU0/EcalBarrel/EBPnDiodeTask/Laser4/Gain16/EBPDT PNs amplitude SM01 G16 L4" />
+            <monitorable name="AuxCollector/EcalBarrelMonitorClient/Collector/FU0/EcalBarrel/EBPnDiodeTask/Laser4/Gain16/EBPDT PNs amplitude SM01 G16 L4" />
          </column>
       </row>
    </layout>
@@ -222,15 +222,15 @@
   <layout name="Pedestal_client_1">
      <row>
          <column>
-            <monitorable name="AuxCollector/EcalBarrelMonitorCLient/EcalBarrel/EBPedestalClient/EBPT pedestal quality G01 SM01" />
+            <monitorable name="AuxCollector/EcalBarrelMonitorClient/EcalBarrel/EBPedestalClient/EBPT pedestal quality G01 SM01" />
          </column>         
      </row>
       <row>
          <column>
-            <monitorable name="AuxCollector/EcalBarrelMonitorCLient/EcalBarrel/EBPedestalClient/EBPT pedestal mean G01 SM01" />
+            <monitorable name="AuxCollector/EcalBarrelMonitorClient/EcalBarrel/EBPedestalClient/EBPT pedestal mean G01 SM01" />
          </column>         
          <column>
-            <monitorable name="AuxCollector/EcalBarrelMonitorCLient/EcalBarrel/EBPedestalClient/EBPT pedestal rms G01 SM01" />
+            <monitorable name="AuxCollector/EcalBarrelMonitorClient/EcalBarrel/EBPedestalClient/EBPT pedestal rms G01 SM01" />
          </column>         
       </row>
    </layout>
@@ -238,15 +238,15 @@
   <layout name="Pedestal_client_2">
      <row>
          <column>
-            <monitorable name="AuxCollector/EcalBarrelMonitorCLient/EcalBarrel/EBPedestalClient/EBPT pedestal quality G06 SM01" />
+            <monitorable name="AuxCollector/EcalBarrelMonitorClient/EcalBarrel/EBPedestalClient/EBPT pedestal quality G06 SM01" />
          </column>         
      </row>
       <row>
          <column>
-            <monitorable name="AuxCollector/EcalBarrelMonitorCLient/EcalBarrel/EBPedestalClient/EBPT pedestal mean G06 SM01" />
+            <monitorable name="AuxCollector/EcalBarrelMonitorClient/EcalBarrel/EBPedestalClient/EBPT pedestal mean G06 SM01" />
          </column>         
          <column>
-            <monitorable name="AuxCollector/EcalBarrelMonitorCLient/EcalBarrel/EBPedestalClient/EBPT pedestal rms G06 SM01" />
+            <monitorable name="AuxCollector/EcalBarrelMonitorClient/EcalBarrel/EBPedestalClient/EBPT pedestal rms G06 SM01" />
          </column>         
       </row>
    </layout>
@@ -254,15 +254,15 @@
   <layout name="Pedestal_client_3">
      <row>
          <column>
-            <monitorable name="AuxCollector/EcalBarrelMonitorCLient/EcalBarrel/EBPedestalClient/EBPT pedestal quality G12 SM01" />
+            <monitorable name="AuxCollector/EcalBarrelMonitorClient/EcalBarrel/EBPedestalClient/EBPT pedestal quality G12 SM01" />
          </column>         
      </row>
       <row>
          <column>
-            <monitorable name="AuxCollector/EcalBarrelMonitorCLient/EcalBarrel/EBPedestalClient/EBPT pedestal mean G12 SM01" />
+            <monitorable name="AuxCollector/EcalBarrelMonitorClient/EcalBarrel/EBPedestalClient/EBPT pedestal mean G12 SM01" />
          </column>         
          <column>
-            <monitorable name="AuxCollector/EcalBarrelMonitorCLient/EcalBarrel/EBPedestalClient/EBPT pedestal rms G12 SM01" />
+            <monitorable name="AuxCollector/EcalBarrelMonitorClient/EcalBarrel/EBPedestalClient/EBPT pedestal rms G12 SM01" />
          </column>         
       </row>
    </layout>
@@ -270,12 +270,12 @@
   <layout name="Pedestal_client_4">
      <row>
          <column>
-            <monitorable name="AuxCollector/EcalBarrelMonitorCLient/Collector/FU0/EcalBarrel/EBPedestalTask/Gain01/EBPT pedestal 3sum SM01 G01" />
+            <monitorable name="AuxCollector/EcalBarrelMonitorClient/Collector/FU0/EcalBarrel/EBPedestalTask/Gain01/EBPT pedestal 3sum SM01 G01" />
          </column>         
      </row>
      <row> 
          <column>
-            <monitorable name="AuxCollector/EcalBarrelMonitorCLient/Collector/FU0/EcalBarrel/EBPedestalTask/Gain01/EBPT pedestal 5sum SM01 G01" />
+            <monitorable name="AuxCollector/EcalBarrelMonitorClient/Collector/FU0/EcalBarrel/EBPedestalTask/Gain01/EBPT pedestal 5sum SM01 G01" />
          </column>
       </row>
    </layout>
@@ -283,12 +283,12 @@
   <layout name="Pedestal_client_5">
      <row>
          <column>
-            <monitorable name="AuxCollector/EcalBarrelMonitorCLient/Collector/FU0/EcalBarrel/EBPedestalTask/Gain06/EBPT pedestal 3sum SM01 G06" />
+            <monitorable name="AuxCollector/EcalBarrelMonitorClient/Collector/FU0/EcalBarrel/EBPedestalTask/Gain06/EBPT pedestal 3sum SM01 G06" />
          </column>         
      </row>
      <row> 
          <column>
-            <monitorable name="AuxCollector/EcalBarrelMonitorCLient/Collector/FU0/EcalBarrel/EBPedestalTask/Gain06/EBPT pedestal 5sum SM01 G06" />
+            <monitorable name="AuxCollector/EcalBarrelMonitorClient/Collector/FU0/EcalBarrel/EBPedestalTask/Gain06/EBPT pedestal 5sum SM01 G06" />
          </column>
       </row>
    </layout>
@@ -296,12 +296,12 @@
   <layout name="Pedestal_client_6">
      <row>
          <column>
-            <monitorable name="AuxCollector/EcalBarrelMonitorCLient/Collector/FU0/EcalBarrel/EBPedestalTask/Gain12/EBPT pedestal 3sum SM01 G12" />
+            <monitorable name="AuxCollector/EcalBarrelMonitorClient/Collector/FU0/EcalBarrel/EBPedestalTask/Gain12/EBPT pedestal 3sum SM01 G12" />
          </column>         
      </row>
      <row> 
          <column>
-            <monitorable name="AuxCollector/EcalBarrelMonitorCLient/Collector/FU0/EcalBarrel/EBPedestalTask/Gain12/EBPT pedestal 5sum SM01 G12" />
+            <monitorable name="AuxCollector/EcalBarrelMonitorClient/Collector/FU0/EcalBarrel/EBPedestalTask/Gain12/EBPT pedestal 5sum SM01 G12" />
          </column>
       </row>
    </layout>
@@ -309,12 +309,12 @@
   <layout name="Pedestal_client_7">
      <row>
          <column>
-            <monitorable name="AuxCollector/EcalBarrelMonitorCLient/Collector/FU0/EcalBarrel/EBPnDiodeTask/Gain01/EBPDT PNs pedestal SM01 G01" />
+            <monitorable name="AuxCollector/EcalBarrelMonitorClient/Collector/FU0/EcalBarrel/EBPnDiodeTask/Gain01/EBPDT PNs pedestal SM01 G01" />
          </column>         
      </row>
      <row> 
          <column>
-            <monitorable name="AuxCollector/EcalBarrelMonitorCLient/Collector/FU0/EcalBarrel/EBPnDiodeTask/Gain16/EBPDT PNs pedestal SM01 G16" />
+            <monitorable name="AuxCollector/EcalBarrelMonitorClient/Collector/FU0/EcalBarrel/EBPnDiodeTask/Gain16/EBPDT PNs pedestal SM01 G16" />
          </column>
       </row>
    </layout>
@@ -327,15 +327,15 @@
   <layout name="PedestalOnline_client_1">
      <row>
          <column>
-            <monitorable name="AuxCollector/EcalBarrelMonitorCLient/EcalBarrel/EBPedestalOnlineClient/EBPOT pedestal quality G12 SM01" />
+            <monitorable name="AuxCollector/EcalBarrelMonitorClient/EcalBarrel/EBPedestalOnlineClient/EBPOT pedestal quality G12 SM01" />
          </column>         
      </row>
       <row>
          <column>
-            <monitorable name="AuxCollector/EcalBarrelMonitorCLient/EcalBarrel/EBPedestalOnlineClient/EBPOT pedestal mean G12 SM01" />
+            <monitorable name="AuxCollector/EcalBarrelMonitorClient/EcalBarrel/EBPedestalOnlineClient/EBPOT pedestal mean G12 SM01" />
          </column>         
          <column>
-            <monitorable name="AuxCollector/EcalBarrelMonitorCLient/EcalBarrel/EBPedestalOnlineClient/EBPOT pedestal rms G12 SM01" />
+            <monitorable name="AuxCollector/EcalBarrelMonitorClient/EcalBarrel/EBPedestalOnlineClient/EBPOT pedestal rms G12 SM01" />
          </column>         
       </row>
    </layout>
@@ -348,15 +348,15 @@
   <layout name="TestPulse_client_1">
      <row>
          <column>
-            <monitorable name="AuxCollector/EcalBarrelMonitorCLient/EcalBarrel/EBTestPulseClient/EBTPT test pulse quality G01 SM01" />
+            <monitorable name="AuxCollector/EcalBarrelMonitorClient/EcalBarrel/EBTestPulseClient/EBTPT test pulse quality G01 SM01" />
          </column>         
      </row>
       <row>
          <column>
-            <monitorable name="AuxCollector/EcalBarrelMonitorCLient/EcalBarrel/EBTestPulseClient/EBTPT test pulse amplitude G01 SM01" />
+            <monitorable name="AuxCollector/EcalBarrelMonitorClient/EcalBarrel/EBTestPulseClient/EBTPT test pulse amplitude G01 SM01" />
          </column>         
          <column>
-            <monitorable name="AuxCollector/EcalBarrelMonitorCLient/Collector/FU0/EcalBarrel/EBTestPulseTask/Gain01/EBTPT shape SM01 G01" />
+            <monitorable name="AuxCollector/EcalBarrelMonitorClient/Collector/FU0/EcalBarrel/EBTestPulseTask/Gain01/EBTPT shape SM01 G01" />
          </column>         
       </row>
    </layout>
@@ -364,15 +364,15 @@
   <layout name="TestPulse_client_2">
      <row>
          <column>
-            <monitorable name="AuxCollector/EcalBarrelMonitorCLient/EcalBarrel/EBTestPulseClient/EBTPT test pulse quality G06 SM01" />
+            <monitorable name="AuxCollector/EcalBarrelMonitorClient/EcalBarrel/EBTestPulseClient/EBTPT test pulse quality G06 SM01" />
          </column>         
      </row>
       <row>
          <column>
-            <monitorable name="AuxCollector/EcalBarrelMonitorCLient/EcalBarrel/EBTestPulseClient/EBTPT test pulse amplitude G06 SM01" />
+            <monitorable name="AuxCollector/EcalBarrelMonitorClient/EcalBarrel/EBTestPulseClient/EBTPT test pulse amplitude G06 SM01" />
          </column>         
          <column>
-            <monitorable name="AuxCollector/EcalBarrelMonitorCLient/Collector/FU0/EcalBarrel/EBTestPulseTask/Gain06/EBTPT shape SM01 G06" />
+            <monitorable name="AuxCollector/EcalBarrelMonitorClient/Collector/FU0/EcalBarrel/EBTestPulseTask/Gain06/EBTPT shape SM01 G06" />
          </column>         
       </row>
    </layout>
@@ -380,15 +380,15 @@
   <layout name="TestPulse_client_3">
      <row>
          <column>
-            <monitorable name="AuxCollector/EcalBarrelMonitorCLient/EcalBarrel/EBTestPulseClient/EBTPT test pulse quality G12 SM01" />
+            <monitorable name="AuxCollector/EcalBarrelMonitorClient/EcalBarrel/EBTestPulseClient/EBTPT test pulse quality G12 SM01" />
          </column>         
      </row>
       <row>
          <column>
-            <monitorable name="AuxCollector/EcalBarrelMonitorCLient/EcalBarrel/EBTestPulseClient/EBTPT test pulse amplitude G12 SM01" />
+            <monitorable name="AuxCollector/EcalBarrelMonitorClient/EcalBarrel/EBTestPulseClient/EBTPT test pulse amplitude G12 SM01" />
          </column>         
          <column>
-            <monitorable name="AuxCollector/EcalBarrelMonitorCLient/Collector/FU0/EcalBarrel/EBTestPulseTask/Gain12/EBTPT shape SM01 G12" />
+            <monitorable name="AuxCollector/EcalBarrelMonitorClient/Collector/FU0/EcalBarrel/EBTestPulseTask/Gain12/EBTPT shape SM01 G12" />
          </column>         
       </row>
    </layout>
@@ -396,18 +396,18 @@
   <layout name="TestPulse_client_4">
      <row>
          <column>
-            <monitorable name="AuxCollector/EcalBarrelMonitorCLient/Collector/FU0/EcalBarrel/EBPnDiodeTask/Gain01/EBPDT PNs pedestal SM01 G01" />
+            <monitorable name="AuxCollector/EcalBarrelMonitorClient/Collector/FU0/EcalBarrel/EBPnDiodeTask/Gain01/EBPDT PNs pedestal SM01 G01" />
          </column>         
          <column>
-            <monitorable name="AuxCollector/EcalBarrelMonitorCLient/Collector/FU0/EcalBarrel/EBPnDiodeTask/Gain01/EBPDT PNs amplitude SM01 G01" />
+            <monitorable name="AuxCollector/EcalBarrelMonitorClient/Collector/FU0/EcalBarrel/EBPnDiodeTask/Gain01/EBPDT PNs amplitude SM01 G01" />
          </column>
       </row>
      <row>
          <column>
-            <monitorable name="AuxCollector/EcalBarrelMonitorCLient/Collector/FU0/EcalBarrel/EBPnDiodeTask/Gain16/EBPDT PNs pedestal SM01 G16" />
+            <monitorable name="AuxCollector/EcalBarrelMonitorClient/Collector/FU0/EcalBarrel/EBPnDiodeTask/Gain16/EBPDT PNs pedestal SM01 G16" />
          </column>         
          <column>
-            <monitorable name="AuxCollector/EcalBarrelMonitorCLient/Collector/FU0/EcalBarrel/EBPnDiodeTask/Gain16/EBPDT PNs amplitude SM01 G16" />
+            <monitorable name="AuxCollector/EcalBarrelMonitorClient/Collector/FU0/EcalBarrel/EBPnDiodeTask/Gain16/EBPDT PNs amplitude SM01 G16" />
          </column>
       </row>
    </layout>
@@ -420,18 +420,18 @@
   <layout name="BeamHodo_client_1">
      <row>
          <column>
-            <monitorable name="AuxCollector/EcalBarrelMonitorCLient/Collector/FU0/EcalBarrel/EBBeamHodoTask/EBBHT occup SM01 01" />
+            <monitorable name="AuxCollector/EcalBarrelMonitorClient/Collector/FU0/EcalBarrel/EBBeamHodoTask/EBBHT occup SM01 01" />
          </column>         
          <column>
-            <monitorable name="AuxCollector/EcalBarrelMonitorCLient/Collector/FU0/EcalBarrel/EBBeamHodoTask/EBBHT raw SM01 01" />
+            <monitorable name="AuxCollector/EcalBarrelMonitorClient/Collector/FU0/EcalBarrel/EBBeamHodoTask/EBBHT raw SM01 01" />
          </column>
       </row>
      <row>
          <column>
-            <monitorable name="AuxCollector/EcalBarrelMonitorCLient/Collector/FU0/EcalBarrel/EBBeamHodoTask/EBBHT occup SM01 02" />
+            <monitorable name="AuxCollector/EcalBarrelMonitorClient/Collector/FU0/EcalBarrel/EBBeamHodoTask/EBBHT occup SM01 02" />
          </column>         
          <column>
-            <monitorable name="AuxCollector/EcalBarrelMonitorCLient/Collector/FU0/EcalBarrel/EBBeamHodoTask/EBBHT raw SM01 02" />
+            <monitorable name="AuxCollector/EcalBarrelMonitorClient/Collector/FU0/EcalBarrel/EBBeamHodoTask/EBBHT raw SM01 02" />
          </column>
       </row>
   </layout>
@@ -439,18 +439,18 @@
   <layout name="BeamHodo_client_2">
      <row>
          <column>
-            <monitorable name="AuxCollector/EcalBarrelMonitorCLient/Collector/FU0/EcalBarrel/EBBeamHodoTask/EBBHT occup SM01 03" />
+            <monitorable name="AuxCollector/EcalBarrelMonitorClient/Collector/FU0/EcalBarrel/EBBeamHodoTask/EBBHT occup SM01 03" />
          </column>         
          <column>
-            <monitorable name="AuxCollector/EcalBarrelMonitorCLient/Collector/FU0/EcalBarrel/EBBeamHodoTask/EBBHT raw SM01 03" />
+            <monitorable name="AuxCollector/EcalBarrelMonitorClient/Collector/FU0/EcalBarrel/EBBeamHodoTask/EBBHT raw SM01 03" />
          </column>
       </row>
      <row>
          <column>
-            <monitorable name="AuxCollector/EcalBarrelMonitorCLient/Collector/FU0/EcalBarrel/EBBeamHodoTask/EBBHT occup SM01 04" />
+            <monitorable name="AuxCollector/EcalBarrelMonitorClient/Collector/FU0/EcalBarrel/EBBeamHodoTask/EBBHT occup SM01 04" />
          </column>         
          <column>
-            <monitorable name="AuxCollector/EcalBarrelMonitorCLient/Collector/FU0/EcalBarrel/EBBeamHodoTask/EBBHT raw SM01 04" />
+            <monitorable name="AuxCollector/EcalBarrelMonitorClient/Collector/FU0/EcalBarrel/EBBeamHodoTask/EBBHT raw SM01 04" />
          </column>
       </row>
   </layout>
@@ -458,18 +458,18 @@
   <layout name="BeamHodo_client_3">
      <row>
          <column>
-            <monitorable name="AuxCollector/EcalBarrelMonitorCLient/Collector/FU0/EcalBarrel/EBBeamHodoTask/EBBHT PosX rec SM01" />
+            <monitorable name="AuxCollector/EcalBarrelMonitorClient/Collector/FU0/EcalBarrel/EBBeamHodoTask/EBBHT PosX rec SM01" />
          </column>         
          <column>
-            <monitorable name="AuxCollector/EcalBarrelMonitorCLient/Collector/FU0/EcalBarrel/EBBeamHodoTask/EBBHT PosY rec SM01" />
+            <monitorable name="AuxCollector/EcalBarrelMonitorClient/Collector/FU0/EcalBarrel/EBBeamHodoTask/EBBHT PosY rec SM01" />
          </column>
       </row>
      <row>
          <column>
-            <monitorable name="AuxCollector/EcalBarrelMonitorCLient/Collector/FU0/EcalBarrel/EBBeamHodoTask/EBBHT PosYX rec SM01" />
+            <monitorable name="AuxCollector/EcalBarrelMonitorClient/Collector/FU0/EcalBarrel/EBBeamHodoTask/EBBHT PosYX rec SM01" />
          </column>         
          <column>
-            <monitorable name="AuxCollector/EcalBarrelMonitorCLient/Collector/FU0/EcalBarrel/EBBeamHodoTask/pippo" />
+            <monitorable name="AuxCollector/EcalBarrelMonitorClient/Collector/FU0/EcalBarrel/EBBeamHodoTask/pippo" />
          </column>
       </row>
   </layout>
@@ -477,18 +477,18 @@
   <layout name="BeamHodo_client_4">
      <row>
          <column>
-            <monitorable name="AuxCollector/EcalBarrelMonitorCLient/Collector/FU0/EcalBarrel/EBBeamHodoTask/EBBHT SloX SM01" />
+            <monitorable name="AuxCollector/EcalBarrelMonitorClient/Collector/FU0/EcalBarrel/EBBeamHodoTask/EBBHT SloX SM01" />
          </column>         
          <column>
-            <monitorable name="AuxCollector/EcalBarrelMonitorCLient/Collector/FU0/EcalBarrel/EBBeamHodoTask/EBBHT SloY SM01" />
+            <monitorable name="AuxCollector/EcalBarrelMonitorClient/Collector/FU0/EcalBarrel/EBBeamHodoTask/EBBHT SloY SM01" />
          </column>
       </row>
      <row>
          <column>
-            <monitorable name="AuxCollector/EcalBarrelMonitorCLient/Collector/FU0/EcalBarrel/EBBeamHodoTask/EBBHT QualX SM01" />
+            <monitorable name="AuxCollector/EcalBarrelMonitorClient/Collector/FU0/EcalBarrel/EBBeamHodoTask/EBBHT QualX SM01" />
          </column>         
          <column>
-            <monitorable name="AuxCollector/EcalBarrelMonitorCLient/Collector/FU0/EcalBarrel/EBBeamHodoTask/EBBHT QualY SM01" />
+            <monitorable name="AuxCollector/EcalBarrelMonitorClient/Collector/FU0/EcalBarrel/EBBeamHodoTask/EBBHT QualY SM01" />
          </column>
       </row>
   </layout>
@@ -496,24 +496,24 @@
   <layout name="BeamHodo_client_5">
      <row>
          <column>
-            <monitorable name="AuxCollector/EcalBarrelMonitorCLient/Collector/FU0/EcalBarrel/EBBeamHodoTask/EBBHT Hodo-Calo X vs Cry SM01" />
+            <monitorable name="AuxCollector/EcalBarrelMonitorClient/Collector/FU0/EcalBarrel/EBBeamHodoTask/EBBHT Hodo-Calo X vs Cry SM01" />
          </column>         
          <column>
-            <monitorable name="AuxCollector/EcalBarrelMonitorCLient/Collector/FU0/EcalBarrel/EBBeamHodoTask/EBBHT Hodo-Calo Y vs Cry SM01" />
+            <monitorable name="AuxCollector/EcalBarrelMonitorClient/Collector/FU0/EcalBarrel/EBBeamHodoTask/EBBHT Hodo-Calo Y vs Cry SM01" />
          </column>
          <column>
-            <monitorable name="AuxCollector/EcalBarrelMonitorCLient/Collector/FU0/EcalBarrel/EBBeamHodoTask/EBBHT TDC-Calo vs Cry SM01" />
+            <monitorable name="AuxCollector/EcalBarrelMonitorClient/Collector/FU0/EcalBarrel/EBBeamHodoTask/EBBHT TDC-Calo vs Cry SM01" />
          </column>         
       </row>
      <row>
          <column>
-            <monitorable name="AuxCollector/EcalBarrelMonitorCLient/Collector/FU0/EcalBarrel/EBBeamHodoTask/EBBHT PosX Hodo-Calo SM01" />
+            <monitorable name="AuxCollector/EcalBarrelMonitorClient/Collector/FU0/EcalBarrel/EBBeamHodoTask/EBBHT PosX Hodo-Calo SM01" />
          </column>
          <column>
-            <monitorable name="AuxCollector/EcalBarrelMonitorCLient/Collector/FU0/EcalBarrel/EBBeamHodoTask/EBBHT PosY Hodo-Calo SM01" />
+            <monitorable name="AuxCollector/EcalBarrelMonitorClient/Collector/FU0/EcalBarrel/EBBeamHodoTask/EBBHT PosY Hodo-Calo SM01" />
          </column>
          <column>
-            <monitorable name="AuxCollector/EcalBarrelMonitorCLient/Collector/FU0/EcalBarrel/EBBeamHodoTask/EBBHT TimeMax TDC-Calo SM01" />
+            <monitorable name="AuxCollector/EcalBarrelMonitorClient/Collector/FU0/EcalBarrel/EBBeamHodoTask/EBBHT TimeMax TDC-Calo SM01" />
          </column>
       </row>
   </layout>
@@ -521,18 +521,18 @@
   <layout name="BeamHodo_client_6">
      <row>
          <column>
-            <monitorable name="AuxCollector/EcalBarrelMonitorCLient/Collector/FU0/EcalBarrel/EBBeamHodoTask/EBBHT prof E1 vs X SM01" />
+            <monitorable name="AuxCollector/EcalBarrelMonitorClient/Collector/FU0/EcalBarrel/EBBeamHodoTask/EBBHT prof E1 vs X SM01" />
          </column>         
          <column>
-            <monitorable name="AuxCollector/EcalBarrelMonitorCLient/Collector/FU0/EcalBarrel/EBBeamHodoTask/EBBHT his E1 vs X SM01" />
+            <monitorable name="AuxCollector/EcalBarrelMonitorClient/Collector/FU0/EcalBarrel/EBBeamHodoTask/EBBHT his E1 vs X SM01" />
          </column>
       </row>
      <row>
          <column>
-            <monitorable name="AuxCollector/EcalBarrelMonitorCLient/Collector/FU0/EcalBarrel/EBBeamHodoTask/EBBHT prof E1 vs Y SM01" />
+            <monitorable name="AuxCollector/EcalBarrelMonitorClient/Collector/FU0/EcalBarrel/EBBeamHodoTask/EBBHT prof E1 vs Y SM01" />
          </column>         
          <column>
-            <monitorable name="AuxCollector/EcalBarrelMonitorCLient/Collector/FU0/EcalBarrel/EBBeamHodoTask/EBBHT his E1 vs Y SM01" />
+            <monitorable name="AuxCollector/EcalBarrelMonitorClient/Collector/FU0/EcalBarrel/EBBeamHodoTask/EBBHT his E1 vs Y SM01" />
          </column>
       </row>
   </layout>
@@ -544,15 +544,15 @@
   <layout name="BeamCalo_client_1">
      <row>
          <column>
-            <monitorable name="AuxCollector/EcalBarrelMonitorCLient/EcalBarrel/EBBeamCaloClient/EBBCT quality" />
+            <monitorable name="AuxCollector/EcalBarrelMonitorClient/EcalBarrel/EBBeamCaloClient/EBBCT quality" />
          </column>
      </row>
      <row>         
          <column>
-            <monitorable name="AuxCollector/EcalBarrelMonitorCLient/EcalBarrel/EBBeamCaloClient/EBBCT quality read crystal errors" />
+            <monitorable name="AuxCollector/EcalBarrelMonitorClient/EcalBarrel/EBBeamCaloClient/EBBCT quality read crystal errors" />
          </column>
          <column>
-            <monitorable name="AuxCollector/EcalBarrelMonitorCLient/EcalBarrel/EBBeamCaloClient/pippo" />
+            <monitorable name="AuxCollector/EcalBarrelMonitorClient/EcalBarrel/EBBeamCaloClient/pippo" />
          </column>
       </row>
   </layout>
@@ -560,18 +560,18 @@
   <layout name="BeamCalo_client_2">
      <row>
          <column>
-            <monitorable name="AuxCollector/EcalBarrelMonitorCLient/EcalBarrel/EBBeamCaloClient/EBBCT quality entries or read crystals errors" />
+            <monitorable name="AuxCollector/EcalBarrelMonitorClient/EcalBarrel/EBBeamCaloClient/EBBCT quality entries or read crystals errors" />
          </column>
      </row>
      <row>
          <column>
-            <monitorable name="AuxCollector/EcalBarrelMonitorCLient/Collector/FU0/EcalBarrel/EBBeamCaloTask/EBBCT readout crystals number" />
+            <monitorable name="AuxCollector/EcalBarrelMonitorClient/Collector/FU0/EcalBarrel/EBBeamCaloTask/EBBCT readout crystals number" />
          </column>
          <column>
-            <monitorable name="AuxCollector/EcalBarrelMonitorCLient/Collector/FU0/EcalBarrel/EBBeamCaloTask/EBBCT readout crystals errors" />
+            <monitorable name="AuxCollector/EcalBarrelMonitorClient/Collector/FU0/EcalBarrel/EBBeamCaloTask/EBBCT readout crystals errors" />
          </column>
          <column>
-            <monitorable name="AuxCollector/EcalBarrelMonitorCLient/Collector/FU0/EcalBarrel/EBBeamCaloTask/pippo" />
+            <monitorable name="AuxCollector/EcalBarrelMonitorClient/Collector/FU0/EcalBarrel/EBBeamCaloTask/pippo" />
          </column>
      </row>
   </layout>
@@ -579,12 +579,12 @@
   <layout name="BeamCalo_client_3">
       <row>   
          <column>
-            <monitorable name="AuxCollector/EcalBarrelMonitorCLient/Collector/FU0/EcalBarrel/EBBeamCaloTask/EBBCT crystal on beam" />
+            <monitorable name="AuxCollector/EcalBarrelMonitorClient/Collector/FU0/EcalBarrel/EBBeamCaloTask/EBBCT crystal on beam" />
          </column>
       </row>
       <row>
          <column>
-            <monitorable name="AuxCollector/EcalBarrelMonitorCLient/Collector/FU0/EcalBarrel/EBBeamCaloTask/EBBCT crystal with maximum rec energy" />
+            <monitorable name="AuxCollector/EcalBarrelMonitorClient/Collector/FU0/EcalBarrel/EBBeamCaloTask/EBBCT crystal with maximum rec energy" />
          </column>
       </row>
   </layout>
@@ -592,18 +592,18 @@
   <layout name="BeamCalo_client_4">
       <row>   
          <column>
-            <monitorable name="AuxCollector/EcalBarrelMonitorCLient/Collector/FU0/EcalBarrel/EBBeamCaloTask/EBBCT rec energy cry 5" />
+            <monitorable name="AuxCollector/EcalBarrelMonitorClient/Collector/FU0/EcalBarrel/EBBeamCaloTask/EBBCT rec energy cry 5" />
          </column>
          <column>
-            <monitorable name="AuxCollector/EcalBarrelMonitorCLient/Collector/FU0/EcalBarrel/EBBeamCaloTask/EBBCT rec Ene sum 3x3" />
+            <monitorable name="AuxCollector/EcalBarrelMonitorClient/Collector/FU0/EcalBarrel/EBBeamCaloTask/EBBCT rec Ene sum 3x3" />
          </column>
       </row>
       <row>   
          <column>
-            <monitorable name="AuxCollector/EcalBarrelMonitorCLient/Collector/FU0/EcalBarrel/EBBeamCaloTask/EBBCT energy deposition in the 3x3" />
+            <monitorable name="AuxCollector/EcalBarrelMonitorClient/Collector/FU0/EcalBarrel/EBBeamCaloTask/EBBCT energy deposition in the 3x3" />
          </column>
          <column>
-            <monitorable name="AuxCollector/EcalBarrelMonitorCLient/Collector/FU0/EcalBarrel/EBBeamCaloTask/pippo" />
+            <monitorable name="AuxCollector/EcalBarrelMonitorClient/Collector/FU0/EcalBarrel/EBBeamCaloTask/pippo" />
          </column>
       </row>
   </layout>
@@ -611,35 +611,35 @@
   <layout name="BeamCalo_client_5">
       <row>   
          <column>
-            <monitorable name="AuxCollector/EcalBarrelMonitorCLient/Collector/FU0/EcalBarrel/EBBeamCaloTask/EBBCT pulse profile in G12 cry 1" />
+            <monitorable name="AuxCollector/EcalBarrelMonitorClient/Collector/FU0/EcalBarrel/EBBeamCaloTask/EBBCT pulse profile in G12 cry 1" />
          </column>
          <column>
-            <monitorable name="AuxCollector/EcalBarrelMonitorCLient/Collector/FU0/EcalBarrel/EBBeamCaloTask/EBBCT pulse profile in G12 cry 2" />
+            <monitorable name="AuxCollector/EcalBarrelMonitorClient/Collector/FU0/EcalBarrel/EBBeamCaloTask/EBBCT pulse profile in G12 cry 2" />
          </column>
          <column>
-            <monitorable name="AuxCollector/EcalBarrelMonitorCLient/Collector/FU0/EcalBarrel/EBBeamCaloTask/EBBCT pulse profile in G12 cry 3" />
-         </column>
-      </row>
-      <row>   
-         <column>
-            <monitorable name="AuxCollector/EcalBarrelMonitorCLient/Collector/FU0/EcalBarrel/EBBeamCaloTask/EBBCT pulse profile in G12 cry 4" />
-         </column>
-         <column>
-            <monitorable name="AuxCollector/EcalBarrelMonitorCLient/Collector/FU0/EcalBarrel/EBBeamCaloTask/EBBCT pulse profile in G12 cry 5" />
-         </column>
-         <column>
-            <monitorable name="AuxCollector/EcalBarrelMonitorCLient/Collector/FU0/EcalBarrel/EBBeamCaloTask/EBBCT pulse profile in G12 cry 6" />
+            <monitorable name="AuxCollector/EcalBarrelMonitorClient/Collector/FU0/EcalBarrel/EBBeamCaloTask/EBBCT pulse profile in G12 cry 3" />
          </column>
       </row>
       <row>   
          <column>
-            <monitorable name="AuxCollector/EcalBarrelMonitorCLient/Collector/FU0/EcalBarrel/EBBeamCaloTask/EBBCT pulse profile in G12 cry 7" />
+            <monitorable name="AuxCollector/EcalBarrelMonitorClient/Collector/FU0/EcalBarrel/EBBeamCaloTask/EBBCT pulse profile in G12 cry 4" />
          </column>
          <column>
-            <monitorable name="AuxCollector/EcalBarrelMonitorCLient/Collector/FU0/EcalBarrel/EBBeamCaloTask/EBBCT pulse profile in G12 cry 8" />
+            <monitorable name="AuxCollector/EcalBarrelMonitorClient/Collector/FU0/EcalBarrel/EBBeamCaloTask/EBBCT pulse profile in G12 cry 5" />
          </column>
          <column>
-            <monitorable name="AuxCollector/EcalBarrelMonitorCLient/Collector/FU0/EcalBarrel/EBBeamCaloTask/EBBCT pulse profile in G12 cry 9" />
+            <monitorable name="AuxCollector/EcalBarrelMonitorClient/Collector/FU0/EcalBarrel/EBBeamCaloTask/EBBCT pulse profile in G12 cry 6" />
+         </column>
+      </row>
+      <row>   
+         <column>
+            <monitorable name="AuxCollector/EcalBarrelMonitorClient/Collector/FU0/EcalBarrel/EBBeamCaloTask/EBBCT pulse profile in G12 cry 7" />
+         </column>
+         <column>
+            <monitorable name="AuxCollector/EcalBarrelMonitorClient/Collector/FU0/EcalBarrel/EBBeamCaloTask/EBBCT pulse profile in G12 cry 8" />
+         </column>
+         <column>
+            <monitorable name="AuxCollector/EcalBarrelMonitorClient/Collector/FU0/EcalBarrel/EBBeamCaloTask/EBBCT pulse profile in G12 cry 9" />
          </column>
       </row>
   </layout>
@@ -647,35 +647,35 @@
   <layout name="BeamCalo_client_6">
       <row>   
          <column>
-            <monitorable name="AuxCollector/EcalBarrelMonitorCLient/Collector/FU0/EcalBarrel/EBBeamCaloTask/EBBCT found gains cry 1" />
+            <monitorable name="AuxCollector/EcalBarrelMonitorClient/Collector/FU0/EcalBarrel/EBBeamCaloTask/EBBCT found gains cry 1" />
          </column>
          <column>
-            <monitorable name="AuxCollector/EcalBarrelMonitorCLient/Collector/FU0/EcalBarrel/EBBeamCaloTask/EBBCT found gains cry 2" />
+            <monitorable name="AuxCollector/EcalBarrelMonitorClient/Collector/FU0/EcalBarrel/EBBeamCaloTask/EBBCT found gains cry 2" />
          </column>
          <column>
-            <monitorable name="AuxCollector/EcalBarrelMonitorCLient/Collector/FU0/EcalBarrel/EBBeamCaloTask/EBBCT found gains cry 3" />
-         </column>
-      </row>
-      <row>   
-         <column>
-            <monitorable name="AuxCollector/EcalBarrelMonitorCLient/Collector/FU0/EcalBarrel/EBBeamCaloTask/EBBCT found gains cry 4" />
-         </column>
-         <column>
-            <monitorable name="AuxCollector/EcalBarrelMonitorCLient/Collector/FU0/EcalBarrel/EBBeamCaloTask/EBBCT found gains cry 5" />
-         </column>
-         <column>
-            <monitorable name="AuxCollector/EcalBarrelMonitorCLient/Collector/FU0/EcalBarrel/EBBeamCaloTask/EBBCT found gains cry 6" />
+            <monitorable name="AuxCollector/EcalBarrelMonitorClient/Collector/FU0/EcalBarrel/EBBeamCaloTask/EBBCT found gains cry 3" />
          </column>
       </row>
       <row>   
          <column>
-            <monitorable name="AuxCollector/EcalBarrelMonitorCLient/Collector/FU0/EcalBarrel/EBBeamCaloTask/EBBCT found gains cry 7" />
+            <monitorable name="AuxCollector/EcalBarrelMonitorClient/Collector/FU0/EcalBarrel/EBBeamCaloTask/EBBCT found gains cry 4" />
          </column>
          <column>
-            <monitorable name="AuxCollector/EcalBarrelMonitorCLient/Collector/FU0/EcalBarrel/EBBeamCaloTask/EBBCT found gains cry 8" />
+            <monitorable name="AuxCollector/EcalBarrelMonitorClient/Collector/FU0/EcalBarrel/EBBeamCaloTask/EBBCT found gains cry 5" />
          </column>
          <column>
-            <monitorable name="AuxCollector/EcalBarrelMonitorCLient/Collector/FU0/EcalBarrel/EBBeamCaloTask/EBBCT found gains cry 9" />
+            <monitorable name="AuxCollector/EcalBarrelMonitorClient/Collector/FU0/EcalBarrel/EBBeamCaloTask/EBBCT found gains cry 6" />
+         </column>
+      </row>
+      <row>   
+         <column>
+            <monitorable name="AuxCollector/EcalBarrelMonitorClient/Collector/FU0/EcalBarrel/EBBeamCaloTask/EBBCT found gains cry 7" />
+         </column>
+         <column>
+            <monitorable name="AuxCollector/EcalBarrelMonitorClient/Collector/FU0/EcalBarrel/EBBeamCaloTask/EBBCT found gains cry 8" />
+         </column>
+         <column>
+            <monitorable name="AuxCollector/EcalBarrelMonitorClient/Collector/FU0/EcalBarrel/EBBeamCaloTask/EBBCT found gains cry 9" />
          </column>
       </row>
   </layout>
@@ -683,18 +683,18 @@
   <layout name="BeamCalo_client_7">
       <row>   
          <column>
-            <monitorable name="AuxCollector/EcalBarrelMonitorCLient/Collector/FU0/EcalBarrel/EBBeamCaloTask/EBBCT crystals done" />
+            <monitorable name="AuxCollector/EcalBarrelMonitorClient/Collector/FU0/EcalBarrel/EBBeamCaloTask/EBBCT crystals done" />
          </column>
          <column>
-            <monitorable name="AuxCollector/EcalBarrelMonitorCLient/Collector/FU0/EcalBarrel/EBBeamCaloTask/EBBCT number of entries" />
+            <monitorable name="AuxCollector/EcalBarrelMonitorClient/Collector/FU0/EcalBarrel/EBBeamCaloTask/EBBCT number of entries" />
          </column>
       </row>
       <row>   
          <column>
-            <monitorable name="AuxCollector/EcalBarrelMonitorCLient/Collector/FU0/EcalBarrel/EBBeamCaloTask/EBBCT average rec energy in the single crystal" />
+            <monitorable name="AuxCollector/EcalBarrelMonitorClient/Collector/FU0/EcalBarrel/EBBeamCaloTask/EBBCT average rec energy in the single crystal" />
          </column>
          <column>
-            <monitorable name="AuxCollector/EcalBarrelMonitorCLient/Collector/FU0/EcalBarrel/EBBeamCaloTask/EBBCT average rec energy in the 3x3 array" />
+            <monitorable name="AuxCollector/EcalBarrelMonitorClient/Collector/FU0/EcalBarrel/EBBeamCaloTask/EBBCT average rec energy in the 3x3 array" />
          </column>
       </row>
   </layout>
@@ -702,12 +702,12 @@
   <layout name="BeamCalo_client_8">
       <row>   
          <column>
-            <monitorable name="AuxCollector/EcalBarrelMonitorCLient/Collector/FU0/EcalBarrel/EBBeamCaloTask/EBBCT crystal in beam vs event" />
+            <monitorable name="AuxCollector/EcalBarrelMonitorClient/Collector/FU0/EcalBarrel/EBBeamCaloTask/EBBCT crystal in beam vs event" />
          </column>
       </row>
       <row>
          <column>
-            <monitorable name="AuxCollector/EcalBarrelMonitorCLient/Collector/FU0/EcalBarrel/EBBeamCaloTask/EBBCT table is moving" />
+            <monitorable name="AuxCollector/EcalBarrelMonitorClient/Collector/FU0/EcalBarrel/EBBeamCaloTask/EBBCT table is moving" />
          </column>
       </row>
   </layout>
