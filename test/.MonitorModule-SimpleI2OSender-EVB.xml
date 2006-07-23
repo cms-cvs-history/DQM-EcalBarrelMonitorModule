@@ -54,7 +54,7 @@
         	                                                              }
                                    module ecalMonitorModule = EcalBarrelMonitorModule{ untracked bool enableMonitorDaemon = true
         	                                                                       untracked bool verbose = true
-        	                                                                       untracked int32 runNumber = 000006100
+        	                                                                       untracked int32 runNumber = 6100
                                                                                      }
                                    module ecalOccupancyTask = EBOccupancyTask{ }
                                    module ecalIntegrityTask = EBIntegrityTask{ }
