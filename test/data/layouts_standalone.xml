@@ -469,7 +469,7 @@
             <monitorable name="EcalBarrelMonitorClient/EcalBarrel/EBBeamHodoTask/EBBHT PosYX rec SM01" />
          </column>         
          <column>
-            <monitorable name="EcalBarrelMonitorClient/EcalBarrel/EBBeamHodoTask/EBBHT Missing Collections SM01" />
+            <monitorable name="EcalBarrelMonitorClient/EcalBarrel/EBBeamHodoTask/pippo" />
          </column>
       </row>
   </layout>
@@ -537,9 +537,18 @@
       </row>
   </layout>
 
+  <layout name="BeamHodo_client_7">
+     <row>
+         <column>
+            <monitorable name="EcalBarrelMonitorClient/EcalBarrel/EBBeamHodoTask/EBBHT Missing Collections SM01" />
+         </column>
+      </row>
+  </layout>
+
 
   <layout name="------ BEAM CALO ------">
   </layout>
+
 
   <layout name="BeamCalo_client_1">
      <row>
