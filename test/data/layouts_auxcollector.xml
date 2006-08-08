@@ -561,7 +561,7 @@
             <monitorable name="AuxCollector/EcalBarrelMonitorClient/EcalBarrel/EBBeamCaloClient/EBBCT quality read crystal errors" />
          </column>
          <column>
-            <monitorable name="AuxCollector/EcalBarrelMonitorClient/EcalBarrel/EBBeamCaloClient/EBBCT Desynchronization vs step" />
+            <monitorable name="AuxCollector/EcalBarrelMonitorClient/Collector/FU0/EcalBarrel/EBBeamCaloTask/EBBCT Desynchronization vs step" />
          </column>
       </row>
   </layout>
