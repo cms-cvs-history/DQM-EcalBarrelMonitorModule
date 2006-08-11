@@ -36,6 +36,9 @@
       <properties xmlns="urn:xdaq-application:FUEventProcessor" xsi:type="soapenc:Struct">
         <collectorAddr xsi:type="xsd:string">localhost</collectorAddr>
         <collectorPort xsi:type="xsd:integer">9090</collectorPort>
+        <collSendUs xsi:type="xsd:integer">5000</collSendUs>
+        <collReconnSec xsi:type="xsd:integer">5</collReconnSec>
+        <monSourceName xsi:type="xsd:string">FU0</monSourceName>
         <parameterSet xsi:type="xsd:string">
                process MONITOR = { module ecalEBunpacker = EcalDCCUnpackingModule{ }
                                    module ecalUncalibHitMaker = EcalWeightUncalibRecHitProducer{ string digiProducer   = "ecalEBunpacker"
