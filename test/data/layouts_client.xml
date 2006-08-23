@@ -580,7 +580,7 @@
             <monitorable name="EcalBarrelMonitorClient/Collector/FU0/EcalBarrel/EBBeamCaloTask/EBBCT readout crystals errors" />
          </column>
          <column>
-            <monitorable name="EcalBarrelMonitorClient/Collector/FU0/EcalBarrel/EBBeamCaloTask/pippo" />
+            <monitorable name="EcalBarrelMonitorClient/EcalBarrel/EBBeamCaloTask/EBBCT E1 in the max cry" />
          </column>
      </row>
   </layout>
