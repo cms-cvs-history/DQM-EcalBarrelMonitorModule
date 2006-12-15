@@ -104,7 +104,9 @@ void SimpleI2OSender::sendMessage(xgi::Input * in, xgi::Output * out ) throw (xg
 
 	try
 	{
- 	      destinationDescriptor_ = getApplicationContext()->getApplicationGroup()->getApplicationDescriptor(destinationClass_, destinationInstance_);
+	  // 20060929 Benigno - Fix for xdaq 3.7
+	  //destinationDescriptor_ = getApplicationContext()->getApplicationGroup()->getApplicationDescriptor(destinationClass_, destinationInstance_);
+	  destinationDescriptor_ = getApplicationContext()->getDefaultZone()->getApplicationDescriptor(destinationClass_, destinationInstance_);
 
 	   // char  * bufferChar = new char [8]; // detector data
 	   // bufferChar = "12345678";
