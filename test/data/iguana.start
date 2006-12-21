@@ -2,5 +2,7 @@
 
 eval `scramv1 runtime -sh`
 
+export LD_LIBRARY_PATH=`echo $LD_LIBRARY_PATH | sed -e 's;/cms/software/slc3_ia32_gcc323/external/gcc/3.2.3/lib:;;'`
+
 iguana --iguana-session 'Vis Example--NTuple browser'
 
