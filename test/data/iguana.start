@@ -6,3 +6,5 @@ export LD_LIBRARY_PATH=`echo $LD_LIBRARY_PATH | sed -e 's;/cms/software/slc3_ia3
 
 iguana --iguana-session 'Vis Example--NTuple browser'
 
+#iguana --dqm-collector-hostname localhost --dqm-collector-port 9090 --iguana-session 'Vis Example--NTuple browser'
+
