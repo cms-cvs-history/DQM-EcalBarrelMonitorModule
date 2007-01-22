@@ -1,3 +1,8 @@
 <library file=stubs/*.cc name=SimpleI2OSender>
   <use name=xdaq>
 </library>
+
+<use name=OnlineDB/EcalCondDB>
+<use name=oracle>
+<use name=DQM/EcalBarrelMonitorClient>
+<bin file=stubs/readMaskFromDB.cpp></bin>
