@@ -1,11 +1,11 @@
-// $Id: readMaskFromDB.cpp,v 1.3 2007/01/22 15:27:04 benigno Exp $
+// $Id: readMaskFromDB.cpp,v 1.4 2007/01/22 16:14:14 benigno Exp $
 
 /*!
   \file readMaskFromDB.cpp
   \brief It reads errors masks from database and writes them to an output file
   \author B. Gobbo 
-  \version $Revision: 1.3 $
-  \date $Date: 2007/01/22 15:27:04 $
+  \version $Revision: 1.4 $
+  \date $Date: 2007/01/22 16:14:14 $
 */
 
 
@@ -138,7 +138,8 @@ int main( int argc, char **argv ) {
   runtag.setLocationDef( locdef );
   runtag.setRunTypeDef( rundef );
   
-  RunIOV runiov = eConn->fetchRunIOV( &runtag, runNb );
+  RunIOV runiov;
+  runiov.setRunTag( runtag );
   EcalErrorMask::readDB( eConn, &runiov );
   EcalErrorMask::writeFile( fileName );
 
