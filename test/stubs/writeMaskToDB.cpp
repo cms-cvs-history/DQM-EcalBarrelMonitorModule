@@ -1,11 +1,11 @@
-// $Id: $
+// $Id: writeMaskToDB.cpp,v 1.1 2007/01/22 15:27:04 benigno Exp $
 
 /*!
   \file writeMaskFromDB.cpp
   \brief It reads errors masks from a file and updates database
   \author B. Gobbo 
-  \version $Revision: $
-  \date $Date: $
+  \version $Revision: 1.1 $
+  \date $Date: 2007/01/22 15:27:04 $
 */
 
 
@@ -22,13 +22,13 @@ void usage( char* cp ) {
 "\n\
 usage: " << cp << " [-h] [-H hostname] [-l location] [-p dbpasswd] [-s sid] \n\
                  [-t run type] [-u dbuser] file\n\n\
-     h             : print this help message \n\
-     H hostname    : data base server host name \n\
-     l location    : location H4, 867-1, ...\n\
-     p dbpasswd    : data base password \n\
-     s sid         : data base sid \n\
-     t runtype     : run type \n\
-     u dbuser      : data base user name \n\n";
+     -h             : print this help message \n\
+     -H hostname    : data base server host name \n\
+     -l location    : location H4, 867-1, ...\n\
+     -p dbpasswd    : data base password \n\
+     -s sid         : data base sid \n\
+     -t runtype     : run type \n\
+     -u dbuser      : data base user name \n\n";
 }
 
 int main( int argc, char **argv ) {
@@ -53,7 +53,7 @@ int main( int argc, char **argv ) {
   // Arguments and Options
   if( argc > 1 ) {
     int rc;
-    while(( rc = getopt( argc, argv, "hp:u:" )) != EOF ) {
+    while(( rc = getopt( argc, argv, "H:hl:p:s:t:u:" )) != EOF ) {
       switch( rc ) {
       case 'H':
 	hostName = optarg;
