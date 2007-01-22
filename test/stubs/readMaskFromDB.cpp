@@ -1,3 +1,14 @@
+// $Id: $
+
+/*!
+  \file readMaskFromDB.cpp
+  \brief It read errors masks from database and writes them to an output file
+  \author B. Gobbo 
+  \version $Revision: $
+  \date $Date: $
+*/
+
+
 #include <iostream>
 #include <string>
 #include <cstdlib>
