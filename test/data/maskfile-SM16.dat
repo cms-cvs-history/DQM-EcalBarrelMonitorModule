@@ -1,8 +1,8 @@
 
 #
 # SM:           16
-# date:         2006/02/01
-# version:      2
+# date:         2006/02/03
+# version:      3
 #
 
 Crystal  1  177 LASER_MEAN_WARNING
@@ -13,7 +13,7 @@ Crystal  1  307 LASER_MEAN_WARNING
 Crystal  1  307 LASER_MEAN_OVER_PN_WARNING
 
 
-# Crystal  1 478 PEDESTAL_LOW_GAIN_MEAN_WARNING
+Crystal  1 478 PEDESTAL_LOW_GAIN_MEAN_WARNING
 
 
 Crystal  1 983 PEDESTAL_HIGH_GAIN_MEAN_ERROR
