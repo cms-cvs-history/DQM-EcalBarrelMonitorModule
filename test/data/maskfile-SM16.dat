@@ -1,8 +1,8 @@
 
 #
 # SM:           16
-# date:         2006/02/06
-# version:      5
+# date:         2006/02/07
+# version:      6
 #
 
 Crystal  1  177 LASER_MEAN_WARNING
@@ -47,3 +47,7 @@ Crystal  1 1172 PEDESTAL_ONLINE_HIGH_GAIN_RMS_WARNING
 
 Crystal  1 1172 LASER_MEAN_WARNING
 Crystal  1 1172 LASER_MEAN_OVER_PN_WARNING
+
+# only in laser runs ped mean exceeds 225
+Crystal  1 1526 PEDESTAL_ONLINE_HIGH_GAIN_MEAN_WARNING
+
