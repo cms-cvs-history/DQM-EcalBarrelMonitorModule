@@ -2,12 +2,13 @@
 #
 # SM:           00
 # date:         2006/02/12
-# version:      1
+# version:      2
 #
 
 
 Crystal  1  6        PEDESTAL_HIGH_GAIN_RMS_WARNING
 Crystal  1  6        PEDESTAL_ONLINE_HIGH_GAIN_MEAN_WARNING
+Crystal  1  6        PEDESTAL_MIDDLE_GAIN_RMS_WARNING
 
 
 Crystal  1  281    PEDESTAL_HIGH_GAIN_MEAN_ERROR
@@ -20,6 +21,7 @@ Crystal  1  281    PEDESTAL_MIDDLE_GAIN_RMS_WARNING
 
 
 Crystal  1  748    PEDESTAL_HIGH_GAIN_MEAN_WARNING
+Crystal  1  748    PEDESTAL_ONLINE_HIGH_GAIN_RMS_WARNING
 
 
 Crystal  1  1249  PEDESTAL_HIGH_GAIN_RMS_ERROR
