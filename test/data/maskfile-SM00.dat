@@ -2,7 +2,7 @@
 #
 # SM:           00
 # date:         2006/02/12
-# version:      2
+# version:      3
 #
 
 
@@ -11,29 +11,50 @@ Crystal  1  6        PEDESTAL_ONLINE_HIGH_GAIN_MEAN_WARNING
 Crystal  1  6        PEDESTAL_MIDDLE_GAIN_RMS_WARNING
 
 
-Crystal  1  281    PEDESTAL_HIGH_GAIN_MEAN_ERROR
-Crystal  1  281    PEDESTAL_ONLINE_HIGH_GAIN_MEAN_ERROR
-Crystal  1  281    PEDESTAL_MIDDLE_GAIN_RMS_WARNING
-# to be checked - likely just a ped offset problem
-#Crystal  1  281    TESTPULSE_HIGH_GAIN_MEAN_WARNING
-#Crystal  1  281    LASER_MEAN_WARNING
-#Crystal  1  281    LASER_MEAN_OVER_PN_WARNING
+
+Crystal  1  44       LASER_MEAN_WARNING
+Crystal  1  44       LASER_MEAN_OVER_PN_WARNING
 
 
-Crystal  1  748    PEDESTAL_HIGH_GAIN_MEAN_WARNING
-Crystal  1  748    PEDESTAL_ONLINE_HIGH_GAIN_RMS_WARNING
+
+# has small rms with no HV, see H4-000038304-SM0-PEDESTAL-STD
+# no signal at all, just 10 pedestal samples
+Crystal  1  213      LASER_MEAN_WARNING
+Crystal  1  213      LASER_MEAN_OVER_PN_WARNING
 
 
-Crystal  1  1249  PEDESTAL_HIGH_GAIN_RMS_ERROR
-Crystal  1  1249  PEDESTAL_ONLINE_HIGH_GAIN_RMS_ERROR
-# to be checked - likely just a ped offset problem
-#Crystal  1  1249  TESTPULSE_HIGH_GAIN_MEAN_WARNING
 
-Crystal  1  1249  PEDESTAL_MIDDLE_GAIN_RMS_ERROR
-#Crystal  1  1249  TESTPULSE_MIDDLE_GAIN_MEAN_WARNING
+Crystal  1  281      PEDESTAL_HIGH_GAIN_MEAN_ERROR
+Crystal  1  281      PEDESTAL_ONLINE_HIGH_GAIN_MEAN_ERROR
+Crystal  1  281      PEDESTAL_MIDDLE_GAIN_RMS_WARNING
 
-Crystal  1  1249  PEDESTAL_LOW_GAIN_RMS_ERROR
-#Crystal  1  1249  TESTPULSE_LOW_GAIN_MEAN_WARNING
-# to be checked - likely just a ped offset problem
-#Crystal  1  1249  LASER_MEAN_WARNING
-#Crystal  1  1249  LASER_MEAN_OVER_PN_WARNING
+
+
+
+# has small rms with no HV, see H4-000038304-SM0-PEDESTAL-STD
+# no signal at all, just 10 pedestal samples
+Crystal  1  407      LASER_MEAN_WARNING
+Crystal  1  407      LASER_MEAN_OVER_PN_WARNING
+
+
+
+Crystal  1  748      PEDESTAL_HIGH_GAIN_MEAN_WARNING
+Crystal  1  748      PEDESTAL_ONLINE_HIGH_GAIN_RMS_WARNING
+# has small rms with no HV, see H4-000038304-SM0-PEDESTAL-STD
+# very small signal, ~10 counts
+Crystal  1  748      LASER_MEAN_WARNING
+Crystal  1  748      LASER_MEAN_OVER_PN_WARNING
+
+
+
+Crystal  1  1249     PEDESTAL_HIGH_GAIN_RMS_ERROR
+Crystal  1  1249     PEDESTAL_ONLINE_HIGH_GAIN_RMS_ERROR
+Crystal  1  1249     PEDESTAL_MIDDLE_GAIN_RMS_ERROR
+Crystal  1  1249     PEDESTAL_LOW_GAIN_RMS_ERROR
+Crystal  1  1249     LASER_MEAN_WARNING
+Crystal  1  1249     LASER_MEAN_OVER_PN_WARNING
+
+
+
+Crystal  1  1543     LASER_MEAN_WARNING
+Crystal  1  1543     LASER_MEAN_OVER_PN_WARNING
