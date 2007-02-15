@@ -1,8 +1,8 @@
 
 #
 # SM:           00
-# date:         2006/02/14
-# version:      4
+# date:         2006/02/15
+# version:      5
 #
 
 
@@ -11,15 +11,18 @@ Crystal  1  6        PEDESTAL_ONLINE_HIGH_GAIN_MEAN_WARNING
 Crystal  1  6        PEDESTAL_MIDDLE_GAIN_RMS_WARNING
 
 
-#restart after long cooling break
+#restart after first long cooling break
 Crystal  1  40       PEDESTAL_HIGH_GAIN_RMS_WARNING
 Crystal  1  40       PEDESTAL_MIDDLE_GAIN_RMS_WARNING
 Crystal  1  40       PEDESTAL_ONLINE_HIGH_GAIN_RMS_WARNING
 
 
-Crystal  1  44       PEDESTAL_HIGH_GAIN_RMS_WARNING
-Crystal  1  44       PEDESTAL_MIDDLE_GAIN_RMS_WARNING
-Crystal  1  44       PEDESTAL_ONLINE_HIGH_GAIN_RMS_WARNING
+# close to 40% treshold, only after 2nd cooling interruption
+Crystal  1  44       LASER_MEAN_WARNING
+# was never the  case
+#Crystal  1  44       PEDESTAL_HIGH_GAIN_RMS_WARNING
+#Crystal  1  44       PEDESTAL_MIDDLE_GAIN_RMS_WARNING
+#Crystal  1  44       PEDESTAL_ONLINE_HIGH_GAIN_RMS_WARNING
 
 
 
