@@ -19,6 +19,7 @@ Crystal  1  40       PEDESTAL_ONLINE_HIGH_GAIN_RMS_WARNING
 
 # close to 40% treshold, only after 2nd cooling interruption
 Crystal  1  44       LASER_MEAN_WARNING
+Crystal  1  44       LASER_MEAN_OVER_PN_WARNING
 # was never the  case
 #Crystal  1  44       PEDESTAL_HIGH_GAIN_RMS_WARNING
 #Crystal  1  44       PEDESTAL_MIDDLE_GAIN_RMS_WARNING
