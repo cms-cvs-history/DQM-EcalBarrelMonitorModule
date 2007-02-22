@@ -1,6 +1,15 @@
 #
 # SM:           26
 # date:         2006/02/22
-# version:      0
+# version:      1
 #
 
+Crystal  1  496 LASER_MEAN_WARNING
+
+
+Crystal  1 1597 PEDESTAL_HIGH_GAIN_RMS_ERROR
+Crystal  1 1597 PEDESTAL_MIDDLE_GAIN_RMS_ERROR
+Crystal  1 1597 PEDESTAL_LOW_GAIN_RMS_WARNING
+Crystal  1 1597 PEDESTAL_ONLINE_HIGH_GAIN_RMS_ERROR
+
+Crystal  1 1597 LASER_MEAN_WARNING
