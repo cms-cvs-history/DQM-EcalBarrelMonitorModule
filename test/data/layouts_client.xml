@@ -492,6 +492,30 @@
    </layout>
 
 
+  <layout name="------ TIMING ------">
+  </layout>
+
+
+  <layout name="BeamHodo_client_1">
+     <row>
+         <column>
+            <monitorable name="EcalBarrelMonitorClient/EcalBarrel/EBTimingClient/EBTMT timing quality SM01" />
+         </column>         
+      </row>
+     <row>
+         <column>
+            <monitorable name="EcalBarrelMonitorClient/EcalBarrel/EBTimingClient/EBTMT timing SM01" />
+         </column>
+         <column>
+            <monitorable name="EcalBarrelMonitorClient/EcalBarrel/EBTimingClient/EBTMT timing mean SM01" />
+         </column>
+         <column>
+            <monitorable name="EcalBarrelMonitorClient/EcalBarrel/EBTimingClient/EBTMT timing rms SM01" />
+         </column>
+      </row>
+  </layout>
+
+
   <layout name="------ BEAM HODO ------">
   </layout>
 
