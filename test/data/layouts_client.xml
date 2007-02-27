@@ -1,6 +1,25 @@
 <?xml version="1.0" encoding="iso-8859-1"?>
 
 <layouts>
+
+
+  <layout name="------ SUMMARY ------">
+  </layout>
+
+
+   <layout name="Summary_client_1">
+     <row>
+         <column>
+            <monitorable name="EcalBarrelMonitorClient/EcalBarrel/EBSummaryClient/EBIT integrity quality summary" />
+         </column>         
+     </row>
+     <row>
+         <column>
+            <monitorable name="EcalBarrelMonitorClient/EcalBarrel/EBSummaryClient/EBPOT pedestal quality summary G12" />
+         </column>         
+     </row>
+  </layout>
+
   
   <layout name="------ INTEGRITY ------">
   </layout>
@@ -496,7 +515,7 @@
   </layout>
 
 
-  <layout name="BeamHodo_client_1">
+  <layout name="Timing_client_1">
      <row>
          <column>
             <monitorable name="EcalBarrelMonitorClient/EcalBarrel/EBTimingClient/EBTMT timing quality SM01" />
