@@ -1,0 +1,147 @@
+
+process ECALDQM = { 
+
+     module ecalEBunpacker = EcalDCCUnpackingModule{ }
+
+     module tdcReco = EcalTBTDCRecInfoProducer{
+       string rawInfoProducer   = "ecalEBunpacker"
+       string rawInfoCollection = ""
+       string eventHeaderProducer   = "ecalEBunpacker"
+       string eventHeaderCollection = ""
+       string recInfoCollection  = "EcalTBTDCRecInfo"
+       untracked bool use2004OffsetConvention = false
+       int32 fitMethod = 0
+       VPSet tdcRanges= {
+         {
+           int32 startRun = 10339
+           int32 endRun = 14441
+           vdouble tdcMin = { 748. ,  400,  400,  400,  400 }
+           vdouble tdcMax = { 1008. ,  927,  927,  927,  927 }
+         },
+         {
+           int32 startRun = 14442
+           int32 endRun = 999999
+          vdouble tdcMin = { 1502. ,  400.,  400.,  400.,  400. }
+           vdouble tdcMax = { 1764. ,  927.,  927.,  927.,  927. }
+         }
+       }
+     }
+
+     module hodoscopeReco = EcalTBHodoscopeRecInfoProducer{
+       string rawInfoProducer   = "ecalEBunpacker"
+       string rawInfoCollection = ""
+       string recInfoCollection  = "EcalTBHodoscopeRecInfo"
+       int32 fitMethod = 0
+       vdouble planeShift = { 0.0, 0.0, 0.4633, 0.1000 }
+       vdouble zPosition = { -3251.0, -2881.0, -751.0, -381.0 }
+     }
+
+     module ecalUncalibHitMaker = EcalFixedAlphaBetaFitUncalibRecHitProducer{
+       InputTag EBdigiCollection = ecalEBunpacker:
+       InputTag EEdigiCollection = ecalEBunpacker:
+       string EBhitCollection  = "EcalUncalibRecHitsEB"
+       string EEhitCollection  = ""
+       untracked int32 nMaxPrintout = 0
+     }
+
+     module ecalRecHitMaker = EcalRecHitProducer{
+       InputTag EBuncalibRecHitCollection = ecalUncalibHitMaker:EcalUncalibRecHitsEB
+       InputTag EEuncalibRecHitCollection = ecalUncalibHitMaker:EcalUncalibRecHitsEE
+       string EBrechitCollection = "EcalRecHitsEB" 
+       string EErechitCollection = "" 
+       untracked int32 nMaxPrintout = 0
+     }
+
+     module ecalMonitorModule = EcalBarrelMonitorModule{
+       untracked bool enableMonitorDaemon = false
+     }
+
+     module ecalOccupancyTask = EBOccupancyTask{ }
+     module ecalIntegrityTask = EBIntegrityTask{ }
+     module ecalCosmicTask = EBCosmicTask{ }
+     module ecalLaserTask = EBLaserTask{ }
+     module ecalPedestalOnlineTask = EBPedestalOnlineTask{ }
+     module ecalPedestalTask = EBPedestalTask{ } 
+     module ecalTestPulseTask = EBTestPulseTask{ }
+     module ecalTriggerTowerTask = EBTriggerTowerTask{ }
+
+     module ecalBeamHodoTask = EBBeamHodoTask{ }
+     module ecalBeamCaloTask = EBBeamCaloTask{
+       string digiProducer ='ecalEBunpacker'
+     }
+
+     module ecalMonitorClient = EcalBarrelMonitorClient{
+       untracked string location = "H4B"
+       untracked string baseHtmlDir = "."
+       untracked bool enableTCC = true
+       untracked bool enableMonitorDaemon = false
+       untracked string prefixME = ""
+       untracked vint32 superModules = { 01 }
+     }
+     module preScaler = Prescaler{ int32 prescaleFactor = 1 }
+
+     sequence s1 = { preScaler, ecalEBunpacker,
+                     hodoscopeReco, tdcReco,
+                     ecalUncalibHitMaker, ecalRecHitMaker }
+
+     sequence s2 = { ecalMonitorModule,
+                     ecalMonitorClient }
+
+     sequence s3 = { ecalLaserTask, ecalOccupancyTask,
+                     ecalIntegrityTask,
+                     ecalCosmicTask,
+                     ecalPedestalOnlineTask, ecalPedestalTask,
+                     ecalTestPulseTask,
+                     ecalTriggerTowerTask,
+                     ecalBeamHodoTask, ecalBeamCaloTask }
+
+     path p = { s1, s2, s3 }
+
+     source = PoolSource{
+       untracked int32 maxEvents = 150
+# replace /tmp with the path to your file
+       untracked vstring fileNames = { 'file:/tmp/h4b.00014790.A.0.0.root' }
+       untracked uint32 debugVebosity = 10
+       untracked bool   debugFlag     = true
+     }
+
+     es_source src1 = EcalTrivialConditionRetriever{
+       untracked bool producedEcalWeights = false
+     }
+
+     service = MessageLogger{
+       untracked vstring destinations = { "cout" } 
+       untracked vstring categories = { "EcalTBInputService",
+                                        "EcalBarrelMonitor",
+                                        "EBCosmicTask",
+                                        "EBIntegrityTask",
+                                        "EBLaserTask",
+                                        "EBOccupancyTask",
+                                        "EBPedestalOnlineTask",
+                                        "EBPedestalTask",
+                                        "EBTestPulseTask",
+                                        "EBBeamHodoTask",
+                                        "EBBeamCaloTask"
+                                      }
+       untracked PSet cout = { untracked string threshold = "INFO"
+                               untracked PSet default = { untracked int32 limit = 0 }
+                               untracked PSet EcalTBInputService = { untracked int32 limit = 1000000 }
+                               untracked PSet EcalBarrelMonitor = { untracked int32 limit = 10 }
+                               untracked PSet EBCosmicTask = { untracked int32 limit = 10 }
+                               untracked PSet EBIntegrityTask = { untracked int32 limit = 10 }
+                               untracked PSet EBLaserTask = { untracked int32 limit = 10 }
+                               untracked PSet EBOccupancyTask = { untracked int32 limit = 10 }
+                               untracked PSet EBPedestalOnlineTask = { untracked int32 limit = 10 }
+                               untracked PSet EBPedestalTask = { untracked int32 limit = 10 }
+                               untracked PSet EBTestPulseTask = { untracked int32 limit = 10 }
+                               untracked PSet EBBeamHodoTask = { untracked int32 limit = 10 }
+                               untracked PSet EBBeamCaloTask = { untracked int32 limit = 10 }
+                               untracked bool noTimeStamps = true
+                               untracked bool noLineBreaks = true
+                             }
+     }
+
+     service = DaqMonitorROOTBackEnd{ }
+
+}
+
