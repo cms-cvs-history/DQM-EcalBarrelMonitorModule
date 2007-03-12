@@ -1,7 +1,17 @@
 #
 # SM:           28
-# date:         2006/03/09
-# version:      0
+# date:         2006/03/12
+# version:      1
 #
 
-# no problems expected from 867
+
+Crystal  1  432 LASER_MEAN_WARNING
+Crystal  1  432 LASER_MEAN_OVER_PN_WARNING
+
+
+Crystal  1  892 LASER_MEAN_WARNING
+Crystal  1  892 LASER_MEAN_OVER_PN_WARNING
+
+
+Crystal  1 1464 LASER_MEAN_WARNING
+Crystal  1 1464 LASER_MEAN_OVER_PN_WARNING
