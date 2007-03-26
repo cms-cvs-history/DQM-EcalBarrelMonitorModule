@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<layouts>
+
+  
+  <layout name="------ INTEGRITY ------">
+  </layout>
+
+
+   <layout name="IntegrityTask">
+     <row>
+         <column>
+            <monitorable name="Collector/FU0/EcalBarrel/EBOccupancyTask/EBOT occupancy SM01" />
+         </column>         
+         <column>
+            <monitorable name="Collector/FU0/EcalBarrel/EBOccupancyTask/EBOT occupancy SM19" />
+         </column>         
+     </row>
+     <row>
+         <column>
+            <monitorable name="Collector/FU0/EcalBarrel/EBOccupancyTask/EBOT occupancy SM02" />
+         </column>         
+         <column>
+            <monitorable name="Collector/FU0/EcalBarrel/EBOccupancyTask/EBOT occupancy SM20" />
+         </column>         
+     </row>
+     <row>
+         <column>
+            <monitorable name="Collector/FU0/EcalBarrel/EBOccupancyTask/EBOT occupancy SM03" />
+         </column>         
+         <column>
+            <monitorable name="Collector/FU0/EcalBarrel/EBOccupancyTask/EBOT occupancy SM21" />
+         </column>         
+     </row>
+     <row>
+         <column>
+            <monitorable name="Collector/FU0/EcalBarrel/EBOccupancyTask/EBOT occupancy SM04" />
+         </column>         
+         <column>
+            <monitorable name="Collector/FU0/EcalBarrel/EBOccupancyTask/EBOT occupancy SM22" />
+         </column>         
+     </row>
+     <row>
+         <column>
+            <monitorable name="Collector/FU0/EcalBarrel/EBOccupancyTask/EBOT occupancy SM05" />
+         </column>         
+         <column>
+            <monitorable name="Collector/FU0/EcalBarrel/EBOccupancyTask/EBOT occupancy SM23" />
+         </column>         
+     </row>
+     <row>
+         <column>
+            <monitorable name="Collector/FU0/EcalBarrel/EBOccupancyTask/EBOT occupancy SM06" />
+         </column>         
+         <column>
+            <monitorable name="Collector/FU0/EcalBarrel/EBOccupancyTask/EBOT occupancy SM24" />
+         </column>         
+     </row>
+     <row>
+         <column>
+            <monitorable name="Collector/FU0/EcalBarrel/EBOccupancyTask/EBOT occupancy SM07" />
+         </column>         
+         <column>
+            <monitorable name="Collector/FU0/EcalBarrel/EBOccupancyTask/EBOT occupancy SM25" />
+         </column>         
+     </row>
+     <row>
+         <column>
+            <monitorable name="Collector/FU0/EcalBarrel/EBOccupancyTask/EBOT occupancy SM08" />
+         </column>         
+         <column>
+            <monitorable name="Collector/FU0/EcalBarrel/EBOccupancyTask/EBOT occupancy SM26" />
+         </column>         
+     </row>
+     <row>
+         <column>
+            <monitorable name="Collector/FU0/EcalBarrel/EBOccupancyTask/EBOT occupancy SM09" />
+         </column>         
+         <column>
+            <monitorable name="Collector/FU0/EcalBarrel/EBOccupancyTask/EBOT occupancy SM27" />
+         </column>         
+     </row>
+     <row>
+         <column>
+            <monitorable name="Collector/FU0/EcalBarrel/EBOccupancyTask/EBOT occupancy SM10" />
+         </column>         
+         <column>
+            <monitorable name="Collector/FU0/EcalBarrel/EBOccupancyTask/EBOT occupancy SM28" />
+         </column>         
+     </row>
+     <row>
+         <column>
+            <monitorable name="Collector/FU0/EcalBarrel/EBOccupancyTask/EBOT occupancy SM11" />
+         </column>         
+         <column>
+            <monitorable name="Collector/FU0/EcalBarrel/EBOccupancyTask/EBOT occupancy SM29" />
+         </column>         
+     </row>
+     <row>
+         <column>
+            <monitorable name="Collector/FU0/EcalBarrel/EBOccupancyTask/EBOT occupancy SM12" />
+         </column>         
+         <column>
+            <monitorable name="Collector/FU0/EcalBarrel/EBOccupancyTask/EBOT occupancy SM30" />
+         </column>         
+     </row>
+     <row>
+         <column>
+            <monitorable name="Collector/FU0/EcalBarrel/EBOccupancyTask/EBOT occupancy SM213" />
+         </column>         
+         <column>
+            <monitorable name="Collector/FU0/EcalBarrel/EBOccupancyTask/EBOT occupancy SM31" />
+         </column>         
+     </row>
+     <row>
+         <column>
+            <monitorable name="Collector/FU0/EcalBarrel/EBOccupancyTask/EBOT occupancy SM14" />
+         </column>         
+         <column>
+            <monitorable name="Collector/FU0/EcalBarrel/EBOccupancyTask/EBOT occupancy SM32" />
+         </column>         
+     </row>
+     <row>
+         <column>
+            <monitorable name="Collector/FU0/EcalBarrel/EBOccupancyTask/EBOT occupancy SM15" />
+         </column>         
+         <column>
+            <monitorable name="Collector/FU0/EcalBarrel/EBOccupancyTask/EBOT occupancy SM33" />
+         </column>         
+     </row>
+     <row>
+         <column>
+            <monitorable name="Collector/FU0/EcalBarrel/EBOccupancyTask/EBOT occupancy SM16" />
+         </column>         
+         <column>
+            <monitorable name="Collector/FU0/EcalBarrel/EBOccupancyTask/EBOT occupancy SM34" />
+         </column>         
+     </row>
+     <row>
+         <column>
+            <monitorable name="Collector/FU0/EcalBarrel/EBOccupancyTask/EBOT occupancy SM17" />
+         </column>         
+         <column>
+            <monitorable name="Collector/FU0/EcalBarrel/EBOccupancyTask/EBOT occupancy SM35" />
+         </column>         
+     </row>
+     <row>
+         <column>
+            <monitorable name="Collector/FU0/EcalBarrel/EBOccupancyTask/EBOT occupancy SM18" />
+         </column>         
+         <column>
+            <monitorable name="Collector/FU0/EcalBarrel/EBOccupancyTask/EBOT occupancy SM36" />
+         </column>         
+     </row>
+   </layout>
+
+
+</layouts>
+
+
