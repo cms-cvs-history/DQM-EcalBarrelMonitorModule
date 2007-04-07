@@ -15,10 +15,22 @@
      </row>
      <row>
          <column>
+            <monitorable name="EcalBarrelMonitorClient/EcalBarrel/EBSummaryClient/EBOT occupancy summary" />
+         </column>         
+     </row>
+   <layout name="Summary_client_2">
+   </layout>
+     <row>
+         <column>
             <monitorable name="EcalBarrelMonitorClient/EcalBarrel/EBSummaryClient/EBPOT pedestal quality summary G12" />
          </column>         
      </row>
-  </layout>
+     <row>
+         <column>
+            <monitorable name="EcalBarrelMonitorClient/EcalBarrel/EBSummaryClient/EBLT laser quality summary L1" />
+         </column>         
+     </row>
+   </layout>
 
 
   <layout name="------ INTEGRITY ------">
