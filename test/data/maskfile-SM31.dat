@@ -1,7 +1,7 @@
 #
 # SM:           31
-# date:         2006/04/13
-# version:     1
+# date:         2006/04/14
+# version:      2
 #
 
 
@@ -19,3 +19,7 @@ Crystal  1  965 LASER_MEAN_WARNING
 
 
 Crystal  1  386 LASER_MEAN_WARNING
+
+
+
+Crystal  1  429 LASER_MEAN_WARNING
