@@ -1,0 +1,10 @@
+#
+# SM:           02
+# date:         2007/04/19
+# version:      1
+#
+
+Crystal  1  1313 PEDESTAL_HIGH_GAIN_RMS_ERROR
+Crystal  1  1313 PEDESTAL_MIDDLE_GAIN_RMS_ERROR
+Crystal  1  1313 PEDESTAL_LOW_GAIN_RMS_WARNING
+
