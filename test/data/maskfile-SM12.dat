@@ -1,0 +1,10 @@
+#
+# SM:           12
+# date:         2007/04/19
+# version:      1
+#
+
+Crystal  1  27 PEDESTAL_MIDDLE_GAIN_RMS_WARNING
+Crystal  1  27 PEDESTAL_HIGH_GAIN_RMS_WARNING
+
+# note: ch. 54 slightly noisy (pedestal RMS G6=1.2)
