@@ -1,0 +1,9 @@
+#
+# SM:           05
+# date:         2007/04/19
+# version:      1
+#
+ 
+
+Crystal  1  803 PEDESTAL_HIGH_GAIN_MEAN_ERROR
+Crystal  1  803 PEDESTAL_MIDDLE_GAIN_RMS_WARNING
