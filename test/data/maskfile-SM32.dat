@@ -1,6 +1,13 @@
 #
 # SM:           32
-# date:         2006/??/??
+# date:         2006/04/23
 # version:      0
 #
 
+
+#Crystal  1   606 LASER_MEAN_WARNING
+#Crystal  1   606 LASER_MEAN_OVER_PN_WARNING
+
+
+Crystal  1  1567 LASER_MEAN_WARNING
+Crystal  1  1567 LASER_MEAN_OVER_PN_WARNING
