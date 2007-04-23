@@ -1,12 +1,11 @@
 #
 # SM:           11
-# date:         2006/03/24
-# version:      2
+# date:         2006/04/23
+# version:      3
 #
 
-# was in 867
-# not needed based on first runs
-# problem re-appears after couple of days running
+# not needed based on first runs at h4 - problem re-appears after couple of days running
+# not needed based on first runs at P5 (on the floor) 
 Crystal  1  158 PEDESTAL_HIGH_GAIN_RMS_WARNING
 Crystal  1  158 PEDESTAL_MIDDLE_GAIN_RMS_WARNING
 Crystal  1  158 PEDESTAL_ONLINE_HIGH_GAIN_RMS_WARNING
