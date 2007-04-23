@@ -6,9 +6,9 @@
 
 # not needed based on first runs at h4 - problem re-appears after couple of days running
 # not needed based on first runs at P5 (on the floor) 
-Crystal  1  158 PEDESTAL_HIGH_GAIN_RMS_WARNING
-Crystal  1  158 PEDESTAL_MIDDLE_GAIN_RMS_WARNING
-Crystal  1  158 PEDESTAL_ONLINE_HIGH_GAIN_RMS_WARNING
+# Crystal  1  158 PEDESTAL_HIGH_GAIN_RMS_WARNING
+# Crystal  1  158 PEDESTAL_MIDDLE_GAIN_RMS_WARNING
+# Crystal  1  158 PEDESTAL_ONLINE_HIGH_GAIN_RMS_WARNING
 
 Crystal  1 1122 PEDESTAL_HIGH_GAIN_RMS_WARNING
 Crystal  1 1122 PEDESTAL_ONLINE_HIGH_GAIN_RMS_WARNING
