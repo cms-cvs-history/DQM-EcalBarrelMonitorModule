@@ -1,13 +1,14 @@
 #
 # SM:           26
-# date:         2006/02/23
-# version:      2
+# date:         2006/04/27
+# version:      3
 #
 
 Crystal  1  496 LASER_MEAN_WARNING
 
 # only on presample, for laser and cosmics runs
-Crystal  1  906 PEDESTAL_ONLINE_HIGH_GAIN_RMS_ERROR
+# seems unnecessary from first commissioning at P5 in HCAL
+#Crystal  1  906 PEDESTAL_ONLINE_HIGH_GAIN_RMS_ERROR
 
 Crystal  1 1597 PEDESTAL_HIGH_GAIN_RMS_ERROR
 Crystal  1 1597 PEDESTAL_MIDDLE_GAIN_RMS_ERROR
