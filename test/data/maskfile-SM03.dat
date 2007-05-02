@@ -1,6 +1,32 @@
 #
 # SM:           03
 # date:         2007/05/02
-# version:      0
+# version:      1
 #
 
+Crystal  1  284 LASER_MEAN_WARNING
+
+
+
+Crystal  1  361 PEDESTAL_LOW_GAIN_RMS_WARNING
+Crystal  1  361 PEDESTAL_MIDDLE_GAIN_RMS_WARNING
+Crystal  1  361 PEDESTAL_HIGH_GAIN_RMS_WARNING
+Crystal  1  361 PEDESTAL_ONLINE_HIGH_GAIN_RMS_WARNING
+
+Crystal  1  361 LASER_MEAN_WARNING
+
+
+
+Crystal  1  481 LASER_MEAN_WARNING
+
+
+
+# fleaky, close to threshold
+#Crystal  1  889 PEDESTAL_LOW_GAIN_RMS_WARNING
+
+# fleaky, close to threshold
+#Crystal  1 1289 PEDESTAL_HIGH_GAIN_RMS_WARNING
+
+
+
+Crystal  1 1398 LASER_MEAN_WARNING
