@@ -1,6 +1,14 @@
 #
 # SM:           33
-# date:         2006/??/??
-# version:      0
+# date:         2006/05/04
+# version:      1
 #
 
+
+Crystal  1    2 PEDESTAL_HIGH_GAIN_RMS_WARNING
+Crystal  1    2 PEDESTAL_ONLINE_HIGH_GAIN_RMS_WARNING
+Crystal  1    2 PEDESTAL_MIDDLE_GAIN_RMS_WARNING
+
+Crystal  1    2 LASER_MEAN_WARNING
+
+Crystal  1  395 PEDESTAL_LOW_GAIN_RMS_WARNING
