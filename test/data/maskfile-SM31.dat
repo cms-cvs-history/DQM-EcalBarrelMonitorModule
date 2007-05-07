@@ -1,8 +1,20 @@
 #
 # SM:           31
-# date:         2006/04/14
-# version:      2
+# date:         2006/05/07
+# version:      3
 #
+
+
+Crystal  1  206 PEDESTAL_MIDDLE_GAIN_RMS_WARNING
+
+
+
+Crystal  1  386 LASER_MEAN_WARNING
+
+
+
+Crystal  1  429 LASER_MEAN_WARNING
+
 
 
 Crystal  1  965 PEDESTAL_LOW_GAIN_MEAN_ERROR
@@ -15,11 +27,3 @@ Crystal  1  965 TESTPULSE_MIDDLE_GAIN_MEAN_WARNING
 Crystal  1  965 TESTPULSE_HIGH_GAIN_MEAN_WARNING
 
 Crystal  1  965 LASER_MEAN_WARNING
-
-
-
-Crystal  1  386 LASER_MEAN_WARNING
-
-
-
-Crystal  1  429 LASER_MEAN_WARNING
