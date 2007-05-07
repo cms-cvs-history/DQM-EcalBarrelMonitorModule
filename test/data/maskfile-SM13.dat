@@ -1,8 +1,12 @@
 
 #
 # SM:           13
-# date:         2007/04/18
-# version:      0
+# date:         2007/05/07
+# version:      1
 #
 
 # as based on commissioning runs at 867 done in feb 07
+
+Crystal  1 1675 PEDESTAL_HIGH_GAIN_RMS_WARNING
+Crystal  1 1675 PEDESTAL_ONLINE_HIGH_GAIN_RMS_WARNING
+Crystal  1 1675 PEDESTAL_MIDDLE_GAIN_RMS_WARNING
