@@ -4,6 +4,7 @@
 # version:      2
 #
  
+# ch 803 and 1530 no laser; 1668, 1255 low laser
 
 Crystal  1  803 PEDESTAL_HIGH_GAIN_MEAN_ERROR
 Crystal  1  803 PEDESTAL_ONLINE_HIGH_GAIN_RMS_WARNING
