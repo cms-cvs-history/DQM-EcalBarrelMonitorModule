@@ -1,16 +1,34 @@
 #
 # SM:           05
-# date:         2007/05/07
-# version:      2
+# date:         2007/05/08
+# version:      3
 #
  
+# laser response
+# is based on 867 data and summary page:
 # ch 803 and 1530 no laser; 1668, 1255 low laser
 
 Crystal  1  803 PEDESTAL_HIGH_GAIN_MEAN_ERROR
 Crystal  1  803 PEDESTAL_ONLINE_HIGH_GAIN_RMS_WARNING
 Crystal  1  803 PEDESTAL_MIDDLE_GAIN_RMS_WARNING
 
+Crystal  1  803 LASER_MEAN_WARNING
+Crystal  1  803 LASER_MEAN_OVER_PN_WARNING
 
 
-Crystal  1  922 PEDESTAL_HIGH_GAIN_MEAN_ERROR
-Crystal  1  922 PEDESTAL_ONLINE_HIGH_GAIN_RMS_WARNING
+# problem not there based on runs on the floor at P5
+#Crystal  1  922 PEDESTAL_HIGH_GAIN_MEAN_ERROR
+#Crystal  1  922 PEDESTAL_ONLINE_HIGH_GAIN_RMS_WARNING
+
+
+Crystal  1 1255 LASER_MEAN_WARNING
+Crystal  1 1255 LASER_MEAN_OVER_PN_WARNING
+
+Crystal  1 1530 LASER_MEAN_WARNING
+Crystal  1 1530 LASER_MEAN_OVER_PN_WARNING
+
+
+Crystal  1 1668 LASER_MEAN_WARNING
+Crystal  1 1668 LASER_MEAN_OVER_PN_WARNING
+
+
