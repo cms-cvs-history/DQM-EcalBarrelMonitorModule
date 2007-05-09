@@ -1,6 +1,10 @@
 #
 # SM:           24
-# date:         2007/0?/??
-# version:      0
+# date:         2007/05/09
+# version:      1
 #
 
+# very old laser data show response to laser: low 1536 vlow 1321 no 893 
+
+Crystal  1  639        LASER_MEAN_WARNING
+Crystal  1  639        LASER_MEAN_OVER_PN_WARNING
