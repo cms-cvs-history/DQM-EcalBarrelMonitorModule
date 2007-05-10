@@ -1,8 +1,7 @@
-
 #
 # SM:           00
-# date:         2006/02/15
-# version:      5
+# date:         2006/05/10
+# version:      6
 #
 
 
@@ -48,8 +47,15 @@ Crystal  1  407      LASER_MEAN_OVER_PN_WARNING
 
 
 
+
+Crystal  1  492      PEDESTAL_HIGH_GAIN_RMS_WARNING
+Crystal  1  492      PEDESTAL_ONLINE_HIGH_GAIN_RMS_WARNING
+
+
+
 Crystal  1  748      PEDESTAL_HIGH_GAIN_MEAN_WARNING
 Crystal  1  748      PEDESTAL_ONLINE_HIGH_GAIN_RMS_WARNING
+Crystal  1  748      PEDESTAL_MIDDLE_GAIN_MEAN_WARNING
 # has small rms with no HV, see H4-000038304-SM0-PEDESTAL-STD
 # very small signal, ~10 counts
 Crystal  1  748      LASER_MEAN_WARNING
