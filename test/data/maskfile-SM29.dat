@@ -1,6 +1,8 @@
 #
 # SM:           29
-# date:         2006/03/28
-# version:      0
+# date:         2006/05/11
+# version:      1
 #
 
+# latest 867 runs before shipping to P5
+Crystal  1  15   PEDESTAL_MIDDLE_GAIN_RMS_WARNING
