@@ -1,6 +1,66 @@
 #
 # SM:           19
-# date:         2007/0?/??
-# version:      0
+# date:         2007/05/11
+# version:      1
 #
+
+
+
+# very low response
+Crystal  1  109        LASER_MEAN_WARNING
+Crystal  1  109        LASER_RMS_WARNING
+
+
+
+# very low response
+Crystal  1  151        LASER_MEAN_WARNING
+Crystal  1  151        LASER_RMS_WARNING
+
+
+# very low response
+Crystal  1  163        LASER_MEAN_WARNING
+Crystal  1  163        LASER_RMS_WARNING
+
+
+
+# very low response
+Crystal  1  689        LASER_MEAN_WARNING
+Crystal  1  689        LASER_RMS_WARNING
+
+
+
+# very low response
+Crystal  1  789        LASER_MEAN_WARNING
+Crystal  1  789        LASER_RMS_WARNING
+
+
+
+# very low response
+Crystal  1  921        LASER_MEAN_WARNING
+Crystal  1  921        LASER_RMS_WARNING
+
+
+
+# low response
+Crystal  1  1173        LASER_MEAN_WARNING
+Crystal  1  1173        LASER_RMS_WARNING
+
+
+
+# low response
+Crystal  1  1285        LASER_MEAN_WARNING
+Crystal  1  1285        LASER_RMS_WARNING
+
+
+
+# no response
+Crystal  1  1467       LASER_MEAN_WARNING
+Crystal  1  1467       LASER_RMS_WARNING
+
+
+
+# very low response
+Crystal  1  1535       LASER_MEAN_WARNING
+Crystal  1  1535       LASER_RMS_WARNING
+
 
