@@ -1,6 +1,21 @@
 #
-# SM:           07
-# date:         2007/0?/??
-# version:      0
+# SM:            07
+# date:           2007/05/14
+# version:      1
 #
 
+# last runs at 867, right before commissioning on the floor at P5
+
+
+Crystal    1    1303   PEDESTAL_HIGH_GAIN_RMS_WARNING
+Crystal    1    1303   PEDESTAL_ONLINE_HIGH_GAIN_RMS_WARNING
+
+
+
+Crystal  1 1333 LASER_MEAN_WARNING
+Crystal  1 1333 LASER_MEAN_OVER_PN_WARNING
+
+
+
+Crystal  1  900 LASER_MEAN_WARNING
+Crystal  1  900 LASER_MEAN_OVER_PN_WARNING
