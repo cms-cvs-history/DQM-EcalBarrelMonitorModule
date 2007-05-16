@@ -1,13 +1,18 @@
 #
 # SM:           30
-# date:         2006/04/05
+# date:         2007/05/16
 # version:      2
 #
+
+Crystal  1 350 PEDESTAL_MIDDLE_GAIN_RMS_WARNING
+
 
 Crystal  1 1333 PEDESTAL_HIGH_GAIN_RMS_WARNING
 Crystal  1 1333 PEDESTAL_ONLINE_HIGH_GAIN_MEAN_WARNING
 
+
 Crystal  1 1333 PEDESTAL_MIDDLE_GAIN_RMS_WARNING
+
 
 Crystal  1 1688 LASER_MEAN_WARNING
 
