@@ -1,7 +1,7 @@
 #
 # SM:           33
-# date:         2007/05/17
-# version:      1
+# date:         2007/05/18
+# version:     2
 #
 
 
@@ -18,3 +18,7 @@ Crystal  1  477 PEDESTAL_MIDDLE_GAIN_MEAN_WARNING
 
 Crystal  1  486 PEDESTAL_HIGH_GAIN_MEAN_WARNING
 Crystal  1  486 PEDESTAL_MIDDLE_GAIN_MEAN_WARNING
+
+Crystal  1    678 PEDESTAL_HIGH_GAIN_RMS_WARNING
+Crystal  1    678  PEDESTAL_ONLINE_HIGH_GAIN_RMS_WARNING
+
