@@ -1,6 +1,13 @@
 #
 # SM:           34
-# date:         2006/??/??
-# version:      0
+# date:         2007/05/25
+# version:      1
 #
 
+Crystal  1    310 TESTPULSE_LOW_GAIN_RMS_WARNING
+Crystal  1    310 TESTPULSE_MIDDLE_GAIN_RMS_WARNING
+
+Crystal  1    535 PEDESTAL_LOW_GAIN_MEAN_WARNING
+
+Crystal  1   1031 LASER_MEAN_WARNING
+Crystal  1   1031 LASER_MEAN_OVER_PN_WARNING
