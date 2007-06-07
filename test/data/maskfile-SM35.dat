@@ -1,6 +1,15 @@
 #
 # SM:           35
-# date:         2006/??/??
-# version:      0
+# date:         2006/06/07
+# version:      1
 #
 
+Crystal  1 1023 PEDESTAL_HIGH_GAIN_RMS_WARNING
+Crystal  1 1023 PEDESTAL_MIDDLE_GAIN_RMS_WARNING
+
+Crystal  1 1023 LASER_MEAN_WARNING
+Crystal  1 1023 LASER_RMS_OVER_PN_WARNING
+
+# edm: about 1/2 the mean response
+Crystal  1  537 LASER_MEAN_WARNING
+Crystal  1  537 LASER_RMS_OVER_PN_WARNING
