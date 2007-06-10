@@ -254,6 +254,9 @@
             <monitorable name="AuxCollector/EcalBarrelMonitorClient/EcalBarrel/EcalBarrel/EBPnDiodeTask/Laser1/Gain01/EBPDT PNs pedestal EB-01 G01 L1" />
          </column>         
          <column>
+            <monitorable name="AuxCollector/EcalBarrelMonitorClient/EcalBarrel/EBLaserClient/EBPDT PNs pedestal rms EB-01 G01 L1" />
+         </column>
+         <column>
             <monitorable name="AuxCollector/EcalBarrelMonitorClient/EcalBarrel/EcalBarrel/EBPnDiodeTask/Laser1/Gain01/EBPDT PNs amplitude EB-01 G01 L1" />
          </column>
      </row>
@@ -261,6 +264,9 @@
          <column>
             <monitorable name="AuxCollector/EcalBarrelMonitorClient/EcalBarrel/EcalBarrel/EBPnDiodeTask/Laser4/Gain01/EBPDT PNs pedestal EB-01 G01 L4" />
          </column>         
+         <column>
+            <monitorable name="AuxCollector/EcalBarrelMonitorClient/EcalBarrel/EBLaserClient/EBPDT PNs pedestal rms EB-01 G01 L4" />
+         </column>
          <column>
             <monitorable name="AuxCollector/EcalBarrelMonitorClient/EcalBarrel/EcalBarrel/EBPnDiodeTask/Laser4/Gain01/EBPDT PNs amplitude EB-01 G01 L4" />
          </column>
@@ -286,13 +292,19 @@
             <monitorable name="AuxCollector/EcalBarrelMonitorClient/EcalBarrel/EcalBarrel/EBPnDiodeTask/Laser1/Gain16/EBPDT PNs pedestal EB-01 G16 L1" />
          </column>         
          <column>
+            <monitorable name="AuxCollector/EcalBarrelMonitorClient/EcalBarrel/EBLaserClient/EBPDT PNs pedestal rms EB-01 G16 L1" />
+         </column>
+         <column>
             <monitorable name="AuxCollector/EcalBarrelMonitorClient/EcalBarrel/EcalBarrel/EBPnDiodeTask/Laser1/Gain16/EBPDT PNs amplitude EB-01 G16 L1" />
          </column>
      </row>
      <row>
          <column>
             <monitorable name="AuxCollector/EcalBarrelMonitorClient/EcalBarrel/EcalBarrel/EBPnDiodeTask/Laser4/Gain16/EBPDT PNs pedestal EB-01 G16 L4" />
-         </column>         
+         </column>
+         <column>
+            <monitorable name="AuxCollector/EcalBarrelMonitorClient/EcalBarrel/EBLaserClient/EBPDT PNs pedestal rms EB-01 G16 L4" />
+         </column>
          <column>
             <monitorable name="AuxCollector/EcalBarrelMonitorClient/EcalBarrel/EcalBarrel/EBPnDiodeTask/Laser4/Gain16/EBPDT PNs amplitude EB-01 G16 L4" />
          </column>
@@ -408,12 +420,18 @@
      <row>
          <column>
             <monitorable name="AuxCollector/EcalBarrelMonitorClient/EcalBarrel/EcalBarrel/EBPnDiodeTask/Gain01/EBPDT PNs pedestal EB-01 G01" />
-         </column>         
+         </column>
+         <column>
+            <monitorable name="AuxCollector/EcalBarrelMonitorClient/EcalBarrel/EBPedestalClient/EBPDT PNs pedestal rms EB-01 G01" />
+         </column>
      </row>
      <row> 
          <column>
             <monitorable name="AuxCollector/EcalBarrelMonitorClient/EcalBarrel/EcalBarrel/EBPnDiodeTask/Gain16/EBPDT PNs pedestal EB-01 G16" />
          </column>
+         <column>
+            <monitorable name="AuxCollector/EcalBarrelMonitorClient/EcalBarrel/EBPedestalClient/EBPDT PNs pedestal rms EB-01 G16" />
+         </column>  
       </row>
    </layout>
 
@@ -510,6 +528,9 @@
             <monitorable name="AuxCollector/EcalBarrelMonitorClient/EcalBarrel/EcalBarrel/EBPnDiodeTask/Gain01/EBPDT PNs pedestal EB-01 G01" />
          </column>         
          <column>
+            <monitorable name="AuxCollector/EcalBarrelMonitorClient/EcalBarrel/EBTestPulseClient/EBPDT PNs pedestal rms EB-01 G01" />
+         </column>
+         <column>
             <monitorable name="AuxCollector/EcalBarrelMonitorClient/EcalBarrel/EcalBarrel/EBPnDiodeTask/Gain01/EBPDT PNs amplitude EB-01 G01" />
          </column>
       </row>
@@ -517,6 +538,9 @@
          <column>
             <monitorable name="AuxCollector/EcalBarrelMonitorClient/EcalBarrel/EcalBarrel/EBPnDiodeTask/Gain16/EBPDT PNs pedestal EB-01 G16" />
          </column>         
+         <column>
+            <monitorable name="AuxCollector/EcalBarrelMonitorClient/EcalBarrel/EBTestPulseClient/EBPDT PNs pedestal rms EB-01 G16" />
+         </column>
          <column>
             <monitorable name="AuxCollector/EcalBarrelMonitorClient/EcalBarrel/EcalBarrel/EBPnDiodeTask/Gain16/EBPDT PNs amplitude EB-01 G16" />
          </column>
