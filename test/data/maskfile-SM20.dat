@@ -1,6 +1,10 @@
 #
 # SM:           20
-# date:         2007/0?/??
-# version:      0
+# date:         2007/07/09
+# version:      1
 #
 
+Crystal  1	1172  PEDESTAL_MIDDLE_GAIN_RMS_WARNING
+Crystal  1	1172  PEDESTAL_HIGH_GAIN_RMS_WARNING
+
+Crystal  1	1172  PEDESTAL_ONLINE_HIGH_GAIN_RMS_WARNING
