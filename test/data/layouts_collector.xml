@@ -276,12 +276,12 @@
    <layout name="Laser_client_7">
      <row>
          <column>
-            <monitorable name="Collector/Ecal/EcalBarrel/EBLaserClient/EBLT laser quality L1 PNs EB+01 G16" />
+            <monitorable name="Collector/Ecal/EcalBarrel/EBLaserClient/EBLT laser quality L1 PNs G16 EB+01" />
          </column>         
      </row>
      <row>
          <column>
-            <monitorable name="Collector/Ecal/EcalBarrel/EBLaserClient/EBLT laser quality L4 PNs EB+01 G16" />
+            <monitorable name="Collector/Ecal/EcalBarrel/EBLaserClient/EBLT laser quality L4 PNs G16 EB+01" />
          </column>
      </row>
    </layout>
