@@ -216,7 +216,7 @@
             <monitorable name="Collector/Ecal/EcalBarrel/EBLaserClient/EBLT timing L1A EB+01" />
          </column>         
          <column>
-            <monitorable name="Collector/Ecal/EcalBarrel/EBLaserTask/Laser1/EBLT shape EB+01 L1A" />
+            <monitorable name="Collector/Ecal/EcalBarrel/EBLaserClient/EBLT laser shape L1A EB+01" />
          </column>         
       </row>
       <row>
@@ -224,7 +224,7 @@
             <monitorable name="Collector/Ecal/EcalBarrel/EBLaserClient/EBLT timing L4A EB+01" />
          </column>         
          <column>
-            <monitorable name="Collector/Ecal/EcalBarrel/EBLaserTask/Laser4/EBLT shape EB+01 L4A" />
+            <monitorable name="Collector/Ecal/EcalBarrel/EBLaserClient/EBLT laser shape L4A EB+01" />
          </column>         
       </row>
   </layout>
@@ -235,7 +235,7 @@
             <monitorable name="Collector/Ecal/EcalBarrel/EBLaserClient/EBLT timing L1B EB+01" />
          </column>         
          <column>
-            <monitorable name="Collector/Ecal/EcalBarrel/EBLaserTask/Laser1/EBLT shape EB+01 L1B" />
+            <monitorable name="Collector/Ecal/EcalBarrel/EBLaserClient/EBLT laser shape L1B EB+01" />
          </column>         
       </row>
       <row>
@@ -243,7 +243,7 @@
             <monitorable name="Collector/Ecal/EcalBarrel/EBLaserClient/EBLT timing L4B EB+01" />
          </column>         
          <column>
-            <monitorable name="Collector/Ecal/EcalBarrel/EBLaserTask/Laser1/EBLT shape EB+01 L4B" />
+            <monitorable name="Collector/Ecal/EcalBarrel/EBLaserClient/EBLT laser shape L4B EB+01" />
          </column>         
       </row>
   </layout>
@@ -472,7 +472,7 @@
             <monitorable name="Collector/Ecal/EcalBarrel/EBTestPulseClient/EBTPT test pulse amplitude G01 EB+01" />
          </column>         
          <column>
-            <monitorable name="Collector/Ecal/EcalBarrel/EBTestPulseTask/Gain01/EBTPT shape EB+01 G01" />
+            <monitorable name="Collector/Ecal/EcalBarrel/EBTestPulseClient/EBTPT test pulse shape G01 EB+01" />
          </column>         
       </row>
    </layout>
@@ -488,7 +488,7 @@
             <monitorable name="Collector/Ecal/EcalBarrel/EBTestPulseClient/EBTPT test pulse amplitude G06 EB+01" />
          </column>         
          <column>
-            <monitorable name="Collector/Ecal/EcalBarrel/EBTestPulseTask/Gain06/EBTPT shape EB+01 G06" />
+            <monitorable name="Collector/Ecal/EcalBarrel/EBTestPulseClient/EBTPT test pulse shape G06 EB+01" />
          </column>         
       </row>
    </layout>
@@ -504,7 +504,7 @@
             <monitorable name="Collector/Ecal/EcalBarrel/EBTestPulseClient/EBTPT test pulse amplitude G12 EB+01" />
          </column>         
          <column>
-            <monitorable name="Collector/Ecal/EcalBarrel/EBTestPulseTask/Gain12/EBTPT shape EB+01 G12" />
+            <monitorable name="Collector/Ecal/EcalBarrel/EBTestPulseClient/EBTPT test pulse shape G12 EB+01" />
          </column>         
       </row>
    </layout>
