@@ -212,7 +212,7 @@
   <layout name="Laser_client_4">
       <row>
          <column>
-            <monitorable name="EcalBarrelMonitorClient/EcalBarrel/EBLaserClient/EBLT timing L1A EB+01" />
+            <monitorable name="EcalBarrelMonitorClient/EcalBarrel/EBLaserClient/EBLT laser timing L1A EB+01" />
          </column>         
          <column>
             <monitorable name="EcalBarrelMonitorClient/EcalBarrel/EBLaserClient/EBLT laser shape L1A EB+01" />
@@ -220,7 +220,7 @@
       </row>
       <row>
          <column>
-            <monitorable name="EcalBarrelMonitorClient/EcalBarrel/EBLaserClient/EBLT timing L4A EB+01" />
+            <monitorable name="EcalBarrelMonitorClient/EcalBarrel/EBLaserClient/EBLT laser timing L4A EB+01" />
          </column>         
          <column>
             <monitorable name="EcalBarrelMonitorClient/EcalBarrel/EBLaserClient/EBLT laser shape L4A EB+01" />
@@ -231,7 +231,7 @@
   <layout name="Laser_client_5">
       <row>
          <column>
-            <monitorable name="EcalBarrelMonitorClient/EcalBarrel/EBLaserClient/EBLT timing L1B EB+01" />
+            <monitorable name="EcalBarrelMonitorClient/EcalBarrel/EBLaserClient/EBLT laser timing L1B EB+01" />
          </column>         
          <column>
             <monitorable name="EcalBarrelMonitorClient/EcalBarrel/EBLaserClient/EBLT laser shape L1B EB+01" />
@@ -239,7 +239,7 @@
       </row>
       <row>
          <column>
-            <monitorable name="EcalBarrelMonitorClient/EcalBarrel/EBLaserClient/EBLT timing L4B EB+01" />
+            <monitorable name="EcalBarrelMonitorClient/EcalBarrel/EBLaserClient/EBLT laser timing L4B EB+01" />
          </column>         
          <column>
             <monitorable name="EcalBarrelMonitorClient/EcalBarrel/EBLaserClient/EBLT laser shape L4B EB+01" />

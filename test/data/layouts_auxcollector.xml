@@ -213,7 +213,7 @@
   <layout name="Laser_client_4">
       <row>
          <column>
-            <monitorable name="AuxCollector/EcalBarrelMonitorClient/EcalBarrel/EBLaserClient/EBLT timing L1A EB+01" />
+            <monitorable name="AuxCollector/EcalBarrelMonitorClient/EcalBarrel/EBLaserClient/EBLT laser timing L1A EB+01" />
          </column>         
          <column>
             <monitorable name="AuxCollector/EcalBarrelMonitorClient/EcalBarrel/EBLaserClient/EBLT laser shape L1A EB+01" />
@@ -221,7 +221,7 @@
       </row>
       <row>
          <column>
-            <monitorable name="AuxCollector/EcalBarrelMonitorClient/EcalBarrel/EBLaserClient/EBLT timing L4A EB+01" />
+            <monitorable name="AuxCollector/EcalBarrelMonitorClient/EcalBarrel/EBLaserClient/EBLT laser timing L4A EB+01" />
          </column>         
          <column>
             <monitorable name="AuxCollector/EcalBarrelMonitorClient/EcalBarrel/EBLaserClient/EBLT laser shape L4A EB+01" />
@@ -232,18 +232,18 @@
   <layout name="Laser_client_5">
       <row>
          <column>
-            <monitorable name="AuxCollector/EcalBarrelMonitorClient/EcalBarrel/EBLaserClient/EBLT timing L1B EB+01" />
+            <monitorable name="AuxCollector/EcalBarrelMonitorClient/EcalBarrel/EBLaserClient/EBLT laser timing L1B EB+01" />
          </column>         
          <column>
-            <monitorable name="AuxCollector/EcalBarrelMonitorClient/Collector/Ecal/EcalBarrel/EBLaserClient/EBLT laser shape L1B EB+01" />
+            <monitorable name="AuxCollector/EcalBarrelMonitorClient/EcalBarrel/EBLaserClient/EBLT laser shape L1B EB+01" />
          </column>         
       </row>
       <row>
          <column>
-            <monitorable name="AuxCollector/EcalBarrelMonitorClient/EcalBarrel/EBLaserClient/EBLT timing L4B EB+01" />
+            <monitorable name="AuxCollector/EcalBarrelMonitorClient/EcalBarrel/EBLaserClient/EBLT laser timing L4B EB+01" />
          </column>         
          <column>
-            <monitorable name="AuxCollector/EcalBarrelMonitorClient/Collector/Ecal/EcalBarrel/EBLaserClient/EBLT laser shape L4B EB+01" />
+            <monitorable name="AuxCollector/EcalBarrelMonitorClient/EcalBarrel/EBLaserClient/EBLT laser shape L4B EB+01" />
          </column>         
       </row>
   </layout>
@@ -254,7 +254,7 @@
             <monitorable name="AuxCollector/EcalBarrelMonitorClient/Collector/Ecal/EcalBarrel/EBLaserTask/Laser1/PN/Gain01/EBPDT PNs pedestal EB+01 G01 L1" />
          </column>
          <column>
-            <monitorable name="AuxCollector/EcalBarrelMonitorClient/Collector/Ecal/EcalBarrel/EBLaserClient/EBPDT PNs pedestal rms EB+01 G01 L1" />
+            <monitorable name="AuxCollector/EcalBarrelMonitorClient/EcalBarrel/EBLaserClient/EBPDT PNs pedestal rms EB+01 G01 L1" />
          </column>
          <column>
             <monitorable name="AuxCollector/EcalBarrelMonitorClient/Collector/Ecal/EcalBarrel/EBLaserTask/Laser1/PN/Gain01/EBPDT PNs amplitude EB+01 G01 L1" />
@@ -265,7 +265,7 @@
             <monitorable name="AuxCollector/EcalBarrelMonitorClient/Collector/Ecal/EcalBarrel/EBLaserTask/Laser4/PN/Gain01/EBPDT PNs pedestal EB+01 G01 L4" />
          </column>
          <column>
-            <monitorable name="AuxCollector/EcalBarrelMonitorClient/Collector/Ecal/EcalBarrel/EBLaserClient/EBPDT PNs pedestal rms EB+01 G01 L4" />
+            <monitorable name="AuxCollector/EcalBarrelMonitorClient/EcalBarrel/EBLaserClient/EBPDT PNs pedestal rms EB+01 G01 L4" />
          </column>
          <column>
             <monitorable name="AuxCollector/EcalBarrelMonitorClient/Collector/Ecal/EcalBarrel/EBLaserTask/Laser4/PN/Gain01/EBPDT PNs amplitude EB+01 G01 L4" />
@@ -292,7 +292,7 @@
             <monitorable name="AuxCollector/EcalBarrelMonitorClient/Collector/Ecal/EcalBarrel/EBLaserTask/Laser1/PN/Gain16/EBPDT PNs pedestal EB+01 G16 L1" />
          </column>
          <column>
-            <monitorable name="AuxCollector/EcalBarrelMonitorClient/Collector/Ecal/EcalBarrel/EBLaserClient/EBPDT PNs pedestal rms EB+01 G16 L1" />
+            <monitorable name="AuxCollector/EcalBarrelMonitorClient/EcalBarrel/EBLaserClient/EBPDT PNs pedestal rms EB+01 G16 L1" />
          </column>
          <column>
             <monitorable name="AuxCollector/EcalBarrelMonitorClient/Collector/Ecal/EcalBarrel/EBLaserTask/Laser1/PN/Gain16/EBPDT PNs amplitude EB+01 G16 L1" />
@@ -303,7 +303,7 @@
             <monitorable name="AuxCollector/EcalBarrelMonitorClient/Collector/Ecal/EcalBarrel/EBLaserTask/Laser4/PN/Gain16/EBPDT PNs pedestal EB+01 G16 L4" />
          </column>         
          <column>
-            <monitorable name="AuxCollector/EcalBarrelMonitorClient/Collector/Ecal/EcalBarrel/EBLaserClient/EBPDT PNs pedestal rms EB+01 G16 L4" />
+            <monitorable name="AuxCollector/EcalBarrelMonitorClient/EcalBarrel/EBLaserClient/EBPDT PNs pedestal rms EB+01 G16 L4" />
          </column>
          <column>
             <monitorable name="AuxCollector/EcalBarrelMonitorClient/Collector/Ecal/EcalBarrel/EBLaserTask/Laser4/PN/Gain16/EBPDT PNs amplitude EB+01 G16 L4" />
@@ -422,7 +422,7 @@
             <monitorable name="AuxCollector/EcalBarrelMonitorClient/Collector/Ecal/EcalBarrel/EBPedestalTask/PN/Gain01/EBPDT PNs pedestal EB+01 G01" />
          </column>
          <column>
-            <monitorable name="AuxCollector/EcalBarrelMonitorClient/Collector/Ecal/EcalBarrel/EBPedestalClient/EBPDT PNs pedestal rms EB+01 G01" />
+            <monitorable name="AuxCollector/EcalBarrelMonitorClient/EcalBarrel/EBPedestalClient/EBPDT PNs pedestal rms EB+01 G01" />
          </column>
      </row>
      <row> 
@@ -430,7 +430,7 @@
             <monitorable name="AuxCollector/EcalBarrelMonitorClient/Collector/Ecal/EcalBarrel/EBPedestalTask/PN/Gain16/EBPDT PNs pedestal EB+01 G16" />
          </column>
          <column>
-            <monitorable name="AuxCollector/EcalBarrelMonitorClient/Collector/Ecal/EcalBarrel/EBPedestalClient/EBPDT PNs pedestal rms EB+01 G16" />
+            <monitorable name="AuxCollector/EcalBarrelMonitorClient/EcalBarrel/EBPedestalClient/EBPDT PNs pedestal rms EB+01 G16" />
          </column>  
       </row>
    </layout>
@@ -472,7 +472,7 @@
             <monitorable name="AuxCollector/EcalBarrelMonitorClient/EcalBarrel/EBTestPulseClient/EBTPT test pulse amplitude G01 EB+01" />
          </column>         
          <column>
-            <monitorable name="AuxCollector/EcalBarrelMonitorClient/Collector/Ecal/EcalBarrel/EBTestPulseClient/EBTPT test pulse shape G01 EB+01" />
+            <monitorable name="AuxCollector/EcalBarrelMonitorClient/EcalBarrel/EBTestPulseClient/EBTPT test pulse shape G01 EB+01" />
          </column>         
       </row>
    </layout>
@@ -488,7 +488,7 @@
             <monitorable name="AuxCollector/EcalBarrelMonitorClient/EcalBarrel/EBTestPulseClient/EBTPT test pulse amplitude G06 EB+01" />
          </column>         
          <column>
-            <monitorable name="AuxCollector/EcalBarrelMonitorClient/Collector/Ecal/EcalBarrel/EBTestPulseClient/EBTPT test pulse shape G06 EB+01" />
+            <monitorable name="AuxCollector/EcalBarrelMonitorClient/EcalBarrel/EBTestPulseClient/EBTPT test pulse shape G06 EB+01" />
          </column>         
       </row>
    </layout>
@@ -504,7 +504,7 @@
             <monitorable name="AuxCollector/EcalBarrelMonitorClient/EcalBarrel/EBTestPulseClient/EBTPT test pulse amplitude G12 EB+01" />
          </column>         
          <column>
-            <monitorable name="AuxCollector/EcalBarrelMonitorClient/Collector/Ecal/EcalBarrel/EBTestPulseClient/EBTPT test pulse shape G12 EB+01" />
+            <monitorable name="AuxCollector/EcalBarrelMonitorClient/EcalBarrel/EBTestPulseClient/EBTPT test pulse shape G12 EB+01" />
          </column>         
       </row>
    </layout>
@@ -528,10 +528,10 @@
             <monitorable name="AuxCollector/EcalBarrelMonitorClient/Collector/Ecal/EcalBarrel/EBTestPulseTask/PN/Gain01/EBPDT PNs pedestal EB+01 G01" />
          </column>         
          <column>
-            <monitorable name="AuxCollector/EcalBarrelMonitorClient/Collector/Ecal/EcalBarrel/EBTestPulseClient/EBPDT PNs pedestal rms EB+01 G01" />
+            <monitorable name="AuxCollector/EcalBarrelMonitorClient/EcalBarrel/EBTestPulseClient/EBPDT PNs pedestal rms EB+01 G01" />
          </column>         
          <column>
-            <monitorable name="AuxCollector/EcalBarrelMonitorClient/Collector/Ecal/EcalBarrel/EBTestPulseTask/PN/Gain01/EBPDT PNs amplitude EB+01 G01" />
+            <monitorable name="AuxCollector/EcalBarrelMonitorClient/EcalBarrel/EBTestPulseTask/PN/Gain01/EBPDT PNs amplitude EB+01 G01" />
          </column>
       </row>
      <row>
@@ -539,7 +539,7 @@
             <monitorable name="AuxCollector/EcalBarrelMonitorClient/Collector/Ecal/EcalBarrel/EBTestPulseTask/PN/Gain16/EBPDT PNs pedestal EB+01 G16" />
          </column>         
          <column>
-            <monitorable name="AuxCollector/EcalBarrelMonitorClient/Collector/Ecal/EcalBarrel/EBTestPulseClient/EBPDT PNs pedestal rms EB+01 G16" />
+            <monitorable name="AuxCollector/EcalBarrelMonitorClient/EcalBarrel/EBTestPulseClient/EBPDT PNs pedestal rms EB+01 G16" />
          </column>         
          <column>
             <monitorable name="AuxCollector/EcalBarrelMonitorClient/Collector/Ecal/EcalBarrel/EBTestPulseTask/PN/Gain16/EBPDT PNs amplitude EB+01 G16" />
@@ -739,7 +739,7 @@
             <monitorable name="AuxCollector/EcalBarrelMonitorClient/Collector/Ecal/EcalBarrel/EBBeamCaloTask/EBBCT readout crystals errors" />
          </column>
          <column>
-            <monitorable name="EcalBarrelMonitorClient/EcalBarrel/EBBeamCaloTask/EBBCT E1 in the max cry" />
+            <monitorable name="EcalBarrelMonitorClient/EcalBarrel/Collector/Ecal/EcalBarrel/EBBeamCaloTask/EBBCT E1 in the max cry" />
          </column>
      </row>
   </layout>
