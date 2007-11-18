@@ -10,146 +10,146 @@
    <layout name="IntegrityTask">
      <row>
          <column>
-            <monitorable name="Collector/Ecal/EcalBarrel/EBOccupancyTask/EBOT occupancy EB-01" />
+            <monitorable name="Collector/EB/EcalBarrel/EBOccupancyTask/EBOT occupancy EB-01" />
          </column>         
          <column>
-            <monitorable name="Collector/Ecal/EcalBarrel/EBOccupancyTask/EBOT occupancy EB+01" />
-         </column>         
-     </row>
-     <row>
-         <column>
-            <monitorable name="Collector/Ecal/EcalBarrel/EBOccupancyTask/EBOT occupancy EB-02" />
-         </column>         
-         <column>
-            <monitorable name="Collector/Ecal/EcalBarrel/EBOccupancyTask/EBOT occupancy EB+02" />
+            <monitorable name="Collector/EB/EcalBarrel/EBOccupancyTask/EBOT occupancy EB+01" />
          </column>         
      </row>
      <row>
          <column>
-            <monitorable name="Collector/Ecal/EcalBarrel/EBOccupancyTask/EBOT occupancy EB-03" />
+            <monitorable name="Collector/EB/EcalBarrel/EBOccupancyTask/EBOT occupancy EB-02" />
          </column>         
          <column>
-            <monitorable name="Collector/Ecal/EcalBarrel/EBOccupancyTask/EBOT occupancy EB+03" />
-         </column>         
-     </row>
-     <row>
-         <column>
-            <monitorable name="Collector/Ecal/EcalBarrel/EBOccupancyTask/EBOT occupancy EB-04" />
-         </column>         
-         <column>
-            <monitorable name="Collector/Ecal/EcalBarrel/EBOccupancyTask/EBOT occupancy EB+04" />
+            <monitorable name="Collector/EB/EcalBarrel/EBOccupancyTask/EBOT occupancy EB+02" />
          </column>         
      </row>
      <row>
          <column>
-            <monitorable name="Collector/Ecal/EcalBarrel/EBOccupancyTask/EBOT occupancy EB-05" />
+            <monitorable name="Collector/EB/EcalBarrel/EBOccupancyTask/EBOT occupancy EB-03" />
          </column>         
          <column>
-            <monitorable name="Collector/Ecal/EcalBarrel/EBOccupancyTask/EBOT occupancy EB+05" />
-         </column>         
-     </row>
-     <row>
-         <column>
-            <monitorable name="Collector/Ecal/EcalBarrel/EBOccupancyTask/EBOT occupancy EB-06" />
-         </column>         
-         <column>
-            <monitorable name="Collector/Ecal/EcalBarrel/EBOccupancyTask/EBOT occupancy EB+06" />
+            <monitorable name="Collector/EB/EcalBarrel/EBOccupancyTask/EBOT occupancy EB+03" />
          </column>         
      </row>
      <row>
          <column>
-            <monitorable name="Collector/Ecal/EcalBarrel/EBOccupancyTask/EBOT occupancy EB-07" />
+            <monitorable name="Collector/EB/EcalBarrel/EBOccupancyTask/EBOT occupancy EB-04" />
          </column>         
          <column>
-            <monitorable name="Collector/Ecal/EcalBarrel/EBOccupancyTask/EBOT occupancy EB+07" />
-         </column>         
-     </row>
-     <row>
-         <column>
-            <monitorable name="Collector/Ecal/EcalBarrel/EBOccupancyTask/EBOT occupancy EB-08" />
-         </column>         
-         <column>
-            <monitorable name="Collector/Ecal/EcalBarrel/EBOccupancyTask/EBOT occupancy EB+08" />
+            <monitorable name="Collector/EB/EcalBarrel/EBOccupancyTask/EBOT occupancy EB+04" />
          </column>         
      </row>
      <row>
          <column>
-            <monitorable name="Collector/Ecal/EcalBarrel/EBOccupancyTask/EBOT occupancy EB-09" />
+            <monitorable name="Collector/EB/EcalBarrel/EBOccupancyTask/EBOT occupancy EB-05" />
          </column>         
          <column>
-            <monitorable name="Collector/Ecal/EcalBarrel/EBOccupancyTask/EBOT occupancy EB+09" />
-         </column>         
-     </row>
-     <row>
-         <column>
-            <monitorable name="Collector/Ecal/EcalBarrel/EBOccupancyTask/EBOT occupancy EB-10" />
-         </column>         
-         <column>
-            <monitorable name="Collector/Ecal/EcalBarrel/EBOccupancyTask/EBOT occupancy EB+10" />
+            <monitorable name="Collector/EB/EcalBarrel/EBOccupancyTask/EBOT occupancy EB+05" />
          </column>         
      </row>
      <row>
          <column>
-            <monitorable name="Collector/Ecal/EcalBarrel/EBOccupancyTask/EBOT occupancy EB-11" />
+            <monitorable name="Collector/EB/EcalBarrel/EBOccupancyTask/EBOT occupancy EB-06" />
          </column>         
          <column>
-            <monitorable name="Collector/Ecal/EcalBarrel/EBOccupancyTask/EBOT occupancy EB+11" />
-         </column>         
-     </row>
-     <row>
-         <column>
-            <monitorable name="Collector/Ecal/EcalBarrel/EBOccupancyTask/EBOT occupancy EB-12" />
-         </column>         
-         <column>
-            <monitorable name="Collector/Ecal/EcalBarrel/EBOccupancyTask/EBOT occupancy EB+12" />
+            <monitorable name="Collector/EB/EcalBarrel/EBOccupancyTask/EBOT occupancy EB+06" />
          </column>         
      </row>
      <row>
          <column>
-            <monitorable name="Collector/Ecal/EcalBarrel/EBOccupancyTask/EBOT occupancy EB-13" />
+            <monitorable name="Collector/EB/EcalBarrel/EBOccupancyTask/EBOT occupancy EB-07" />
          </column>         
          <column>
-            <monitorable name="Collector/Ecal/EcalBarrel/EBOccupancyTask/EBOT occupancy EB+13" />
-         </column>         
-     </row>
-     <row>
-         <column>
-            <monitorable name="Collector/Ecal/EcalBarrel/EBOccupancyTask/EBOT occupancy EB-14" />
-         </column>         
-         <column>
-            <monitorable name="Collector/Ecal/EcalBarrel/EBOccupancyTask/EBOT occupancy EB+14" />
+            <monitorable name="Collector/EB/EcalBarrel/EBOccupancyTask/EBOT occupancy EB+07" />
          </column>         
      </row>
      <row>
          <column>
-            <monitorable name="Collector/Ecal/EcalBarrel/EBOccupancyTask/EBOT occupancy EB-15" />
+            <monitorable name="Collector/EB/EcalBarrel/EBOccupancyTask/EBOT occupancy EB-08" />
          </column>         
          <column>
-            <monitorable name="Collector/Ecal/EcalBarrel/EBOccupancyTask/EBOT occupancy EB+15" />
-         </column>         
-     </row>
-     <row>
-         <column>
-            <monitorable name="Collector/Ecal/EcalBarrel/EBOccupancyTask/EBOT occupancy EB-16" />
-         </column>         
-         <column>
-            <monitorable name="Collector/Ecal/EcalBarrel/EBOccupancyTask/EBOT occupancy EB+16" />
+            <monitorable name="Collector/EB/EcalBarrel/EBOccupancyTask/EBOT occupancy EB+08" />
          </column>         
      </row>
      <row>
          <column>
-            <monitorable name="Collector/Ecal/EcalBarrel/EBOccupancyTask/EBOT occupancy EB-17" />
+            <monitorable name="Collector/EB/EcalBarrel/EBOccupancyTask/EBOT occupancy EB-09" />
          </column>         
          <column>
-            <monitorable name="Collector/Ecal/EcalBarrel/EBOccupancyTask/EBOT occupancy EB+17" />
+            <monitorable name="Collector/EB/EcalBarrel/EBOccupancyTask/EBOT occupancy EB+09" />
          </column>         
      </row>
      <row>
          <column>
-            <monitorable name="Collector/Ecal/EcalBarrel/EBOccupancyTask/EBOT occupancy EB-18" />
+            <monitorable name="Collector/EB/EcalBarrel/EBOccupancyTask/EBOT occupancy EB-10" />
          </column>         
          <column>
-            <monitorable name="Collector/Ecal/EcalBarrel/EBOccupancyTask/EBOT occupancy EB+18" />
+            <monitorable name="Collector/EB/EcalBarrel/EBOccupancyTask/EBOT occupancy EB+10" />
+         </column>         
+     </row>
+     <row>
+         <column>
+            <monitorable name="Collector/EB/EcalBarrel/EBOccupancyTask/EBOT occupancy EB-11" />
+         </column>         
+         <column>
+            <monitorable name="Collector/EB/EcalBarrel/EBOccupancyTask/EBOT occupancy EB+11" />
+         </column>         
+     </row>
+     <row>
+         <column>
+            <monitorable name="Collector/EB/EcalBarrel/EBOccupancyTask/EBOT occupancy EB-12" />
+         </column>         
+         <column>
+            <monitorable name="Collector/EB/EcalBarrel/EBOccupancyTask/EBOT occupancy EB+12" />
+         </column>         
+     </row>
+     <row>
+         <column>
+            <monitorable name="Collector/EB/EcalBarrel/EBOccupancyTask/EBOT occupancy EB-13" />
+         </column>         
+         <column>
+            <monitorable name="Collector/EB/EcalBarrel/EBOccupancyTask/EBOT occupancy EB+13" />
+         </column>         
+     </row>
+     <row>
+         <column>
+            <monitorable name="Collector/EB/EcalBarrel/EBOccupancyTask/EBOT occupancy EB-14" />
+         </column>         
+         <column>
+            <monitorable name="Collector/EB/EcalBarrel/EBOccupancyTask/EBOT occupancy EB+14" />
+         </column>         
+     </row>
+     <row>
+         <column>
+            <monitorable name="Collector/EB/EcalBarrel/EBOccupancyTask/EBOT occupancy EB-15" />
+         </column>         
+         <column>
+            <monitorable name="Collector/EB/EcalBarrel/EBOccupancyTask/EBOT occupancy EB+15" />
+         </column>         
+     </row>
+     <row>
+         <column>
+            <monitorable name="Collector/EB/EcalBarrel/EBOccupancyTask/EBOT occupancy EB-16" />
+         </column>         
+         <column>
+            <monitorable name="Collector/EB/EcalBarrel/EBOccupancyTask/EBOT occupancy EB+16" />
+         </column>         
+     </row>
+     <row>
+         <column>
+            <monitorable name="Collector/EB/EcalBarrel/EBOccupancyTask/EBOT occupancy EB-17" />
+         </column>         
+         <column>
+            <monitorable name="Collector/EB/EcalBarrel/EBOccupancyTask/EBOT occupancy EB+17" />
+         </column>         
+     </row>
+     <row>
+         <column>
+            <monitorable name="Collector/EB/EcalBarrel/EBOccupancyTask/EBOT occupancy EB-18" />
+         </column>         
+         <column>
+            <monitorable name="Collector/EB/EcalBarrel/EBOccupancyTask/EBOT occupancy EB+18" />
          </column>         
      </row>
    </layout>
