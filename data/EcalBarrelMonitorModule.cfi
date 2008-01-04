@@ -4,6 +4,7 @@ module ecalBarrelMonitorModule = EcalBarrelMonitorModule{
   InputTag EcalRawDataCollection = ecalEBunpacker:
   InputTag EBDigiCollection = ecalEBunpacker:ebDigis
   InputTag EcalUncalibratedRecHitCollection = ecalUncalibHit:EcalUncalibRecHitsEB
+  InputTag EcalTrigPrimDigiCollection = ecalEBunpacker:EBTT
   untracked bool enableCleanup = false
   untracked bool enableMonitorDaemon = false
   untracked bool enableEventDisplay = false
