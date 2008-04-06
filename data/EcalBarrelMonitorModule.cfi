@@ -1,5 +1,4 @@
 module ecalBarrelMonitorModule = EcalBarrelMonitorModule{
-  InputTag EcalTBEventHeader = ecalEBunpacker:
   InputTag EcalRawDataCollection = ecalEBunpacker:
   InputTag EBDigiCollection = ecalEBunpacker:ebDigis
   InputTag EcalRecHitCollection = ecalRecHit:EcalRecHitsEB
