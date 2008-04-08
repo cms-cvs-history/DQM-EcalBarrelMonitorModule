@@ -3,6 +3,7 @@ module ecalBarrelMonitorModule = EcalBarrelMonitorModule{
   InputTag EBDigiCollection = ecalEBunpacker:ebDigis
   InputTag EcalRecHitCollection = ecalRecHit:EcalRecHitsEB
   InputTag EcalTrigPrimDigiCollection = ecalEBunpacker:EcalTriggerPrimitives
+  untracked string prefixME = "EcalBarrel"
   untracked bool enableCleanup = false
   untracked bool enableEventDisplay = false
   untracked int32 runNumber = 0
