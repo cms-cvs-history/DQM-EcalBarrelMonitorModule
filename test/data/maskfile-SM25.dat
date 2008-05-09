@@ -1,9 +1,0 @@
-#
-# SM:           25
-# date:         2007/07/13
-# version:      1
-#
-
-Crystal  1 	1073   PEDESTAL_MIDDLE_GAIN_RMS_WARNING
-Crystal  1 	1073   PEDESTAL_HIGH_GAIN_RMS_WARNING
-Crystal  1 	1073   PEDESTAL_ONLINE_HIGH_GAIN_RMS_WARNING
