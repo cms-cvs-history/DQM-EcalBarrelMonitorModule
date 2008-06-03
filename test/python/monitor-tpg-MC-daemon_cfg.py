@@ -16,9 +16,12 @@ process.load("DQM.EcalBarrelMonitorTasks.EcalBarrelMonitorTasks_cfi")
 
 process.load("DQM.EcalBarrelMonitorTasks.mergeRuns_cff")
 
+process.load("SimCalorimetry.EcalTrigPrimProducers.ecalTriggerPrimitiveDigis_cff")
+
 process.load("Geometry.EcalMapping.EcalMapping_cfi")
 
-process.load("Geometry.EcalMapping.EcalMappingRecord_cfi")
+import SimCalorimetry.EcalTrigPrimProducers.ecalTriggerPrimitiveDigis_cfi
+process.ecalTriggerPrimitiveDigis2 = SimCalorimetry.EcalTrigPrimProducers.ecalTriggerPrimitiveDigis_cfi.ecalTriggerPrimitiveDigis.clone()
 
 process.load("DQM.EcalBarrelMonitorClient.EcalBarrelMonitorClient_cfi")
 
@@ -36,6 +39,13 @@ process.dqmInfoEB = cms.EDFilter("DQMEventInfo",
     subSystemFolder = cms.untracked.string('EcalBarrel')
 )
 
+process.dqmQTestEB = cms.EDFilter("QualityTester",
+    reportThreshold = cms.untracked.string('red'),
+    prescaleFactor = cms.untracked.int32(1),
+    qtList = cms.untracked.FileInPath('DQM/EcalBarrelMonitorModule/test/data/EcalBarrelQualityTests.xml'),
+    getQualityTestsFromFile = cms.untracked.bool(True)
+)
+
 process.dqmSaverEB = cms.EDFilter("DQMFileSaver",
     fileName = cms.untracked.string('EcalBarrel'),
     dirName = cms.untracked.string('.'),
@@ -43,11 +53,23 @@ process.dqmSaverEB = cms.EDFilter("DQMFileSaver",
 )
 
 process.maxEvents = cms.untracked.PSet(
-    input = cms.untracked.int32(300)
+#    input = cms.untracked.int32(150)
+#    input = cms.untracked.int32(300)
 )
 process.source = cms.Source("PoolSource",
 #---
-    fileNames = cms.untracked.vstring('/store/users/dellaric/data/5E883D60-4B98-DC11-BD17-000423D6A6F4.root')
+    fileNames = cms.untracked.vstring('/store/users/dellaric/data/5E883D60-4B98-DC11-BD17-000423D6A6F4.root', 
+        '/store/users/dellaric/data/5E883D60-4B98-DC11-BD17-000423D6A6F4.root', 
+        '/store/users/dellaric/data/5E883D60-4B98-DC11-BD17-000423D6A6F4.root', 
+        '/store/users/dellaric/data/5E883D60-4B98-DC11-BD17-000423D6A6F4.root', 
+        '/store/users/dellaric/data/5E883D60-4B98-DC11-BD17-000423D6A6F4.root', 
+        '/store/users/dellaric/data/5E883D60-4B98-DC11-BD17-000423D6A6F4.root', 
+        '/store/users/dellaric/data/5E883D60-4B98-DC11-BD17-000423D6A6F4.root', 
+        '/store/users/dellaric/data/5E883D60-4B98-DC11-BD17-000423D6A6F4.root', 
+        '/store/users/dellaric/data/5E883D60-4B98-DC11-BD17-000423D6A6F4.root', 
+        '/store/users/dellaric/data/5E883D60-4B98-DC11-BD17-000423D6A6F4.root', 
+        '/store/users/dellaric/data/5E883D60-4B98-DC11-BD17-000423D6A6F4.root', 
+        '/store/users/dellaric/data/5E883D60-4B98-DC11-BD17-000423D6A6F4.root')
 #---
 )
 
@@ -75,8 +97,8 @@ process.MessageLogger = cms.Service("MessageLogger",
     destinations = cms.untracked.vstring('cout')
 )
 
-process.ecalBarrelDataSequence = cms.Sequence(process.preScaler*process.ecalUncalibHit*process.ecalRecHit*process.islandBasicClusters*process.islandSuperClusters*process.hybridSuperClusters)
-process.ecalBarrelMonitorSequence = cms.Sequence(process.ecalBarrelMonitorModule*process.dqmInfoEB*process.ecalBarrelMonitorClient*process.dqmSaverEB)
+process.ecalBarrelDataSequence = cms.Sequence(process.preScaler*process.ecalUncalibHit*process.ecalRecHit*process.ecalTriggerPrimitiveDigis*process.ecalTriggerPrimitiveDigis2*process.islandBasicClusters*process.islandSuperClusters*process.hybridSuperClusters)
+process.ecalBarrelMonitorSequence = cms.Sequence(process.ecalBarrelMonitorModule*process.dqmInfoEB*process.ecalBarrelMonitorClient*process.dqmQTestEB*process.dqmSaverEB)
 
 process.p = cms.Path(process.ecalBarrelDataSequence*process.ecalBarrelMonitorSequence)
 process.q = cms.EndPath(process.ecalBarrelDefaultTasksSequence*process.ecalBarrelClusterTask)
@@ -92,7 +114,20 @@ process.ecalRecHit.EEuncalibRecHitCollection = cms.InputTag("ecalUncalibHit","Ec
 process.ecalBarrelMonitorModule.mergeRuns = True
 process.ecalBarrelMonitorModule.EBDigiCollection = cms.InputTag("ecalDigis","ebDigis")
 process.ecalBarrelMonitorModule.runType = 3 # MTCC/PHYSICS
-process.ecalBarrelMonitorModule.EcalTrigPrimDigiCollection = 'ecalTriggerPrimitiveDigis'
+
+process.ecalTriggerPrimitiveDigis.Label = 'ecalDigis'
+process.ecalTriggerPrimitiveDigis.InstanceEB = 'ebDigis'
+process.ecalTriggerPrimitiveDigis.InstanceEE = 'eeDigis'
+process.ecalTriggerPrimitiveDigis.BarrelOnly = True
+
+process.ecalTriggerPrimitiveDigis2.Label = 'ecalDigis'
+process.ecalTriggerPrimitiveDigis2.InstanceEB = 'ebDigis'
+process.ecalTriggerPrimitiveDigis2.InstanceEE = 'eeDigis'
+process.ecalTriggerPrimitiveDigis2.BarrelOnly = True
+
+process.ecalBarrelTriggerTowerTask.EcalTrigPrimDigiCollectionReal = 'ecalTriggerPrimitiveDigis2'
+
+process.ecalBarrelMonitorModule.EcalTrigPrimDigiCollection = 'ecalTriggerPrimitiveDigis2'
 
 process.ecalBarrelOccupancyTask.EBDigiCollection = cms.InputTag("ecalDigis","ebDigis")
 process.ecalBarrelOccupancyTask.EcalTrigPrimDigiCollection = 'ecalTriggerPrimitiveDigis'
@@ -103,7 +138,6 @@ process.ecalBarrelMonitorClient.maskFile = 'maskfile-EB.dat'
 process.ecalBarrelMonitorClient.mergeRuns = True
 process.ecalBarrelMonitorClient.location = 'H4'
 process.ecalBarrelMonitorClient.baseHtmlDir = '.'
-process.ecalBarrelMonitorClient.enabledClients = ['Integrity', 'Occupancy', 'PedestalOnline', 'Timing', 'Cluster', 'Summary']
 
-process.DQM.collectorHost = ''
+process.ecalBarrelMonitorClient.enabledClients = ['Integrity', 'Occupancy', 'PedestalOnline', 'Timing', 'TriggerTower', 'Cluster', 'Summary']
 
