@@ -722,12 +722,19 @@
         <TestName activate="true">EB_Occupancy_Rechits_Comp2RefKolmogorov</TestName>
 </LINK>
 
+<QTEST name="EB_Occupancy_RechitsThr_Comp2RefKolmogorov">
+        <TYPE>Comp2RefKolmogorov</TYPE>
+        <PARAM name="testparam">0</PARAM>
+        <PARAM name="error">0.60</PARAM>
+        <PARAM name="warning">0.80</PARAM>
+</QTEST>
+
 <LINK name="*EcalBarrel/EBOccupancyTask/EBOT rec hit thr occupancy projection eta">
-        <TestName activate="true">EB_Occupancy_Rechits_Comp2RefKolmogorov</TestName>
+        <TestName activate="true">EB_Occupancy_RechitsThr_Comp2RefKolmogorov</TestName>
 </LINK>
 
 <LINK name="*EcalBarrel/EBOccupancyTask/EBOT rec hit thr occupancy projection phi">
-        <TestName activate="true">EB_Occupancy_Rechits_Comp2RefKolmogorov</TestName>
+        <TestName activate="true">EB_Occupancy_RechitsThr_Comp2RefKolmogorov</TestName>
 </LINK>
 
 <QTEST name="EB_Occupancy_TP_Comp2RefKolmogorov">
@@ -745,19 +752,26 @@
         <TestName activate="true">EB_Occupancy_TP_Comp2RefKolmogorov</TestName>
 </LINK>
 
+<QTEST name="EB_Occupancy_TPThr_Comp2RefKolmogorov">
+        <TYPE>Comp2RefKolmogorov</TYPE>
+        <PARAM name="testparam">0</PARAM>
+        <PARAM name="error">0.50</PARAM>
+        <PARAM name="warning">0.70</PARAM>
+</QTEST>
+
 <LINK name="*EcalBarrel/EBOccupancyTask/EBOT TP digi thr occupancy projection eta">
-        <TestName activate="true">EB_Occupancy_TP_Comp2RefKolmogorov</TestName>
+        <TestName activate="true">EB_Occupancy_TPThr_Comp2RefKolmogorov</TestName>
 </LINK>
 
 <LINK name="*EcalBarrel/EBOccupancyTask/EBOT TP digi thr occupancy projection phi">
-        <TestName activate="true">EB_Occupancy_TP_Comp2RefKolmogorov</TestName>
+        <TestName activate="true">EB_Occupancy_TPThr_Comp2RefKolmogorov</TestName>
 </LINK>
 
 <QTEST name="EB_BasicClusters_Energy_Comp2RefKolmogorov">
         <TYPE>Comp2RefKolmogorov</TYPE>
         <PARAM name="testparam">0</PARAM>
-        <PARAM name="error">0.50</PARAM>
-        <PARAM name="warning">0.70</PARAM>
+        <PARAM name="error">0.70</PARAM>
+        <PARAM name="warning">0.90</PARAM>
 </QTEST>
 
 <LINK name="*EcalBarrel/EBClusterTask/EBCLT BC energy">
@@ -783,8 +797,8 @@
 <QTEST name="EB_BasicClusters_Occupancy_Comp2RefKolmogorov">
         <TYPE>Comp2RefKolmogorov</TYPE>
         <PARAM name="testparam">0</PARAM>
-        <PARAM name="error">0.50</PARAM>
-        <PARAM name="warning">0.70</PARAM>
+        <PARAM name="error">0.70</PARAM>
+        <PARAM name="warning">0.90</PARAM>
 </QTEST>
 
 <LINK name="*EcalBarrel/EBClusterTask/EBCLT BC number">
@@ -814,8 +828,8 @@
 <QTEST name="EB_SuperClusters_Energy_Comp2RefKolmogorov">
         <TYPE>Comp2RefKolmogorov</TYPE>
         <PARAM name="testparam">0</PARAM>
-        <PARAM name="error">0.50</PARAM>
-        <PARAM name="warning">0.70</PARAM>
+        <PARAM name="error">0.70</PARAM>
+        <PARAM name="warning">0.90</PARAM>
 </QTEST>
 
 <LINK name="*EcalBarrel/EBClusterTask/EBCLT SC energy">
@@ -825,8 +839,8 @@
 <QTEST name="EB_SuperClusters_Occupancy_Comp2RefKolmogorov">
         <TYPE>Comp2RefKolmogorov</TYPE>
         <PARAM name="testparam">0</PARAM>
-        <PARAM name="error">0.50</PARAM>
-        <PARAM name="warning">0.70</PARAM>
+        <PARAM name="error">0.70</PARAM>
+        <PARAM name="warning">0.90</PARAM>
 </QTEST>
 
 <LINK name="*EcalBarrel/EBClusterTask/EBCLT SC number">
