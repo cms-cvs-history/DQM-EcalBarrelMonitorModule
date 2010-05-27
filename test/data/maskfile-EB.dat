@@ -11,24 +11,25 @@ TT       EB-10  41    PEDESTAL_ONLINE_HIGH_GAIN_RMS_ERROR
 TT       EB-01  12    STATUS_FLAG_ERROR
 TT       EB-02  13    STATUS_FLAG_ERROR
 TT       EB-03  7     STATUS_FLAG_ERROR
-TT       EB-06  17    STATUS_FLAG_ERROR
-TT       EB-06  45    STATUS_FLAG_ERROR
+# not masked in reco, masked by me (problematic in most of runs)
+TT       EB-04  1     STATUS_FLAG_ERROR
 TT       EB-07  42    STATUS_FLAG_ERROR
+# not masked in reco, masked by me (problematic in most of runs)
+TT       EB-09  22    STATUS_FLAG_ERROR
 TT       EB-10  67    STATUS_FLAG_ERROR
 TT       EB-11  8     STATUS_FLAG_ERROR
 TT       EB-12  5     STATUS_FLAG_ERROR
 TT       EB-14  39    STATUS_FLAG_ERROR
+# not masked in reco, but frequently problematic
+TT       EB-13  33    STATUS_FLAG_ERROR
 TT       EB-16  53    STATUS_FLAG_ERROR
 TT       EB-17  34    STATUS_FLAG_ERROR
 TT       EB+03  47    STATUS_FLAG_ERROR
 TT       EB+06  6     STATUS_FLAG_ERROR
-TT       EB+06  14    STATUS_FLAG_ERROR
 TT       EB+06  43    STATUS_FLAG_ERROR
 TT       EB+09  42    STATUS_FLAG_ERROR
 TT       EB+09  67    STATUS_FLAG_ERROR
 TT       EB+10  50    STATUS_FLAG_ERROR
-TT       EB+15  21    STATUS_FLAG_ERROR
-TT       EB+16  30    STATUS_FLAG_ERROR
 TT       EB+18  60    STATUS_FLAG_ERROR
 TT       EB+18  65    STATUS_FLAG_ERROR
 
