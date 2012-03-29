@@ -1,8 +1,8 @@
 /*
  * \file EcalBarrelMonitorModule.cc
  *
- * $Date: 2011/06/27 08:26:29 $
- * $Revision: 1.203 $
+ * $Date: 2011/09/02 13:55:02 $
+ * $Revision: 1.204 $
  * \author G. Della Ricca
  * \author G. Franzoni
  *
@@ -156,6 +156,8 @@ void EcalBarrelMonitorModule::beginJob(void){
 void EcalBarrelMonitorModule::beginRun(const edm::Run& r, const edm::EventSetup& c) {
 
   if ( debug_ ) std::cout << "EcalBarrelMonitorModule: beginRun" << std::endl;
+
+  if(verbose_) std::cout << "Starting run " << r.run() << std::endl;
 
   if ( ! mergeRuns_ ) this->reset();
 
