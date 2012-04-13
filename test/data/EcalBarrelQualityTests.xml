@@ -893,19 +893,19 @@
         <TestName activate="true">EB_Quality_Summary</TestName>
 </LINK>
 
-<LINK name="*EcalBarrel/EBSummaryClient/EBPT pedestal quality summary">
+<LINK name="*EcalBarrel/EBSummaryClient/EBPT pedestal quality * summary">
         <TestName activate="true">EB_Quality_Summary</TestName>
 </LINK>
 
-<LINK name="*EcalBarrel/EBSummaryClient/EBPT PN pedestal quality summary">
+<LINK name="*EcalBarrel/EBSummaryClient/EBPT PN pedestal quality * summary">
         <TestName activate="true">EB_Quality_Summary</TestName>
 </LINK>
 
-<LINK name="*EcalBarrel/EBSummaryClient/EBTPT test pulse quality summary">
+<LINK name="*EcalBarrel/EBSummaryClient/EBTPT test pulse quality * summary">
         <TestName activate="true">EB_Quality_Summary</TestName>
 </LINK>
 
-<LINK name="*EcalBarrel/EBSummaryClient/EBTPT PN test pulse quality summary">
+<LINK name="*EcalBarrel/EBSummaryClient/EBTPT PN test pulse quality * summary">
         <TestName activate="true">EB_Quality_Summary</TestName>
 </LINK>
 
